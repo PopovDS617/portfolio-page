@@ -1,0 +1,33 @@
+{
+  "name": "portfolio-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev -H 0.0.0.0",
+    "build": "next build",
+    "prettier": "prettier -write .",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PopovDS617/portfolio-page.git"
+  },
+  "keywords": [],
+  "author": "Dmitry Popov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PopovDS617/portfolio-page/issues"
+  },
+  "homepage": "https://github.com/PopovDS617/portfolio-page#readme",
+  "dependencies": {
+    "@chakra-ui/icons": "^2.0.10",
+    "@chakra-ui/react": "^2.3.4",
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "framer-motion": "^7.3.6",
+    "next": "^12.3.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
