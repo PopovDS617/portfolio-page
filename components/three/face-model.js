@@ -69,7 +69,7 @@ const FaceModel = () => {
       controls.autoRotate = true;
       controls.target = target;
 
-      loadGLTFModel(scene, '/knight.glb', {
+      loadGLTFModel(scene, '/kng_fnsh.glb', {
         receiveShadow: false,
         castShadow: false
       }).then(() => {

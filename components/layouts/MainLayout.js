@@ -2,7 +2,6 @@ import Head from 'next/head';
 import { Box, Container } from '@chakra-ui/react';
 import Navbar from '../Navbar';
 import FaceModel from '../three/face-model';
-import NoSsr from '../no-ssr';
 
 const MainLayout = ({ children, router }) => {
   return (
@@ -14,9 +13,8 @@ const MainLayout = ({ children, router }) => {
       </Head>
       <Navbar path={router.asPath} />
       <Container maxW="container.md" pt={14}>
-        <NoSsr>
-          <FaceModel />
-        </NoSsr>
+        <FaceModel />
+
         {children}
       </Container>
     </Box>
