@@ -18,7 +18,8 @@ const LogoBox = styled.span`
 `;
 
 const Logo = () => {
-  const navLogoImg = `/images/navLogo${useColorModeValue('')}`;
+  //const navLogoImg = `/images/navLogo${useColorModeValue('')}`;
+  const navLogoImg = '/images/ava.jpg';
   return (
     <Link href="/">
       <a>

@@ -12,81 +12,86 @@ import Section from '../components/Section';
 import Paragraph from '../components/paragraph';
 import { ChevronRightIcon } from '@chakra-ui/icons';
 import { BioSection, BioYear } from '../components/Bio';
+import ArticleLayout from '../components/layouts/ArticleLayout';
 
 const Page = () => {
   return (
-    <Container>
-      <Box
-        borderRadius="lg"
-        p={3}
-        mb={6}
-        textAlign="center"
-        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
-      >
-        Привет, это страничка
-      </Box>
-      <Box display={{ md: 'flex' }}>
-        <Box flexGrow={1}>
-          <Heading as="h2" variant="page-title">
-            Дмитрий Попов
-          </Heading>
-          <p>разработчик из России</p>
-        </Box>
+    <ArticleLayout>
+      <Container>
         <Box
-          flexShrink={0}
-          mt={{ base: 4, md: 0 }}
-          ml={{ md: 6 }}
+          borderRadius="lg"
+          p={3}
+          mb={6}
           textAlign="center"
+          bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         >
-          <Image
-            borderColor="whiteAlpha.800"
-            borderWidth={2}
-            borderStyle="solid"
-            maxWidth="100px"
-            display="inline-block"
-            borderRadius="full"
-            src="/images/ava.jpg"
-            alt="profile image"
-          />
+          Привет, это страничка
         </Box>
-      </Box>
-      <Section delay={0.1}>
-        <Heading as="h3" variant="section-title">
-          Work
-        </Heading>
-        <Paragraph>Hello this is mine description hello and welcome</Paragraph>
-        <Box align="center" my={4}>
-          <NextLink href="/projects">
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              my portfolio
-            </Button>
-          </NextLink>
+        <Box display={{ md: 'flex' }}>
+          <Box flexGrow={1}>
+            <Heading as="h2" variant="page-title">
+              Дмитрий Попов
+            </Heading>
+            <p>разработчик из России</p>
+          </Box>
+          <Box
+            flexShrink={0}
+            mt={{ base: 4, md: 0 }}
+            ml={{ md: 6 }}
+            textAlign="center"
+          >
+            <Image
+              borderColor="whiteAlpha.800"
+              borderWidth={2}
+              borderStyle="solid"
+              maxWidth="100px"
+              display="inline-block"
+              borderRadius="full"
+              src="/images/ava.jpg"
+              alt="profile image"
+            />
+          </Box>
         </Box>
-      </Section>
-      <Section delay={0.2}>
-        <Heading as="h3" variant="section-title">
-          <BioSection>
-            <BioYear>2000</BioYear>
-          </BioSection>
-        </Heading>
-      </Section>
-      <Section delay={0.3}>
-        <Heading as="h3" variant="section-title">
-          Увлечения
-        </Heading>
-        <Paragraph>
-          Music,
-          <Link href="" target="_blank">
-            Drawing
-          </Link>
-          Playing
-          <Link href="" target="_blank">
-            Photography
-          </Link>
-          Music
-        </Paragraph>
-      </Section>
-    </Container>
+        <Section delay={0.1}>
+          <Heading as="h3" variant="section-title">
+            Work
+          </Heading>
+          <Paragraph>
+            Hello this is mine description hello and welcome
+          </Paragraph>
+          <Box align="center" my={4}>
+            <NextLink href="/projects">
+              <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+                my portfolio
+              </Button>
+            </NextLink>
+          </Box>
+        </Section>
+        <Section delay={0.2}>
+          <Heading as="h3" variant="section-title">
+            <BioSection>
+              <BioYear>2000</BioYear>
+            </BioSection>
+          </Heading>
+        </Section>
+        <Section delay={0.3}>
+          <Heading as="h3" variant="section-title">
+            Увлечения
+          </Heading>
+          <Paragraph>
+            Music,
+            <Link href="" target="_blank">
+              Drawing
+            </Link>
+            Playing
+            <Link href="" target="_blank">
+              Photography
+            </Link>
+            Music
+          </Paragraph>
+        </Section>
+      </Container>
+    </ArticleLayout>
   );
 };
 
