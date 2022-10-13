@@ -5,7 +5,7 @@ import thumbnailCryptoTracker from '../public/images/ava.jpg';
 import thumbnailQuizWebsite from '../public/images/ava.jpg';
 import ArticleLayout from '../components/layouts/ArticleLayout';
 
-const Projects = () => {
+const ProjectsPage = () => {
   return (
     <ArticleLayout>
       <Container>
@@ -15,7 +15,7 @@ const Projects = () => {
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section delay={0.1}>
             <ProjectGridItem
-              id="first project"
+              id="crypto-tracker"
               title="crypto tracker"
               thumbnail={thumbnailCryptoTracker}
             >
@@ -58,4 +58,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default ProjectsPage;

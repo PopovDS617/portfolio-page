@@ -9,12 +9,12 @@ import {
   Link
 } from '@chakra-ui/react';
 import Section from '../components/Section';
-import Paragraph from '../components/paragraph';
+import { Paragraph } from '../components/Paragraph';
 import { ChevronRightIcon } from '@chakra-ui/icons';
 import { BioSection, BioYear } from '../components/Bio';
 import ArticleLayout from '../components/layouts/ArticleLayout';
 
-const Page = () => {
+const HomePage = () => {
   return (
     <ArticleLayout>
       <Container>
@@ -95,4 +95,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default HomePage;
