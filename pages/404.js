@@ -16,7 +16,13 @@ const NotFoundPage = () => {
       <Divider my={6} />
       <Box my={6} align="center">
         <NextLink href="/">
-          <Button colorScheme="teal">to homepage</Button>
+          <Button
+            colorScheme="green"
+            bg="customSaturatedGreenColor"
+            _hover={{ bg: 'customDarkGreenColor' }}
+          >
+            to homepage
+          </Button>
         </NextLink>
       </Box>
     </Container>

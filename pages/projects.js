@@ -59,3 +59,4 @@ const ProjectsPage = () => {
 };
 
 export default ProjectsPage;
+export { getServerSideProps } from '../components/ssrSetup';

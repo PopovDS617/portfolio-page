@@ -69,7 +69,7 @@ const FaceModel = () => {
       controls.autoRotate = true;
       controls.target = target;
 
-      loadGLTFModel(scene, '/untitled6.glb', {
+      loadGLTFModel(scene, '/aki5.glb', {
         receiveShadow: false,
         castShadow: false
       }).then(() => {

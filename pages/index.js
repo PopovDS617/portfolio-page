@@ -6,13 +6,19 @@ import {
   Image,
   useColorModeValue,
   Button,
-  Link
+  Link,
+  SimpleGrid,
+  List,
+  ListItem,
+  Icon
 } from '@chakra-ui/react';
 import Section from '../components/Section';
 import { Paragraph } from '../components/Paragraph';
 import { ChevronRightIcon } from '@chakra-ui/icons';
 import { BioSection, BioYear } from '../components/Bio';
 import ArticleLayout from '../components/layouts/ArticleLayout';
+import { BsTelegram, BsGithub } from 'react-icons/bs';
+import { GridItem } from '../components/GridItem';
 
 const HomePage = () => {
   return (
@@ -61,7 +67,12 @@ const HomePage = () => {
           </Paragraph>
           <Box align="center" my={4}>
             <NextLink href="/projects">
-              <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+              <Button
+                rightIcon={<ChevronRightIcon />}
+                colorScheme="green"
+                bg="customSaturatedGreenColor"
+                _hover={{ bg: 'customDarkGreenColor' }}
+              >
                 my portfolio
               </Button>
             </NextLink>
@@ -90,9 +101,39 @@ const HomePage = () => {
             Music
           </Paragraph>
         </Section>
+        <Section delay={0.3}>
+          <Heading as="h3" variant="section-title">
+            contacts
+          </Heading>
+          <List>
+            <ListItem>
+              <Link href="https://github.com/PopovDS617" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="green"
+                  leftIcon={<Icon as={BsGithub} />}
+                >
+                  my github profile
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://t.me/PopovDS617" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="green"
+                  leftIcon={<Icon as={BsTelegram} />}
+                >
+                  {`my telegram profile`}
+                </Button>
+              </Link>
+            </ListItem>
+          </List>
+        </Section>
       </Container>
     </ArticleLayout>
   );
 };
 
 export default HomePage;
+export { getServerSideProps } from '../components/ssrSetup';
