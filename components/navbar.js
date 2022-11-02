@@ -36,7 +36,7 @@ const LinkItem = ({ href, path, children, target, ...props }) => {
   );
 };
 
-const Navbar = props => {
+export const Navbar = props => {
   const { path } = props;
   return (
     <Box
@@ -123,5 +123,3 @@ const Navbar = props => {
     </Box>
   );
 };
-
-export default Navbar;

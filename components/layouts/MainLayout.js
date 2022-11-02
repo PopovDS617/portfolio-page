@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { Box, Container } from '@chakra-ui/react';
-import Navbar from '../../components/Navbar';
+import { Navbar } from '../../components/Navbar';
 import dynamic from 'next/dynamic';
 
 import Loader from '../three/model-loader';
