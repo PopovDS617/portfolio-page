@@ -1,10 +1,10 @@
 import Head from 'next/head';
 import { Box, Container } from '@chakra-ui/react';
-import Navbar from '../Navbar';
+import Navbar from '../../components/Navbar';
 import dynamic from 'next/dynamic';
 
 import Loader from '../three/model-loader';
-import Footer from '../footer';
+import Footer from '../../components/Navbar';
 
 const FaceModel = dynamic(() => import('../three/face-model'), {
   ssr: false,

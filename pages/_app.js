@@ -1,7 +1,7 @@
 import { ChakraProvider } from '@chakra-ui/react';
 import Layout from '../components/layouts/MainLayout';
 import theme from '../lib/theme';
-import Fonts from '../components/fonts';
+import Fonts from '../components/Fonts';
 import { AnimatePresence } from 'framer-motion';
 
 if (typeof window !== 'undefined') {
