@@ -19,6 +19,7 @@ import { BioSection, BioYear } from '../components/Bio';
 import ArticleLayout from '../components/layouts/ArticleLayout';
 import { BsTelegram, BsGithub } from 'react-icons/bs';
 import { GridItem } from '../components/GridItem';
+import Footer from '../components/Footer';
 
 const HomePage = () => {
   return (
@@ -131,6 +132,7 @@ const HomePage = () => {
           </List>
         </Section>
       </Container>
+      <Footer />
     </ArticleLayout>
   );
 };
