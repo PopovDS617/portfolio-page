@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
-import { Box } from '@chakra-ui/react';
+
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { loadGLTFModel } from '../../lib/three-model';
@@ -69,7 +69,7 @@ const FaceModel = () => {
       controls.autoRotate = true;
       controls.target = target;
 
-      loadGLTFModel(scene, '/kng_fnsh.glb', {
+      loadGLTFModel(scene, '/untitled6.glb', {
         receiveShadow: false,
         castShadow: false
       }).then(() => {
