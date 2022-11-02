@@ -4,7 +4,7 @@ import Navbar from '../../components/Navbar';
 import dynamic from 'next/dynamic';
 
 import Loader from '../three/model-loader';
-import Footer from '../../components/Navbar';
+import Footer from '../../components/Footer';
 
 const FaceModel = dynamic(() => import('../three/face-model'), {
   ssr: false,
