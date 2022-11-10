@@ -12,19 +12,31 @@ const LogoBox = styled.span`
   height: 30px;
   line-height: 20px;
   padding: 10px;
-  &:hover img {
-    transform: rotate(20deg);
+  &:hover div {
+    transform: rotate(180deg);
   }
 `;
 
+const LogoIcon=styled.span`
+color:white;  
+font-size:18px;
+
+display:flex; align-items:center;justify-content:center; 
+transition: all 0.5s ease-out;
+ &:hover { transform:rotate(-180deg);
+    transition: all 0.5s ease-out;}
+`
+
 const Logo = () => {
-  //const navLogoImg = `/images/navLogo${useColorModeValue('')}`;
+   
   const navLogoImg = '/images/ava.jpg';
   return (
     <Link href="/">
       <a>
         <LogoBox>
-          <Image src={navLogoImg} width={20} height={20} alt="logo" />
+          <LogoIcon>dp</LogoIcon>
+    
+   
           <Text
             color={useColorModeValue('gray.800', 'whiteAlpha.900')}
             fontFamily="M PLUS Rounded 1c"
