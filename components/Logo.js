@@ -21,7 +21,7 @@ const LogoIcon=styled.span`
 color:white;  
 font-size:18px;
 
-display:flex; align-items:center;justify-content:center; 
+display:inline-flex; align-items:center;justify-content:center; 
 transition: all 0.5s ease-out;
  &:hover { transform:rotate(-180deg);
     transition: all 0.5s ease-out;}
@@ -29,12 +29,17 @@ transition: all 0.5s ease-out;
 
 const Logo = () => {
    
-  const navLogoImg = '/images/ava.jpg';
+   
   return (
     <Link href="/">
       <a>
         <LogoBox>
-          <LogoIcon>dp</LogoIcon>
+          <LogoIcon>  <Text
+            color={useColorModeValue('gray.800', 'whiteAlpha.900')}
+            fontFamily="M PLUS Rounded 1c"
+            
+            ml={3}
+          >dp</Text></LogoIcon>
     
    
           <Text
