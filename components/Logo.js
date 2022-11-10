@@ -6,7 +6,7 @@ import styled from '@emotion/styled';
 const LogoBox = styled.span`
   font-weight: bold;
   font-size: 18px;
-  display: inline-flex;
+  display:  flex;
   align-items: center;
   height: 20px;
   height: 30px;
@@ -21,7 +21,7 @@ const LogoIcon=styled.span`
 color:white;  
 font-size:18px;
 
-display:inline-flex; align-items:center;justify-content:center; 
+display: flex; align-items:center;justify-content:center; 
 transition: all 0.5s ease-out;
  &:hover { transform:rotate(-180deg);
     transition: all 0.5s ease-out;}
