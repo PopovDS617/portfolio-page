@@ -33,6 +33,30 @@ const HomePage = () => {
           bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         >
           Привет, это страничка
+              
+               <Box flexGrow={1}>
+            <Heading as="h2" variant="page-title">
+              Дмитрий Попов
+            </Heading>
+            <p>разработчик из России</p>
+          </Box>
+          <Box
+            flexShrink={0}
+            mt={{ base: 4, md: 0 }}
+            ml={{ md: 6 }}
+            textAlign="center"
+          >
+            <Image
+              borderColor="whiteAlpha.800"
+              borderWidth={2}
+              borderStyle="solid"
+              maxWidth="100px"
+              display="inline-block"
+              borderRadius="full"
+              src="/images/ava.jpg"
+              alt="profile image"
+            />
+          </Box>
         </Box>
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
