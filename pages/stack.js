@@ -45,7 +45,7 @@ const StackPage = () => {
         </Section>
         
       </Container>
-      <Footer />
+   
     </ArticleLayout>
   );
 };
