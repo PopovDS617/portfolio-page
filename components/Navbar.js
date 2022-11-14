@@ -15,6 +15,7 @@ import {
   useColorModeValue
 } from '@chakra-ui/react';
 import ThemeToggleButton from '../components/ThemeToggleButton';
+import LangToggleButton from '../components/LangToggleButton';
 import { BsGithub } from 'react-icons/bs';
 import { HamburgerIcon } from '@chakra-ui/icons';
 
@@ -90,6 +91,7 @@ export const Navbar = props => {
         </Stack>
         <Box flex={1} align="right">
           <ThemeToggleButton />
+          <LangToggleButton/>
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
             <Menu>
               <MenuButton
