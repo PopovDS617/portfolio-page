@@ -21,7 +21,7 @@ const LangToggleButton = () => {
           colorScheme={useColorModeValue('black', 'white')}
           
           onClick={toggleColorMode}
-        ></Text>
+        >RU</Text>
       </motion.div>
     </AnimatePresence>
   );
