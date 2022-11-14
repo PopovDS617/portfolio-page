@@ -1,5 +1,5 @@
 import React from 'react';
-import {   useColorModeValue, useColorMode } from '@chakra-ui/react';
+import {   useColorModeValue, useColorMode,Text } from '@chakra-ui/react';
 
 import { AnimatePresence, motion } from 'framer-motion';
 
