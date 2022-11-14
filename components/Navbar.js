@@ -90,8 +90,9 @@ export const Navbar = props => {
           </LinkItem>
         </Stack>
         <Box flex={1} align="right">
+             <LangToggleButton/>
           <ThemeToggleButton />
-          <LangToggleButton/>
+       
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
             <Menu>
               <MenuButton
