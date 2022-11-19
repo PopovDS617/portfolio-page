@@ -6,7 +6,7 @@ import styled from '@emotion/styled';
 const LogoBox = styled.span`
   font-weight: bold;
   font-size: 18px;
-  display:  flex;
+  display: flex;
   align-items: center;
   height: 20px;
   height: 30px;
@@ -17,31 +17,36 @@ const LogoBox = styled.span`
   }
 `;
 
-const LogoIcon=styled.span`
-color:white;  
-font-size:18px;
+const LogoIcon = styled.span`
+  color: white;
+  font-size: 18px;
 
-display: flex; align-items:center;justify-content:center; 
-transition: all 0.5s ease-out;
- &:hover { transform:rotate(-180deg);
-    transition: all 0.5s ease-out;}
-`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-out;
+  &:hover {
+    transform: rotate(-180deg);
+    transition: all 0.5s ease-out;
+  }
+`;
 
 const Logo = () => {
-   
-   
   return (
     <Link href="/">
       <a>
         <LogoBox>
-          <LogoIcon>  <Text
-            color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-            fontFamily="M PLUS Rounded 1c"
-            
-            ml={3}
-          >dp</Text></LogoIcon>
-    
-   
+          <LogoIcon>
+            {' '}
+            <Text
+              color={useColorModeValue('gray.800', 'whiteAlpha.900')}
+              fontFamily="M PLUS Rounded 1c"
+              ml={3}
+            >
+              dp
+            </Text>
+          </LogoIcon>
+
           <Text
             color={useColorModeValue('gray.800', 'whiteAlpha.900')}
             fontFamily="M PLUS Rounded 1c"

@@ -33,8 +33,6 @@ const HomePage = () => {
           bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         >
           Привет, это страничка
-              
-              
         </Box>
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
@@ -140,4 +138,3 @@ const HomePage = () => {
 };
 
 export default HomePage;
-export { getServerSideProps } from '../components/ssrSetup';
