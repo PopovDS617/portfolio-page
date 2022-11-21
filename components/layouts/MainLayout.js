@@ -1,11 +1,11 @@
 import Head from 'next/head';
 import { Box, Container } from '@chakra-ui/react';
-import { Navbar } from '../Navbar';
+import { Navbar } from '../navbar/Navbar';
 
 import { Canvas } from '@react-three/fiber';
 import { Suspense } from 'react';
 import Three from './../3dmodel/model-container';
-import { ModelSpinner } from '../Spinner';
+import { ModelSpinner } from '../ui/Spinner';
 
 const MainLayout = ({ children, router }) => {
   return (

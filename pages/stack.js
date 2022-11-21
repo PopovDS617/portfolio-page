@@ -6,7 +6,7 @@ import {
   Icon
 } from '@chakra-ui/react';
 import Section from '../components/Section';
-import { Paragraph } from '../components/Paragraph';
+import { Paragraph } from '../components/styles/Paragraph';
 
 import ArticleLayout from '../components/layouts/ArticleLayout';
 

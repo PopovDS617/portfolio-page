@@ -14,8 +14,8 @@ import {
   IconButton,
   useColorModeValue
 } from '@chakra-ui/react';
-import ThemeToggleButton from '../components/ThemeToggleButton';
-import LangToggleButton from '../components/LangToggleButton';
+import ThemeToggleButton from './ThemeToggleButton';
+import LangToggleButton from './LangToggleButton';
 import { BsGithub } from 'react-icons/bs';
 import { HamburgerIcon } from '@chakra-ui/icons';
 import useTraslation from 'next-translate/useTranslation';

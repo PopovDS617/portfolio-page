@@ -1,7 +1,9 @@
 import { Container, Badge, List, ListItem, Box } from '@chakra-ui/react';
 
-import { PostTitle, PostMeta, PostImage } from '../../components/Post';
-import { Paragraph } from '../../components/Paragraph';
+import { PostImage } from '../../components/post/PostImage';
+import { PostMeta } from '../../components/post/PostMeta';
+import { PostTitle } from '../../components/post/PostTitle';
+import { Paragraph } from '../../components/styles/Paragraph';
 import ArticleLayout from '../../components/layouts/ArticleLayout';
 
 const Post = () => {

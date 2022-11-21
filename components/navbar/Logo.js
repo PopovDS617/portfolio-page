@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import { Text, useColorModeValue, Box } from '@chakra-ui/react';
+import { Text, useColorModeValue } from '@chakra-ui/react';
 import styled from '@emotion/styled';
 import useTranslation from 'next-translate/useTranslation';
 

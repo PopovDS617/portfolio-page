@@ -1,6 +1,6 @@
 import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react';
 import Section from '../components/Section';
-import { ProjectGridItem } from '../components/GridItem';
+import { ProjectGridItem } from '../components/grid/GridItem';
 import thumbnailCryptoTracker from '../public/images/ava.jpg';
 import thumbnailQuizWebsite from '../public/images/ava.jpg';
 import ArticleLayout from '../components/layouts/ArticleLayout';

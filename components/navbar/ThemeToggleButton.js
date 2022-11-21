@@ -9,11 +9,11 @@ const ThemeToggleButton = () => {
   return (
     <AnimatePresence mode="wait" initial={false}>
       <motion.div
-        style={{ display: 'inline-block', marginRight:10, marginLeft:10  }}
+        style={{ display: 'inline-block', marginRight: 10, marginLeft: 10 }}
         key={useColorModeValue('light', 'dark')}
-        initial={{ y: -20, opacity: 0 }}
+        initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        exit={{ y: 20, opacity: 0 }}
+        exit={{ y: -20, opacity: 0 }}
         transition={{ duration: 0.2 }}
       >
         <IconButton
@@ -21,7 +21,7 @@ const ThemeToggleButton = () => {
           colorScheme={useColorModeValue('purple', 'orange')}
           icon={useColorModeValue(<MoonIcon />, <SunIcon />)}
           onClick={toggleColorMode}
-        ></IconButton>
+        />
       </motion.div>
     </AnimatePresence>
   );
