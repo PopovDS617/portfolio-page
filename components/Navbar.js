@@ -18,6 +18,7 @@ import ThemeToggleButton from '../components/ThemeToggleButton';
 import LangToggleButton from '../components/LangToggleButton';
 import { BsGithub } from 'react-icons/bs';
 import { HamburgerIcon } from '@chakra-ui/icons';
+import useTraslation from 'next-translate/useTranslation';
 
 const LinkItem = ({ href, path, children, target, ...props }) => {
   const active = path === href;
@@ -70,7 +71,7 @@ export const Navbar = props => {
           flexGrow={1}
           mt={{ base: 4, nmd: 0 }}
         >
-             <LinkItem href="/stack" path={path}>
+          <LinkItem href="/stack" path={path}>
             stack
           </LinkItem>
           <LinkItem href="/projects" path={path}>
@@ -92,10 +93,10 @@ export const Navbar = props => {
             source
           </LinkItem>
         </Stack>
-        <Box flex={1} align="right">
-             <LangToggleButton/>
+        <Box flex={1} align="right" mr={5}>
+          <LangToggleButton />
           <ThemeToggleButton />
-       
+
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
             <Menu>
               <MenuButton
@@ -108,11 +109,11 @@ export const Navbar = props => {
                 <NextLink href="/" passHref>
                   <MenuItem as={Link}>about</MenuItem>
                 </NextLink>
-                <NextLink href="/stack" passHref  >
-                  <MenuItem >stack</MenuItem>
+                <NextLink href="/stack" passHref>
+                  <MenuItem>stack</MenuItem>
                 </NextLink>
-                <NextLink href="/projects" passHref  >
-                  <MenuItem >projects</MenuItem>
+                <NextLink href="/projects" passHref>
+                  <MenuItem>projects</MenuItem>
                 </NextLink>
                 <NextLink href="/posts" passHref>
                   <MenuItem as={Link}>posts</MenuItem>

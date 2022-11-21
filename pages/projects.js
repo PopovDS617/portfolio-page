@@ -4,13 +4,16 @@ import { ProjectGridItem } from '../components/GridItem';
 import thumbnailCryptoTracker from '../public/images/ava.jpg';
 import thumbnailQuizWebsite from '../public/images/ava.jpg';
 import ArticleLayout from '../components/layouts/ArticleLayout';
+import useTranslation from 'next-translate/useTranslation';
 
 const ProjectsPage = () => {
+  const { t } = useTranslation('projects');
+
   return (
     <ArticleLayout>
       <Container>
         <Heading as="h3" fontSize={20} mb={4}>
-          Projects
+          {t('title')}
         </Heading>
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section delay={0.1}>
@@ -59,4 +62,3 @@ const ProjectsPage = () => {
 };
 
 export default ProjectsPage;
-export { getServerSideProps } from '../components/ssrSetup';

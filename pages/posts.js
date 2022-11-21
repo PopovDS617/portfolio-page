@@ -52,5 +52,3 @@ const PostsPage = () => {
 };
 
 export default PostsPage;
-
-export { getServerSideProps } from '../components/ssrSetup';

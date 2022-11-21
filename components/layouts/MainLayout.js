@@ -5,6 +5,7 @@ import { Navbar } from '../Navbar';
 import { Canvas } from '@react-three/fiber';
 import { Suspense } from 'react';
 import Three from './../3dmodel/model-container';
+import { ModelSpinner } from '../Spinner';
 
 const MainLayout = ({ children, router }) => {
   return (
@@ -17,7 +18,6 @@ const MainLayout = ({ children, router }) => {
       <Navbar path={router.asPath} />
       <Container maxW="container.md" pt={14}>
         <Box
-          className="voxel-dog"
           m="auto"
           mt={['-20px', '-60px', '-120px']}
           mb={['-40px', '-140px', '-200px']}
@@ -25,9 +25,11 @@ const MainLayout = ({ children, router }) => {
           h={[280, 480, 640]}
           position="relative"
         >
-          <Canvas id="three-canvas-container" shadows>
-            <Three />
-          </Canvas>
+          <Suspense fallback={<ModelSpinner />}>
+            <Canvas shadows>
+              <Three />
+            </Canvas>
+          </Suspense>
         </Box>
 
         {children}
