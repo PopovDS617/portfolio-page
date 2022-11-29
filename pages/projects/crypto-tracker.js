@@ -19,7 +19,7 @@ const Project = () => {
         </Paragraph>
         <List ml={4} my={4}>
           <ListItem>
-            <ProjectMeta>Website</ProjectMeta>
+            <ProjectMeta>Demo</ProjectMeta>
             <Link href="https://crypto-trkr.netlify.app" isExternal>
               https://crypto-trkr.netlify.app <ExternalLinkIcon mx="2px" />
             </Link>
@@ -27,6 +27,12 @@ const Project = () => {
           <ListItem>
             <ProjectMeta>Stack</ProjectMeta>
             <span>React, TypeScript</span>
+          </ListItem>
+  <ListItem>
+            <ProjectMeta>Source</ProjectMeta>
+             <Link href="https://github.com/PopovDS617/crypto-tracker-app" isExternal>
+              https://github.com/PopovDS617/crypto-tracker-app <ExternalLinkIcon mx="2px" />
+            </Link>
           </ListItem>
           <ProjectImage src="/images/ava.jpg" />
         </List>
