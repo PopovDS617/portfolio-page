@@ -2,7 +2,6 @@ import Link from 'next/link';
 
 import { Text, useColorModeValue } from '@chakra-ui/react';
 import styled from '@emotion/styled';
-import useTranslation from 'next-translate/useTranslation';
 
 const LogoBox = styled.span`
   font-weight: bold;
@@ -33,8 +32,6 @@ const LogoIcon = styled.span`
 `;
 
 const Logo = () => {
-  const { t } = useTranslation('common');
-
   return (
     <Link href="/">
       <a>
@@ -44,19 +41,11 @@ const Logo = () => {
               color={useColorModeValue('gray.800', 'whiteAlpha.900')}
               fontFamily="M PLUS Rounded 1c"
               ml={3}
+              fontSize={30}
             >
               dp
             </Text>
           </LogoIcon>
-
-          <Text
-            color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-            fontFamily="M PLUS Rounded 1c"
-            fontWeight="bold"
-            ml={3}
-          >
-            {t('title')}
-          </Text>
         </LogoBox>
       </a>
     </Link>

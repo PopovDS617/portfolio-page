@@ -18,8 +18,6 @@ import { BioSection, BioYear } from '../components/styles/Bio';
 import ArticleLayout from '../components/layouts/ArticleLayout';
 import { BsTelegram, BsGithub } from 'react-icons/bs';
 
-import Footer from '../components/Footer';
-
 const HomePage = () => {
   return (
     <ArticleLayout>
@@ -131,7 +129,6 @@ const HomePage = () => {
           </List>
         </Section>
       </Container>
-      <Footer />
     </ArticleLayout>
   );
 };
