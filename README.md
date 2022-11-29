@@ -3,7 +3,7 @@
 
 
 to do:
-- [ ] refactor folders and components
+- [x] refactor folders and components
 - [ ] add ts
 - [x] change three logic from vanilla to fiber & drei 
 - [ ] add  my face 3d voxel model
