@@ -113,7 +113,7 @@ const HomePage = () => {
                   colorScheme="green"
                   leftIcon={<Icon as={BsGithub} />}
                 >
-                  my github profile
+                  {`github profile`}
                 </Button>
               </Link>
             </ListItem>
@@ -124,7 +124,7 @@ const HomePage = () => {
                   colorScheme="green"
                   leftIcon={<Icon as={BsTelegram} />}
                 >
-                  {`my telegram profile`}
+                  {`telegram`}
                 </Button>
               </Link>
             </ListItem>
