@@ -1,0 +1,8 @@
+{
+  "locales": ["ru-RU", "en-US"],
+  "defaultLocale": "ru-RU",
+  "pages": {
+    "*": ["common"],
+    "/projects": ["projects"]
+  }
+}

@@ -1,9 +1,8 @@
 import { Container, Heading, SimpleGrid } from '@chakra-ui/react';
 import ArticleLayout from '../components/layouts/ArticleLayout';
 import Section from '../components/Section';
-import { GridItem } from '../components/GridItem';
+import { GridItem, PostGridItem } from '../components/grid/GridItem';
 import ImagePath from '../public/images/ava.jpg';
-import { PostGridItem } from '../components/GridItem';
 
 const PostsPage = () => {
   return (
@@ -52,5 +51,3 @@ const PostsPage = () => {
 };
 
 export default PostsPage;
-
-export { getServerSideProps } from '../components/ssrSetup';

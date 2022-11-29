@@ -7,19 +7,16 @@ import {
   useColorModeValue,
   Button,
   Link,
-  SimpleGrid,
   List,
   ListItem,
   Icon
 } from '@chakra-ui/react';
 import Section from '../components/Section';
-import { Paragraph } from '../components/Paragraph';
+import { Paragraph } from '../components/styles/Paragraph';
 import { ChevronRightIcon } from '@chakra-ui/icons';
-import { BioSection, BioYear } from '../components/Bio';
+import { BioSection, BioYear } from '../components/styles/Bio';
 import ArticleLayout from '../components/layouts/ArticleLayout';
 import { BsTelegram, BsGithub } from 'react-icons/bs';
-import { GridItem } from '../components/GridItem';
-import Footer from '../components/Footer';
 
 const HomePage = () => {
   return (
@@ -33,8 +30,6 @@ const HomePage = () => {
           bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         >
           Привет, это страничка
-              
-              
         </Box>
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
@@ -116,7 +111,7 @@ const HomePage = () => {
                   colorScheme="green"
                   leftIcon={<Icon as={BsGithub} />}
                 >
-                  my github profile
+                  {`github profile`}
                 </Button>
               </Link>
             </ListItem>
@@ -127,17 +122,15 @@ const HomePage = () => {
                   colorScheme="green"
                   leftIcon={<Icon as={BsTelegram} />}
                 >
-                  {`my telegram profile`}
+                  {`telegram`}
                 </Button>
               </Link>
             </ListItem>
           </List>
         </Section>
       </Container>
-      <Footer />
     </ArticleLayout>
   );
 };
 
 export default HomePage;
-export { getServerSideProps } from '../components/ssrSetup';
