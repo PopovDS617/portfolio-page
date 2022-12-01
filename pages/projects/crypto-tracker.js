@@ -6,10 +6,7 @@ import { ProjectImage } from '../../components/project/ProjectImage';
 import { Paragraph } from '../../components/styles/Paragraph';
 import ArticleLayout from '../../components/layouts/ArticleLayout';
 
-import firstPicture from './../../public/images/projects/crypto-tracker/shot-1.jpg';
-import secondPicture from './../../public/images/projects/crypto-tracker/shot-2.jpg';
-import thirdPicture from './../../public/images/projects/crypto-tracker/shot-3.jpg';
-import fourthPicture from './../../public/images/projects/crypto-tracker/shot-4.jpg';
+ 
 
 const Project = () => {
   return (
@@ -46,6 +43,7 @@ const Project = () => {
           <ProjectImage src="/images/projects/crypto-tracker/shot-2.jpg" />
           <ProjectImage src="/images/projects/crypto-tracker/shot-3.jpg" />
           <ProjectImage src="/images/projects/crypto-tracker/shot-4.jpg" />
+              <ProjectImage src="/images/projects/crypto-tracker/shot-5.jpg" />
         </List>
       </Container>
     </ArticleLayout>
