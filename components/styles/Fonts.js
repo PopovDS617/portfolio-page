@@ -5,7 +5,7 @@ const Fonts = () => (
     styles={`
     
     
-   @import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
    
     
     `}
