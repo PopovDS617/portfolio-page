@@ -20,7 +20,7 @@ const LogoBox = styled.span`
 const LogoIcon = styled.span`
   color: white;
   font-size: 18px;
-font-family:'Zen Dots',
+ 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,7 +39,7 @@ const Logo = () => {
           <LogoIcon>
             <Text
               color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-              fontFamily="M PLUS Rounded 1c"
+              fontFamily="Zen Dots"
               ml={3}
               fontSize={30}
             >
