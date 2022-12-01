@@ -20,7 +20,7 @@ const LogoBox = styled.span`
 const LogoIcon = styled.span`
   color: white;
   font-size: 18px;
-
+font-family:'Zen Dots',
   display: flex;
   align-items: center;
   justify-content: center;
