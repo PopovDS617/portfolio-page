@@ -39,12 +39,14 @@ const Project = () => {
               <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
-          <ProjectImage src="/images/projects/crypto-tracker/shot-1.jpg" />
+ 
+        
+        </List>
+  <ProjectImage src="/images/projects/crypto-tracker/shot-1.jpg" />
           <ProjectImage src="/images/projects/crypto-tracker/shot-2.jpg" />
           <ProjectImage src="/images/projects/crypto-tracker/shot-3.jpg" />
           <ProjectImage src="/images/projects/crypto-tracker/shot-4.jpg" />
               <ProjectImage src="/images/projects/crypto-tracker/shot-5.jpg" />
-        </List>
       </Container>
     </ArticleLayout>
   );
