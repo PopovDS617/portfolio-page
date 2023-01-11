@@ -8,41 +8,34 @@ import ArticleLayout from '../../components/layouts/ArticleLayout';
 
 const Project = () => {
   return (
-    <ArticleLayout title="crypto tracker">
+    <ArticleLayout title="Harry Potter CSP">
       <Container>
         <ProjectTitle>
-          Crypto Tracker <Badge>2022</Badge>
+          Harry Potter CSP <Badge>2022</Badge>
         </ProjectTitle>
-        <Paragraph>
-          a simple app for tracking of buying and selling crypto assets
-        </Paragraph>
+        <Paragraph>List of characters, spells and potions</Paragraph>
         <List ml={4} my={4}>
           <ListItem>
             <ProjectMeta>Demo</ProjectMeta>
-            <Link href="https://crypto-trkr.netlify.app" isExternal>
-              https://crypto-trkr.netlify.app <ExternalLinkIcon mx="2px" />
+            <Link href="https://harry-potter-pp.vercel.app/" isExternal>
+              https://harry-potter-pp.vercel.app <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
           <ListItem>
             <ProjectMeta>Stack</ProjectMeta>
-            <span>React, TypeScript, CSS</span>
+            <span>React, TypeScript</span>
           </ListItem>
           <ListItem>
             <ProjectMeta>Source</ProjectMeta>
-            <Link
-              href="https://github.com/PopovDS617/crypto-tracker-app"
-              isExternal
-            >
+            <Link href="https://github.com/PopovDS617/harry-potter" isExternal>
               https://github.com/PopovDS617/crypto-tracker-app
               <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
         </List>
-        <ProjectImage src="/images/projects/crypto-tracker/shot-1.jpg" />
-        <ProjectImage src="/images/projects/crypto-tracker/shot-2.jpg" />
-        <ProjectImage src="/images/projects/crypto-tracker/shot-3.jpg" />
-        <ProjectImage src="/images/projects/crypto-tracker/shot-4.jpg" />
-        <ProjectImage src="/images/projects/crypto-tracker/shot-5.jpg" />
+        <ProjectImage src="/images/projects/harry-potter-csp/shot-1.jpg" />
+        <ProjectImage src="/images/projects/harry-potter-csp/shot-2.jpg" />
+        <ProjectImage src="/images/projects/harry-potter-csp/shot-3.jpg" />
       </Container>
     </ArticleLayout>
   );

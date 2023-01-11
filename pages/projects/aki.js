@@ -8,41 +8,33 @@ import ArticleLayout from '../../components/layouts/ArticleLayout';
 
 const Project = () => {
   return (
-    <ArticleLayout title="crypto tracker">
+    <ArticleLayout title="Aki">
       <Container>
         <ProjectTitle>
-          Crypto Tracker <Badge>2022</Badge>
+          Aki <Badge>2022</Badge>
         </ProjectTitle>
-        <Paragraph>
-          a simple app for tracking of buying and selling crypto assets
-        </Paragraph>
+        <Paragraph>-------</Paragraph>
         <List ml={4} my={4}>
           <ListItem>
             <ProjectMeta>Demo</ProjectMeta>
-            <Link href="https://crypto-trkr.netlify.app" isExternal>
-              https://crypto-trkr.netlify.app <ExternalLinkIcon mx="2px" />
+            <Link href="https://cat-aki.vercel.app/" isExternal>
+              https://cat-aki.vercel.app <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
           <ListItem>
             <ProjectMeta>Stack</ProjectMeta>
-            <span>React, TypeScript, CSS</span>
+            <span>React, TypeScript</span>
           </ListItem>
           <ListItem>
             <ProjectMeta>Source</ProjectMeta>
-            <Link
-              href="https://github.com/PopovDS617/crypto-tracker-app"
-              isExternal
-            >
-              https://github.com/PopovDS617/crypto-tracker-app
+            <Link href="https://github.com/PopovDS617/aki" isExternal>
+              https://github.com/PopovDS617/aki
               <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
         </List>
-        <ProjectImage src="/images/projects/crypto-tracker/shot-1.jpg" />
-        <ProjectImage src="/images/projects/crypto-tracker/shot-2.jpg" />
-        <ProjectImage src="/images/projects/crypto-tracker/shot-3.jpg" />
-        <ProjectImage src="/images/projects/crypto-tracker/shot-4.jpg" />
-        <ProjectImage src="/images/projects/crypto-tracker/shot-5.jpg" />
+        <ProjectImage src="/images/projects/aki/shot-1.jpg" />
+        <ProjectImage src="/images/projects/aki/shot-2.jpg" />
       </Container>
     </ArticleLayout>
   );

@@ -6,6 +6,12 @@ import thumbnailQuizWebsite from '../public/images/ava.jpg';
 import ArticleLayout from '../components/layouts/ArticleLayout';
 import useTranslation from 'next-translate/useTranslation';
 import CryptoTrackerLogo from '../public/images/projects/crypto-tracker/logo.jpg';
+import QuizLogo from '../public/images/projects/quiz/logo.jpg';
+import HarryPotterLogo from '../public/images/projects/harry-potter-csp/logo.jpg';
+import AkiLogo from '../public/images/projects/aki/logo.jpg';
+import RestPleaseLogo from '../public/images/projects/rest-please/shot-1.jpg';
+import MoonLogo from '../public/images/projects/the-moon/logo.jpg';
+import EngGrammarLogo from '../public/images/projects/english-grammar/logo.jpg';
 
 const ProjectsPage = () => {
   const { t } = useTranslation('projects');
@@ -20,69 +26,53 @@ const ProjectsPage = () => {
           <Section delay={0.1}>
             <ProjectGridItem
               id="crypto-tracker"
-              title="crypto tracker"
+              title="Crypto tracker"
               thumbnail={CryptoTrackerLogo}
-            >
-              crypto tracker
-            </ProjectGridItem>
+            />
           </Section>
           <Section delay={0.2}>
             <ProjectGridItem
-              id="second project"
-              title="quiz website tracker"
-              thumbnail={thumbnailQuizWebsite}
-            >
-              quiz website
-            </ProjectGridItem>
+              id="quiz"
+              title="Pub quiz website"
+              thumbnail={QuizLogo}
+            />
           </Section>
         </SimpleGrid>
         <Divider my={6} />
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section delay={0.3}>
             <ProjectGridItem
-              id="first project"
-              title="crypto tracker"
-              thumbnail={CryptoTrackerLogo}
-            >
-              crypto tracker 2
-            </ProjectGridItem>
+              id="harry-potter-csp"
+              title="Harry Potter CSP"
+              thumbnail={HarryPotterLogo}
+            />
           </Section>
           <Section delay={0.4}>
-            <ProjectGridItem
-              id="second project"
-              title="quiz website tracker"
-              thumbnail={thumbnailQuizWebsite}
-            >
-              quiz website 2
-            </ProjectGridItem>
+            <ProjectGridItem id="aki" title="Cat Aki" thumbnail={AkiLogo} />
           </Section>
         </SimpleGrid>
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section delay={0.3}>
             <ProjectGridItem
-              id="first project"
-              title="crypto tracker"
-              thumbnail={CryptoTrackerLogo}
-            >
-              crypto tracker 2
-            </ProjectGridItem>
+              id="rest-please"
+              title="Rest, please"
+              thumbnail={RestPleaseLogo}
+            />
           </Section>
           <Section delay={0.4}>
             <ProjectGridItem
-              id="second project"
-              title="quiz website tracker"
-              thumbnail={thumbnailQuizWebsite}
-            >
-              quiz website 2
-            </ProjectGridItem>
+              id="the-moon"
+              title="the Moon"
+              thumbnail={MoonLogo}
+            />
           </Section>
         </SimpleGrid>
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section delay={0.3}>
             <ProjectGridItem
-              id="first project"
-              title="crypto tracker"
-              thumbnail={CryptoTrackerLogo}
+              id="english-grammar"
+              title="English Grammar"
+              thumbnail={EngGrammarLogo}
             >
               crypto tracker 2
             </ProjectGridItem>

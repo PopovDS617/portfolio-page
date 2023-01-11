@@ -8,41 +8,33 @@ import ArticleLayout from '../../components/layouts/ArticleLayout';
 
 const Project = () => {
   return (
-    <ArticleLayout title="crypto tracker">
+    <ArticleLayout title="English Grammar">
       <Container>
         <ProjectTitle>
-          Crypto Tracker <Badge>2022</Badge>
+          English Grammar <Badge>2022</Badge>
         </ProjectTitle>
-        <Paragraph>
-          a simple app for tracking of buying and selling crypto assets
-        </Paragraph>
+        <Paragraph>-------</Paragraph>
         <List ml={4} my={4}>
           <ListItem>
             <ProjectMeta>Demo</ProjectMeta>
-            <Link href="https://crypto-trkr.netlify.app" isExternal>
-              https://crypto-trkr.netlify.app <ExternalLinkIcon mx="2px" />
+            <Link href="https://eng-grammar.vercel.app/" isExternal>
+              https://eng-grammar.vercel.app <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
           <ListItem>
             <ProjectMeta>Stack</ProjectMeta>
-            <span>React, TypeScript, CSS</span>
+            <span>React, TypeScript</span>
           </ListItem>
           <ListItem>
             <ProjectMeta>Source</ProjectMeta>
-            <Link
-              href="https://github.com/PopovDS617/crypto-tracker-app"
-              isExternal
-            >
-              https://github.com/PopovDS617/crypto-tracker-app
+            <Link href="https://github.com/PopovDS617/eng-gram" isExternal>
+              https://github.com/PopovDS617/eng-gram
               <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
         </List>
-        <ProjectImage src="/images/projects/crypto-tracker/shot-1.jpg" />
-        <ProjectImage src="/images/projects/crypto-tracker/shot-2.jpg" />
-        <ProjectImage src="/images/projects/crypto-tracker/shot-3.jpg" />
-        <ProjectImage src="/images/projects/crypto-tracker/shot-4.jpg" />
-        <ProjectImage src="/images/projects/crypto-tracker/shot-5.jpg" />
+        <ProjectImage src="/images/projects/english-grammar/shot-1.jpg" />
+        <ProjectImage src="/images/projects/english-grammar/shot-3.jpg" />
       </Container>
     </ArticleLayout>
   );
