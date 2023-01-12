@@ -31,7 +31,7 @@ const Project = () => {
               href="https://github.com/PopovDS617/pub-quiz-project"
               isExternal
             >
-              https://github.com/PopovDS617/crypto-tracker-app
+              https://github.com/PopovDS617/pub-quiz-project
               <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>

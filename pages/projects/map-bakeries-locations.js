@@ -8,17 +8,17 @@ import ArticleLayout from '../../components/layouts/ArticleLayout';
 
 const Project = () => {
   return (
-    <ArticleLayout title="Aki">
+    <ArticleLayout title="Map. Addresses of bakeries">
       <Container>
         <ProjectTitle>
-          Aki <Badge>2022</Badge>
+          Map. Addresses of bakeries <Badge>2022</Badge>
         </ProjectTitle>
         <Paragraph>-------</Paragraph>
         <List ml={4} my={4}>
           <ListItem>
             <ProjectMeta>Demo</ProjectMeta>
-            <Link href="https://cat-aki.vercel.app/" isExternal>
-              https://cat-aki.vercel.app <ExternalLinkIcon mx="2px" />
+            <Link href="popov-bakery-locations.netlify.app/" isExternal>
+              popov-bakeries-locations.netlify.app <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
           <ListItem>
@@ -27,15 +27,17 @@ const Project = () => {
           </ListItem>
           <ListItem>
             <ProjectMeta>Source</ProjectMeta>
-            <Link href="https://github.com/PopovDS617/aki" isExternal>
-              https://github.com/PopovDS617/aki
+            <Link
+              href="https://github.com/PopovDS617/microservice-interactive-map"
+              isExternal
+            >
+              https://github.com/PopovDS617/microservice-interactive-map
               <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
         </List>
-        <ProjectImage src="/images/projects/aki/shot-1.jpg" />
-        <ProjectImage src="/images/projects/aki/shot-2.jpg" />
-        <ProjectImage src="/images/projects/aki/shot-3.jpg" />
+        <ProjectImage src="/images/projects/map-bakeries/shot-1.jpg" />
+        <ProjectImage src="/images/projects/map-bakeries/shot-2.jpg" />
       </Container>
     </ArticleLayout>
   );

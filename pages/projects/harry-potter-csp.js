@@ -28,7 +28,7 @@ const Project = () => {
           <ListItem>
             <ProjectMeta>Source</ProjectMeta>
             <Link href="https://github.com/PopovDS617/harry-potter" isExternal>
-              https://github.com/PopovDS617/crypto-tracker-app
+              https://github.com/PopovDS617/harry-potter
               <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
@@ -36,6 +36,7 @@ const Project = () => {
         <ProjectImage src="/images/projects/harry-potter-csp/shot-1.jpg" />
         <ProjectImage src="/images/projects/harry-potter-csp/shot-2.jpg" />
         <ProjectImage src="/images/projects/harry-potter-csp/shot-3.jpg" />
+        <ProjectImage src="/images/projects/harry-potter-csp/shot-4.jpg" />
       </Container>
     </ArticleLayout>
   );

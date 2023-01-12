@@ -8,17 +8,17 @@ import ArticleLayout from '../../components/layouts/ArticleLayout';
 
 const Project = () => {
   return (
-    <ArticleLayout title="Aki">
+    <ArticleLayout title="Map. Point-to-point route">
       <Container>
         <ProjectTitle>
-          Aki <Badge>2022</Badge>
+          Map. Point-to-point route <Badge>2022</Badge>
         </ProjectTitle>
         <Paragraph>-------</Paragraph>
         <List ml={4} my={4}>
           <ListItem>
             <ProjectMeta>Demo</ProjectMeta>
-            <Link href="https://cat-aki.vercel.app/" isExternal>
-              https://cat-aki.vercel.app <ExternalLinkIcon mx="2px" />
+            <Link href="p-t-p-map-routing.vercel.app/" isExternal>
+              p-t-p-map-routing.vercel.app <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
           <ListItem>
@@ -27,15 +27,17 @@ const Project = () => {
           </ListItem>
           <ListItem>
             <ProjectMeta>Source</ProjectMeta>
-            <Link href="https://github.com/PopovDS617/aki" isExternal>
-              https://github.com/PopovDS617/aki
+            <Link
+              href="https://github.com/PopovDS617/map-point-to-point-routing"
+              isExternal
+            >
+              https://github.com/PopovDS617/map-point-to-point-routing
               <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
         </List>
-        <ProjectImage src="/images/projects/aki/shot-1.jpg" />
-        <ProjectImage src="/images/projects/aki/shot-2.jpg" />
-        <ProjectImage src="/images/projects/aki/shot-3.jpg" />
+        <ProjectImage src="/images/projects/map-point-to-point/shot-1.jpg" />
+        <ProjectImage src="/images/projects/map-point-to-point/shot-2.jpg" />
       </Container>
     </ArticleLayout>
   );

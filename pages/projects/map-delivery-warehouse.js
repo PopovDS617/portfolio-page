@@ -8,17 +8,21 @@ import ArticleLayout from '../../components/layouts/ArticleLayout';
 
 const Project = () => {
   return (
-    <ArticleLayout title="Aki">
+    <ArticleLayout title="Map. Delivery from a warehouse">
       <Container>
         <ProjectTitle>
-          Aki <Badge>2022</Badge>
+          Map. Delivery from a warehouse <Badge>2022</Badge>
         </ProjectTitle>
         <Paragraph>-------</Paragraph>
         <List ml={4} my={4}>
           <ListItem>
             <ProjectMeta>Demo</ProjectMeta>
-            <Link href="https://cat-aki.vercel.app/" isExternal>
-              https://cat-aki.vercel.app <ExternalLinkIcon mx="2px" />
+            <Link
+              href="https://map-warehouse-to-delivery-point.vercel.app/"
+              isExternal
+            >
+              https://map-warehouse-to-delivery-point.vercel.app{' '}
+              <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
           <ListItem>
@@ -27,15 +31,19 @@ const Project = () => {
           </ListItem>
           <ListItem>
             <ProjectMeta>Source</ProjectMeta>
-            <Link href="https://github.com/PopovDS617/aki" isExternal>
-              https://github.com/PopovDS617/aki
+            <Link
+              href="https://github.com/PopovDS617/map-warehouse-to-delivery-point"
+              isExternal
+            >
+              https://github.com/PopovDS617/map-warehouse-to-delivery-point
               <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
         </List>
-        <ProjectImage src="/images/projects/aki/shot-1.jpg" />
-        <ProjectImage src="/images/projects/aki/shot-2.jpg" />
-        <ProjectImage src="/images/projects/aki/shot-3.jpg" />
+        <ProjectImage src="/images/projects/map-warehouse/shot-1.jpg" />
+        <ProjectImage src="/images/projects/map-warehouse/shot-2.jpg" />
+        <ProjectImage src="/images/projects/map-warehouse/shot-3.jpg" />
+        <ProjectImage src="/images/projects/map-warehouse/shot-4.jpg" />
       </Container>
     </ArticleLayout>
   );

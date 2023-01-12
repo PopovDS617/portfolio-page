@@ -12,6 +12,9 @@ import AkiLogo from '../public/images/projects/aki/logo.jpg';
 import RestPleaseLogo from '../public/images/projects/rest-please/shot-1.jpg';
 import MoonLogo from '../public/images/projects/the-moon/logo.jpg';
 import EngGrammarLogo from '../public/images/projects/english-grammar/logo.jpg';
+import MapBakeriesLogo from '../public/images/projects/map-bakeries/shot-1.jpg';
+import MapP2PLogo from '../public/images/projects/map-point-to-point/shot-1.jpg';
+import MapWarehouseLogo from '../public/images/projects/map-warehouse/shot-1.jpg';
 
 const ProjectsPage = () => {
   const { t } = useTranslation('projects');
@@ -73,58 +76,30 @@ const ProjectsPage = () => {
               id="english-grammar"
               title="English Grammar"
               thumbnail={EngGrammarLogo}
-            >
-              crypto tracker 2
-            </ProjectGridItem>
+            />
           </Section>
           <Section delay={0.4}>
             <ProjectGridItem
-              id="second project"
-              title="quiz website tracker"
-              thumbnail={thumbnailQuizWebsite}
-            >
-              quiz website 2
-            </ProjectGridItem>
+              id="map-bakeries-locations"
+              title="Map. Addresses of bakeries"
+              thumbnail={MapBakeriesLogo}
+            />
           </Section>
         </SimpleGrid>
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section delay={0.3}>
             <ProjectGridItem
-              id="first project"
-              title="crypto tracker"
-              thumbnail={CryptoTrackerLogo}
-            >
-              crypto tracker 2
-            </ProjectGridItem>
+              id="map-point-to-point"
+              title="Map. Point-to-point route"
+              thumbnail={MapP2PLogo}
+            />
           </Section>
           <Section delay={0.4}>
             <ProjectGridItem
-              id="second project"
-              title="quiz website tracker"
-              thumbnail={thumbnailQuizWebsite}
-            >
-              quiz website 2
-            </ProjectGridItem>
-          </Section>
-        </SimpleGrid>
-        <SimpleGrid columns={[1, 1, 2]} gap={6}>
-          <Section delay={0.3}>
-            <ProjectGridItem
-              id="first project"
-              title="crypto tracker"
-              thumbnail={CryptoTrackerLogo}
-            >
-              crypto tracker 2
-            </ProjectGridItem>
-          </Section>
-          <Section delay={0.4}>
-            <ProjectGridItem
-              id="second project"
-              title="quiz website tracker"
-              thumbnail={thumbnailQuizWebsite}
-            >
-              quiz website 2
-            </ProjectGridItem>
+              id="map-delivery-warehouse"
+              title="Map. Delivery from a warehouse"
+              thumbnail={MapWarehouseLogo}
+            />
           </Section>
         </SimpleGrid>
       </Container>

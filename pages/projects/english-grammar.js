@@ -34,6 +34,7 @@ const Project = () => {
           </ListItem>
         </List>
         <ProjectImage src="/images/projects/english-grammar/shot-1.jpg" />
+        <ProjectImage src="/images/projects/english-grammar/shot-2.jpg" />
         <ProjectImage src="/images/projects/english-grammar/shot-3.jpg" />
       </Container>
     </ArticleLayout>
