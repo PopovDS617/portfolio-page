@@ -22,7 +22,15 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
 );
 
 export const ProjectGridItem = ({ children, id, title, thumbnail }) => (
-  <Box w="100%" align="center">
+  <Box
+    w="100%"
+    align="center"
+    transition="all 0.3s"
+    _hover={{
+      transform: 'scale(1.02)',
+      transition: 'all 0.3s'
+    }}
+  >
     <NextLink href={`/projects/${id}`}>
       <LinkBox cursor="pointer">
         <Image

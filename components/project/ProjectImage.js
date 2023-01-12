@@ -7,7 +7,7 @@ export const ProjectImage = ({ src, alt }) => (
     src={src}
     alt={alt}
     mb={4}
-    transition="all 0.3s"
-    _hover={{ transform: 'scale(1.3)', transition: 'all 0.3s' }}
+    transition="all 0.4s"
+    _hover={{ transform: 'scale(1.2)', transition: 'all 0.4s' }}
   />
 );
