@@ -18,7 +18,7 @@ import ThemeToggleButton from './ThemeToggleButton';
 import LangToggleButton from './LangToggleButton';
 import { BsGithub } from 'react-icons/bs';
 import { HamburgerIcon } from '@chakra-ui/icons';
-import useTraslation from 'next-translate/useTranslation';
+import useTranslation from 'next-translate/useTranslation';
 
 const LinkItem = ({ href, path, children, target, ...props }) => {
   const active = path === href;
@@ -39,6 +39,8 @@ const LinkItem = ({ href, path, children, target, ...props }) => {
 };
 
 export const Navbar = props => {
+  const { t } = useTranslation('common');
+
   const { path } = props;
   return (
     <Box
@@ -72,13 +74,13 @@ export const Navbar = props => {
           mt={{ base: 4, nmd: 0 }}
         >
           <LinkItem href="/stack" path={path}>
-            stack
+            {t('stackLink')}
           </LinkItem>
           <LinkItem href="/projects" path={path}>
-            projects
+            {t('projectsLink')}
           </LinkItem>
           <LinkItem href="/posts" path={path}>
-            posts
+            {t('postsLink')}
           </LinkItem>
           <LinkItem
             target="_blank"
@@ -90,7 +92,7 @@ export const Navbar = props => {
             pl={2}
           >
             <BsGithub />
-            source
+            {t('sourceLink')}
           </LinkItem>
         </Stack>
         <Box flex={1} align="right" mr={5}>
@@ -106,24 +108,24 @@ export const Navbar = props => {
                 aria-label="Options"
               />
               <MenuList>
-                <NextLink href="/" passHref>
+                {/* <NextLink href="/" passHref>
                   <MenuItem as={Link}>about</MenuItem>
-                </NextLink>
+                </NextLink> */}
                 <NextLink href="/stack" passHref>
-                  <MenuItem>stack</MenuItem>
+                  <MenuItem> {t('stackLink')}</MenuItem>
                 </NextLink>
                 <NextLink href="/projects" passHref>
-                  <MenuItem>projects</MenuItem>
+                  <MenuItem> {t('projectsLink')}</MenuItem>
                 </NextLink>
                 <NextLink href="/posts" passHref>
-                  <MenuItem as={Link}>posts</MenuItem>
+                  <MenuItem as={Link}>{t('postsLink')}</MenuItem>
                 </NextLink>
 
                 <MenuItem
                   as={Link}
                   href="https://github.com/PopovDS617/portfolio-page"
                 >
-                  source code
+                  {t('sourceLink')}
                 </MenuItem>
               </MenuList>
             </Menu>

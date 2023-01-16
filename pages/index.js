@@ -9,32 +9,28 @@ import {
   Link,
   List,
   ListItem,
-  Icon
+  Icon,
+  ListIcon,
+  UnorderedList
 } from '@chakra-ui/react';
 import Section from '../components/Section';
 import { Paragraph } from '../components/styles/Paragraph';
-import { ChevronRightIcon } from '@chakra-ui/icons';
+import { ChevronRightIcon, SearchIcon } from '@chakra-ui/icons';
 import { BioSection, BioYear } from '../components/styles/Bio';
 import ArticleLayout from '../components/layouts/ArticleLayout';
 import { BsTelegram, BsGithub } from 'react-icons/bs';
+import useTranslation from 'next-translate/useTranslation';
 
 const HomePage = () => {
+  const { t } = useTranslation('common');
+
   return (
     <ArticleLayout>
       <Container>
-        <Box
-          borderRadius="lg"
-          p={3}
-          mb={6}
-          textAlign="center"
-          bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
-        >
-          Привет, это страничка
-        </Box>
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
             <Heading as="h2" variant="page-title">
-              Дмитрий Попов
+              {t('title')}
             </Heading>
             <p>разработчик из России</p>
           </Box>
@@ -63,7 +59,7 @@ const HomePage = () => {
           <Paragraph>
             Hello this is mine description hello and welcome
           </Paragraph>
-          <Box align="center" my={4}>
+          {/* <Box align="center" my={4}>
             <NextLink href="/projects">
               <Button
                 rightIcon={<ChevronRightIcon />}
@@ -74,34 +70,42 @@ const HomePage = () => {
                 my portfolio
               </Button>
             </NextLink>
-          </Box>
+          </Box> */}
         </Section>
-        <Section delay={0.2}>
+        {/* <Section delay={0.2}>
           <Heading as="h3" variant="section-title">
             <BioSection>
               <BioYear>2000</BioYear>
             </BioSection>
           </Heading>
-        </Section>
+        </Section> */}
         <Section delay={0.3}>
           <Heading as="h3" variant="section-title">
-            Увлечения
+            {t('hobbiesTitle')}
           </Heading>
-          <Paragraph>
-            Music,
-            <Link href="" target="_blank">
-              Drawing
-            </Link>
-            Playing
-            <Link href="" target="_blank">
-              Photography
-            </Link>
-            Music
-          </Paragraph>
+
+          <List>
+            <ListItem>
+              <ListIcon as={SearchIcon} color="green.500" />
+              {t('hobbie1')}
+            </ListItem>
+            <ListItem>
+              <ListIcon as={SearchIcon} color="green.500" />
+              {t('hobbie2')}
+            </ListItem>
+            <ListItem>
+              <ListIcon as={SearchIcon} color="green.500" />
+              {t('hobbie3')}
+            </ListItem>
+            <ListItem>
+              <ListIcon as={SearchIcon} color="green.500" />
+              {t('hobbie4')}
+            </ListItem>
+          </List>
         </Section>
         <Section delay={0.3}>
           <Heading as="h3" variant="section-title">
-            contacts
+            {t('contactsTitle')}
           </Heading>
           <List>
             <ListItem>
@@ -111,7 +115,7 @@ const HomePage = () => {
                   colorScheme="green"
                   leftIcon={<Icon as={BsGithub} />}
                 >
-                  {`github profile`}
+                  {`github`}
                 </Button>
               </Link>
             </ListItem>
