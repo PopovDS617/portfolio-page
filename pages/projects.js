@@ -1,8 +1,7 @@
 import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react';
 import Section from '../components/Section';
 import { ProjectGridItem } from '../components/grid/GridItem';
-import thumbnailCryptoTracker from '../public/images/ava.jpg';
-import thumbnailQuizWebsite from '../public/images/ava.jpg';
+
 import ArticleLayout from '../components/layouts/ArticleLayout';
 import useTranslation from 'next-translate/useTranslation';
 import CryptoTrackerLogo from '../public/images/projects/crypto-tracker/logo.jpg';
@@ -12,9 +11,9 @@ import AkiLogo from '../public/images/projects/aki/logo.jpg';
 import RestPleaseLogo from '../public/images/projects/rest-please/shot-1.jpg';
 import MoonLogo from '../public/images/projects/the-moon/logo.jpg';
 import EngGrammarLogo from '../public/images/projects/english-grammar/logo.jpg';
-import MapBakeriesLogo from '../public/images/projects/map-bakeries/shot-1.jpg';
-import MapP2PLogo from '../public/images/projects/map-point-to-point/shot-1.jpg';
-import MapWarehouseLogo from '../public/images/projects/map-warehouse/shot-1.jpg';
+import MapBakeriesLogo from '../public/images/projects/map-bakeries/logo.jpg';
+import MapP2PLogo from '../public/images/projects/map-point-to-point/logo.jpg';
+import MapWarehouseLogo from '../public/images/projects/map-warehouse/logo.jpg';
 
 const ProjectsPage = () => {
   const { t } = useTranslation('projects');

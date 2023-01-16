@@ -33,6 +33,7 @@ const Project = () => {
             </Link>
           </ListItem>
         </List>
+        <ProjectImage src="/images/projects/aki/shot-0.jpg" />
         <ProjectImage src="/images/projects/aki/shot-1.jpg" />
         <ProjectImage src="/images/projects/aki/shot-2.jpg" />
         <ProjectImage src="/images/projects/aki/shot-3.jpg" />
