@@ -8,12 +8,13 @@ import CryptoTrackerLogo from '../public/images/projects/crypto-tracker/logo.jpg
 import QuizLogo from '../public/images/projects/quiz/logo.jpg';
 import HarryPotterLogo from '../public/images/projects/harry-potter-csp/logo.jpg';
 import AkiLogo from '../public/images/projects/aki/logo.jpg';
-import RestPleaseLogo from '../public/images/projects/rest-please/shot-1.jpg';
+import RestPleaseLogo from '../public/images/projects/rest-please/logo.jpg';
 import MoonLogo from '../public/images/projects/the-moon/logo.jpg';
 import EngGrammarLogo from '../public/images/projects/english-grammar/logo.jpg';
 import MapBakeriesLogo from '../public/images/projects/map-bakeries/logo.jpg';
 import MapP2PLogo from '../public/images/projects/map-point-to-point/logo.jpg';
 import MapWarehouseLogo from '../public/images/projects/map-warehouse/logo.jpg';
+import WForecastLogo from '../public/images/projects/weather-forecast/logo.jpg';
 
 const ProjectsPage = () => {
   const { t } = useTranslation('projects');
@@ -24,6 +25,7 @@ const ProjectsPage = () => {
         <Heading as="h3" fontSize={20} mb={4}>
           {t('title')}
         </Heading>
+        <Divider my={6} />
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section delay={0.1}>
             <ProjectGridItem
@@ -53,6 +55,7 @@ const ProjectsPage = () => {
             <ProjectGridItem id="aki" title="Cat Aki" thumbnail={AkiLogo} />
           </Section>
         </SimpleGrid>
+        <Divider my={6} />
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section delay={0.3}>
             <ProjectGridItem
@@ -69,6 +72,7 @@ const ProjectsPage = () => {
             />
           </Section>
         </SimpleGrid>
+        <Divider my={6} />
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section delay={0.3}>
             <ProjectGridItem
@@ -85,6 +89,7 @@ const ProjectsPage = () => {
             />
           </Section>
         </SimpleGrid>
+        <Divider my={6} />
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section delay={0.3}>
             <ProjectGridItem
@@ -98,6 +103,16 @@ const ProjectsPage = () => {
               id="map-delivery-warehouse"
               title="Map. Delivery from a warehouse"
               thumbnail={MapWarehouseLogo}
+            />
+          </Section>
+        </SimpleGrid>
+        <Divider my={6} />
+        <SimpleGrid columns={[1, 1, 2]} gap={6}>
+          <Section delay={0.3}>
+            <ProjectGridItem
+              id="weather-forecast"
+              title="Weather forecast"
+              thumbnail={WForecastLogo}
             />
           </Section>
         </SimpleGrid>

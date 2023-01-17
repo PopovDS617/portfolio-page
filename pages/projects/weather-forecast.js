@@ -8,17 +8,17 @@ import ArticleLayout from '../../components/layouts/ArticleLayout';
 
 const Project = () => {
   return (
-    <ArticleLayout title="Rest, please">
+    <ArticleLayout title="Weather forecast">
       <Container>
         <ProjectTitle>
-          Rest, please <Badge>2022</Badge>
+          Weather forecast <Badge>2022</Badge>
         </ProjectTitle>
         <Paragraph>-------</Paragraph>
         <List ml={4} my={4}>
           <ListItem>
             <ProjectMeta>Demo</ProjectMeta>
-            <Link href="https://rest-please.vercel.app/" isExternal>
-              https://rest-please.vercel.app <ExternalLinkIcon mx="2px" />
+            <Link href="https://popov-forecast.vercel.app/" isExternal>
+              https://popov-forecast.vercel.app <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
           <ListItem>
@@ -27,15 +27,17 @@ const Project = () => {
           </ListItem>
           <ListItem>
             <ProjectMeta>Source</ProjectMeta>
-            <Link href="https://github.com/PopovDS617/rest-please" isExternal>
-              https://github.com/PopovDS617/rest-please
+            <Link
+              href="https://github.com/PopovDS617/microservice-weather-forecast"
+              isExternal
+            >
+              https://github.com/PopovDS617/microservice-weather-forecast
               <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
         </List>
-        <ProjectImage src="/images/projects/rest-please/shot-1.jpg" />
-        <ProjectImage src="/images/projects/rest-please/shot-2.jpg" />
-        <ProjectImage src="/images/projects/rest-please/shot-3.jpg" />
+        <ProjectImage src="/images/projects/weather-forecast/shot-1.jpg" />
+        <ProjectImage src="/images/projects/weather-forecast/shot-2.jpg" />
       </Container>
     </ArticleLayout>
   );
