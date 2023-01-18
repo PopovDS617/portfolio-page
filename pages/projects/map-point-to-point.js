@@ -17,7 +17,7 @@ const Project = () => {
         <List ml={4} my={4}>
           <ListItem>
             <ProjectMeta>Demo</ProjectMeta>
-            <Link href="p-t-p-map-routing.vercel.app/" isExternal>
+            <Link href="https://p-t-p-map-routing.vercel.app/" isExternal>
               p-t-p-map-routing.vercel.app <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
