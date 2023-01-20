@@ -1,3 +1,39 @@
 {
-  "title": "Проекты"
+  "pageTitle": "Проекты",
+
+"cryptoTrackerTitle": " ",
+"cryptoTrackerDescription": "Приложение для отслеживания покупок и продаж криптоактивов",
+
+"pubQuizTitle": " ",
+"pubQuizDescription": "Сайт несуществующего квиза. Создан в качестве образца для тестирования возможностей Next.js",
+
+"harryPotterTitle": " ",
+"harryPotterDescription": "Сайт, сожержащий небольшую базу данных о персонажах, заклинаниях и зельях, упоминающихся в фильма и книгах 'о мальчике, который выжил'",
+
+"catAkiTitle": " ",
+"catAkiDescription": "Сайт кота по имени Аки",
+
+"restPleaseTitle": " ",
+"restPleaseDescription": "Приложение для тестирования эндпоинтов. Упрощенная версия postman и insomnia",
+
+"englishGrammarTitle: " ",
+"englishGrammarDescription: "Сайт-шпаргалка по грамматике английского языка",
+
+"theMoonTitle": " ",
+"theMoonDescription": "3D модель Луны и ее краткое описание. Создано для тестирования возможностей Three.js",
+
+"mapBakeryTitle": " ",
+"mapBakeryDescription": "Адреса всех пекарен 'Кекс' в Ростове-на-Дону. Создано для тестирования возможностей React Leaflet",
+
+"mapRoutingTitle": " ",
+"mapRoutingDescription": "Приложение для построения маршрута доставок. Создано для тестирования возможностей Tom Tom sdk",
+
+"mapWarehouseTitle": " ",
+"mapWarehouseDescription": "Приложение для рассчета расстояния и времени доставки груза со склада до пункта выдачи. Создано для тестирования возможностей Tom Tom sdk",
+
+"weatherForecasctTitle": " ",
+"weatherForecasctDescription": "Приложение, позволяющее узнать прогноз погоды",
+
+
 }
+ 
