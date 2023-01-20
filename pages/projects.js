@@ -17,7 +17,7 @@ import MapWarehouseLogo from '../public/images/projects/map-warehouse/logo.jpg';
 import WForecastLogo from '../public/images/projects/weather-forecast/logo.jpg';
 
 const ProjectsPage = () => {
-  const { t } = useTranslation('projects');
+  const { t } = useTranslation('pageTitle');
 
   return (
     <ArticleLayout>

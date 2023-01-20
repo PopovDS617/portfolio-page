@@ -1,14 +1,13 @@
 {
-"pageTitle": "Технологии, которые я использую:"",
-"languagesTitle":"ЯП",
-"frontendTitle":"Фронтенд",
-"backendTitle":"Бэкенд",
-"frameworksFrontEndTitle":"Фреймворки",
-"stylingFronEndTitle":"Стилизация и анимации",
-"miscFronEndTitle":"Разное",
-"backendTitle":"",
-"dbBackendTitle":"Базы данных",
-"testingTitle":"Тестирование",
-"familiarWith":"Знаю на базовом уровне",
-"goalsFor2023":"Цели на 2023 год"
+  "pageTitle": "Технологии, которые я использую",
+  "languagesTitle": "ЯП",
+  "frontendTitle": "Фронтенд",
+  "backendTitle": "Бэкенд",
+  "frameworksFrontEndTitle": "Фреймворки",
+  "stylingFronEndTitle": "Стилизация и анимации",
+  "miscFronEndTitle": "Разное",
+  "dbBackendTitle": "Базы данных",
+  "testingTitle": "Тестирование",
+  "familiarWith": "Знаю на базовом уровне",
+  "goalsFor2023": "Цели на 2023 год"
 }
