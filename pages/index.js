@@ -47,7 +47,7 @@ const HomePage = () => {
               maxWidth="100px"
               display="inline-block"
               borderRadius="full"
-              src="/images/ava.jpg"
+              src="/images/avatar.jpg"
               alt="profile image"
             />
           </Box>
