@@ -47,7 +47,7 @@ const HomePage = () => {
             textAlign="center"
           >
             <Image
-              borderColor="whiteAlpha.800"
+              borderColor={useColorModeValue('#202023', 'whiteAlpha.800')}
               borderWidth={2}
               borderStyle="solid"
               maxWidth="150px"

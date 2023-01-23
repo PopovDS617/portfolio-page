@@ -44,8 +44,8 @@ const Logo = props => {
               p={2}
               px={4}
               color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-              border={active ? 'solid 3px' : undefined}
-              borderColor={active ? ' customSaturatedGreenColor' : undefined}
+              outline={active ? 'solid 4px' : undefined}
+              outlineColor={active ? ' customSaturatedGreenColor' : undefined}
               fontFamily="Zen Dots"
               ml={3}
               fontSize={25}
