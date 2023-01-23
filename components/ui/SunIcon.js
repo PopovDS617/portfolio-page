@@ -10,6 +10,7 @@ const SunIcon = () => {
       version="1.1"
       viewBox="0 0 159.705 159.705"
       xmlSpace="preserve"
+      height="50px"
     >
       <circle cx="79.852" cy="79.852" r="79.852" fill="#A3DCE2"></circle>
       <path

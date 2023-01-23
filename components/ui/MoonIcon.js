@@ -10,6 +10,7 @@ const MoonIcon = () => {
       version="1.1"
       viewBox="0 0 499.6 499.6"
       xmlSpace="preserve"
+      height="50px"
     >
       <circle cx="249.6" cy="250" r="249.6" fill="#063F66"></circle>
       <path
