@@ -103,6 +103,7 @@ export const Navbar = props => {
             <Menu>
               <MenuButton
                 as={IconButton}
+                outline="2px solid #00dc82"
                 icon={<HamburgerIcon />}
                 variant="outline"
                 aria-label="Options"
