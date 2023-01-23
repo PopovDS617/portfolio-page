@@ -44,7 +44,7 @@ const HomePage = () => {
               borderColor="whiteAlpha.800"
               borderWidth={2}
               borderStyle="solid"
-              maxWidth="100px"
+              maxWidth="150px"
               display="inline-block"
               borderRadius="full"
               src="/images/avatar.jpg"

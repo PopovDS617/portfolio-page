@@ -16,7 +16,7 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
       <LinkOverlay href={href} target="_blank">
         <Text mt={2}>{title}</Text>
       </LinkOverlay>
-      <Text fontSize={14}>{children}</Text>
+      <Text fontSize={16}>{children}</Text>
     </LinkBox>
   </Box>
 );
@@ -40,11 +40,11 @@ export const ProjectGridItem = ({ children, id, title, thumbnail }) => (
           placeholder="blur"
         />
         <LinkOverlay href={`/projects/${id}`}>
-          <Text mt={2} fontSize={20}>
+          <Text mt={2} fontSize={22}>
             {title}
           </Text>
         </LinkOverlay>
-        <Text fontSize={14}>{children}</Text>
+        <Text fontSize={16}>{children}</Text>
       </LinkBox>
     </NextLink>
   </Box>
@@ -60,11 +60,11 @@ export const PostGridItem = ({ children, id, title, thumbnail }) => (
           placeholder="blur"
         />
         <LinkOverlay href={`/posts/${id}`}>
-          <Text mt={2} fontSize={20}>
+          <Text mt={2} fontSize={22}>
             {title}
           </Text>
         </LinkOverlay>
-        <Text fontSize={14}>{children}</Text>
+        <Text fontSize={16}>{children}</Text>
       </LinkBox>
     </NextLink>
   </Box>

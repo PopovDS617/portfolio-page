@@ -11,7 +11,7 @@ export const ProjectTitle = ({ children }) => (
     <span>
       <ChevronRightIcon />
     </span>
-    <Heading display="inline-block" as="h3" fontSize={20} mb={4}>
+    <Heading display="inline-block" as="h3" fontSize={22} mb={4}>
       {children}
     </Heading>
   </Box>

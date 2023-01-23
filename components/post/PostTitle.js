@@ -11,7 +11,7 @@ export const PostTitle = ({ children }) => (
     <span>
       <ChevronRightIcon />
     </span>
-    <Heading display="inline-block" as="h2" fontSize={20} mb={2}>
+    <Heading display="inline-block" as="h2" fontSize={22} mb={2}>
       {children}
     </Heading>
   </Box>
