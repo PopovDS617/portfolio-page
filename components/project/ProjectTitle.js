@@ -4,14 +4,19 @@ import { Heading, Box, Link } from '@chakra-ui/react';
 import { ChevronRightIcon } from '@chakra-ui/icons';
 
 export const ProjectTitle = ({ children }) => (
-  <Box>
+  <Box fontSize={{ base: 20, md: 26 }}>
     <NextLink href="/projects" passHref>
       <Link>Projects</Link>
     </NextLink>
     <span>
       <ChevronRightIcon />
     </span>
-    <Heading display="inline-block" as="h3" fontSize={22} mb={4}>
+    <Heading
+      display="inline-block"
+      as="h3"
+      fontSize={{ base: 20, md: 26 }}
+      mb={4}
+    >
       {children}
     </Heading>
   </Box>

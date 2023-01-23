@@ -11,12 +11,12 @@ const Project = () => {
     <ArticleLayout title="crypto tracker">
       <Container>
         <ProjectTitle>
-          Crypto Tracker <Badge>2022</Badge>
+          Crypto Tracker <ProjectMeta>2022</ProjectMeta>
         </ProjectTitle>
         <Paragraph>
           a simple app for tracking of buying and selling crypto assets
         </Paragraph>
-        <List ml={4} my={4}>
+        <List ml={4} my={4} fontSize={18}>
           <ListItem>
             <ProjectMeta>Demo</ProjectMeta>
             <Link href="https://crypto-trkr.netlify.app" isExternal>

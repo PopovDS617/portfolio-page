@@ -27,10 +27,11 @@ const LinkItem = ({ href, path, children, target, ...props }) => {
     <NextLink href={href} passHref scroll={false}>
       <Link
         p={2}
+        px={4}
         bg={active ? 'customSaturatedGreenColor' : undefined}
         color={active ? '#202023' : inactiveColor}
         target={target}
-        // fontSize={20}
+        fontSize={20}
         {...props}
       >
         {children}
@@ -48,7 +49,7 @@ export const Navbar = props => {
       position="fixed"
       as="nav"
       w="100%"
-      bg={useColorModeValue('#ffffff40', '#20202380')}
+      bg={useColorModeValue('#e5e3c980', '#20202380')}
       style={{ backdropFilter: 'blur(10px)' }}
       zIndex={1}
       {...props}
@@ -62,9 +63,7 @@ export const Navbar = props => {
         justify="space-between"
       >
         <Flex align="center" mr={5}>
-          <Heading as="h1" size="lg">
-            <Logo />
-          </Heading>
+          <Logo path={props.path} />
         </Flex>
         <Stack
           direction={{ base: 'column', md: 'row' }}
@@ -127,6 +126,9 @@ export const Navbar = props => {
                   href="https://github.com/PopovDS617/portfolio-page"
                 >
                   {t('sourceLink')}
+                  <Box px={1}>
+                    <BsGithub />
+                  </Box>
                 </MenuItem>
               </MenuList>
             </Menu>

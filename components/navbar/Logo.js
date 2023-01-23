@@ -20,7 +20,7 @@ const LogoBox = styled.span`
 const LogoIcon = styled.span`
   color: white;
   font-size: 18px;
- 
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -31,17 +31,24 @@ const LogoIcon = styled.span`
   }
 `;
 
-const Logo = () => {
+const Logo = props => {
+  const active = props.path === '/';
+  const inactiveColor = useColorModeValue('gray200', 'whiteAlpha900');
   return (
     <Link href="/">
       <a>
         <LogoBox>
           <LogoIcon>
             <Text
+              borderRadius="0.375rem"
+              p={2}
+              px={4}
               color={useColorModeValue('gray.800', 'whiteAlpha.900')}
+              border={active ? 'solid 3px' : undefined}
+              borderColor={active ? ' customSaturatedGreenColor' : undefined}
               fontFamily="Zen Dots"
               ml={3}
-              fontSize={30}
+              fontSize={25}
             >
               dp
             </Text>

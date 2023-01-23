@@ -28,11 +28,17 @@ const HomePage = () => {
     <ArticleLayout>
       <Container>
         <Box display={{ md: 'flex' }}>
-          <Box flexGrow={1}>
-            <Heading as="h2" variant="page-title">
+          <Box
+            flexGrow={1}
+            display="flex"
+            justifyContent={{ md: 'center', sm: 'center' }}
+            alignItems={{ base: 'center', md: 'flex-start' }}
+            flexDirection="column"
+          >
+            <Heading as="h2" variant="page-title" textAlign={{ sm: 'justify' }}>
               {t('title')}
             </Heading>
-            <p>разработчик из России</p>
+            <Paragraph>разработчик из России</Paragraph>
           </Box>
           <Box
             flexShrink={0}
@@ -56,7 +62,7 @@ const HomePage = () => {
           <Heading as="h3" variant="section-title">
             Work
           </Heading>
-          <Paragraph>
+          <Paragraph fontSize={20}>
             Hello this is mine description hello and welcome
           </Paragraph>
           {/* <Box align="center" my={4}>
@@ -84,21 +90,45 @@ const HomePage = () => {
             {t('hobbiesTitle')}
           </Heading>
 
-          <List>
+          <List fontSize={20}>
             <ListItem>
-              <ListIcon as={SearchIcon} color="green.500" />
+              <ListIcon
+                as={SearchIcon}
+                color={useColorModeValue(
+                  'customDarkBlueColor',
+                  'customSaturatedGreenColor'
+                )}
+              />
               {t('hobbie1')}
             </ListItem>
             <ListItem>
-              <ListIcon as={SearchIcon} color="green.500" />
+              <ListIcon
+                as={SearchIcon}
+                color={useColorModeValue(
+                  'customDarkBlueColor',
+                  'customSaturatedGreenColor'
+                )}
+              />
               {t('hobbie2')}
             </ListItem>
             <ListItem>
-              <ListIcon as={SearchIcon} color="green.500" />
+              <ListIcon
+                as={SearchIcon}
+                color={useColorModeValue(
+                  'customDarkBlueColor',
+                  'customSaturatedGreenColor'
+                )}
+              />
               {t('hobbie3')}
             </ListItem>
             <ListItem>
-              <ListIcon as={SearchIcon} color="green.500" />
+              <ListIcon
+                as={SearchIcon}
+                color={useColorModeValue(
+                  'customDarkBlueColor',
+                  'customSaturatedGreenColor'
+                )}
+              />
               {t('hobbie4')}
             </ListItem>
           </List>
@@ -112,7 +142,18 @@ const HomePage = () => {
               <Link href="https://github.com/PopovDS617" target="_blank">
                 <Button
                   variant="ghost"
+                  _hover={{
+                    bg: useColorModeValue(
+                      'rgba(0, 66, 90,0.35)',
+                      'rgba(0, 220, 130,0.10)'
+                    )
+                  }}
+                  fontSize={20}
                   colorScheme="green"
+                  color={useColorModeValue(
+                    'customDarkBlueColor',
+                    'customSaturatedGreenColor'
+                  )}
                   leftIcon={<Icon as={BsGithub} />}
                 >
                   {`github`}
@@ -122,8 +163,19 @@ const HomePage = () => {
             <ListItem>
               <Link href="https://t.me/PopovDS617" target="_blank">
                 <Button
+                  _hover={{
+                    bg: useColorModeValue(
+                      'rgba(0, 66, 90,0.35)',
+                      'rgba(0, 220, 130,0.10)'
+                    )
+                  }}
+                  fontSize={20}
                   variant="ghost"
                   colorScheme="green"
+                  color={useColorModeValue(
+                    'customDarkBlueColor',
+                    'customSaturatedGreenColor'
+                  )}
                   leftIcon={<Icon as={BsTelegram} />}
                 >
                   {`telegram`}

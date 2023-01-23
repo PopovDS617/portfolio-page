@@ -22,7 +22,7 @@ const ProjectsPage = () => {
   return (
     <ArticleLayout>
       <Container>
-        <Heading as="h3" fontSize={20} mb={4}>
+        <Heading as="h3" fontSize={26} mb={4}>
           {t('title')}
         </Heading>
         <Divider my={6} />

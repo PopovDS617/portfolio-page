@@ -14,7 +14,7 @@ const Project = () => {
           Pub quiz website <Badge>2022</Badge>
         </ProjectTitle>
         <Paragraph>-------</Paragraph>
-        <List ml={4} my={4}>
+        <List ml={4} my={4} fontSize={18}>
           <ListItem>
             <ProjectMeta>Demo</ProjectMeta>
             <Link href="https://quiz-pp.vercel.app/" isExternal>
