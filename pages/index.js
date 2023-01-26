@@ -38,7 +38,7 @@ const HomePage = () => {
             <Heading as="h2" variant="page-title" textAlign={{ sm: 'justify' }}>
               {t('title')}
             </Heading>
-            <Paragraph>разработчик из России</Paragraph>
+           // <Paragraph>разработчик из России</Paragraph>
           </Box>
           <Box
             flexShrink={0}
