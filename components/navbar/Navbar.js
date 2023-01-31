@@ -16,7 +16,7 @@ import {
 } from '@chakra-ui/react';
 import ThemeToggleButton from './ThemeToggleButton';
 import LangToggleButton from './LangToggleButton';
-import { BsGithub } from 'react-icons/bs';
+
 import { HamburgerIcon } from '@chakra-ui/icons';
 import useTranslation from 'next-translate/useTranslation';
 
@@ -82,18 +82,7 @@ export const Navbar = props => {
           <LinkItem href="/posts" path={path}>
             {t('postsLink')}
           </LinkItem>
-          <LinkItem
-            target="_blank"
-            href="https://github.com/PopovDS617/portfolio-page"
-            path={path}
-            display="inline-flex"
-            alignItems="center"
-            style={{ gap: 4 }}
-            pl={2}
-          >
-            <BsGithub />
-            {t('sourceLink')}
-          </LinkItem>
+         
         </Stack>
         <Box flex={1} align="right" mr={5}>
           <LangToggleButton />
@@ -123,15 +112,7 @@ export const Navbar = props => {
                   <MenuItem as={Link}>{t('postsLink')}</MenuItem>
                 </NextLink>
 
-                <MenuItem
-                  as={Link}
-                  href="https://github.com/PopovDS617/portfolio-page"
-                >
-                  {t('sourceLink')}
-                  <Box px={1}>
-                    <BsGithub />
-                  </Box>
-                </MenuItem>
+              
               </MenuList>
             </Menu>
           </Box>
