@@ -27,7 +27,13 @@ const HomePage = () => {
   return (
     <ArticleLayout>
       <Container>
-        <Box display={{ md: 'flex' }}>
+        <Box
+          display={{ md: 'flex' }}
+          bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+          css={{ backdropFilter: 'blur(10px)' }}
+          padding={5}
+          borderRadius={20}
+        >
           <Box
             flexGrow={1}
             display="flex"
@@ -38,7 +44,7 @@ const HomePage = () => {
             <Heading as="h2" variant="page-title" textAlign={{ sm: 'justify' }}>
               {t('title')}
             </Heading>
-           // <Paragraph>разработчик из России</Paragraph>
+            // <Paragraph>разработчик из России</Paragraph>
           </Box>
           <Box
             flexShrink={0}

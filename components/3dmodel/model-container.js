@@ -1,42 +1,29 @@
 import { OrbitControls, PerspectiveCamera } from '@react-three/drei';
 
 import { Model } from './face-model';
+import { angleToRadians } from '../../lib/angleToRadians';
 
 const Three = () => {
   return (
     <>
-      <PerspectiveCamera makeDefault position={[-1, 5, -10]} />
-      <OrbitControls enabled={false} />
+      <PerspectiveCamera makeDefault position={[0, 3, -15]} />
+      <OrbitControls enabled={true} />
 
       <Model
-        scale={0.15}
+        scale={0.6}
         receiveShadow
-        position={[0, 0, 0]}
-        rotation={[0, 4, 0]}
+        position={[0, -1, 0]}
+        rotation={[angleToRadians(10), angleToRadians(140), angleToRadians(0)]}
       />
 
-      {/* <spotLight
-        castShadow
-        args={['#ffffff', 5]}
-        position={[-15, 2, -20]}
-        penumbra={1}
-        distance={45}
-        decay={0.5}
-        angle={5}
-        castShadow
-        shadow-mapSize-height={1024}
-        shadow-mapSize-width={1024}
-        shadow-radius={10}
-        shadow-bias={-0.0001}
-      /> */}
-
       <directionalLight
-        position={[-5, 10, -10]}
+        position={[5, 7, -16]}
         castShadow
         shadow-mapSize-height={1024}
         shadow-mapSize-width={1024}
-        shadow-radius={10}
+        shadow-radius={20}
         shadow-bias={-0.0001}
+        intensity={0.8}
       />
     </>
   );

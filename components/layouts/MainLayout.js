@@ -26,7 +26,7 @@ const MainLayout = ({ children, router }) => {
           position="relative"
         >
           <Suspense fallback={<ModelSpinner />}>
-            <Canvas shadows>
+            <Canvas concurrent="true" shadows>
               <Three />
             </Canvas>
           </Suspense>
