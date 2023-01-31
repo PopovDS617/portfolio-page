@@ -29,7 +29,7 @@ const HomePage = () => {
       <Container>
         <Box
           display={{ md: 'flex' }}
-          bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+          bg={useColorModeValue('#e8d2a6b5', '#20202380')}
           css={{ backdropFilter: 'blur(10px)' }}
           padding={5}
           borderRadius={20}
