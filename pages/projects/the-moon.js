@@ -14,7 +14,7 @@ const Project = () => {
           The Moon <Badge>2022</Badge>
         </ProjectTitle>
         <Paragraph>-------</Paragraph>
-        <List ml={4} my={4}>
+        <List ml={4} my={4} fontSize={18}>
           <ListItem>
             <ProjectMeta>Demo</ProjectMeta>
             <Link href="https://moon-pp.netlify.app/" isExternal>
@@ -23,7 +23,7 @@ const Project = () => {
           </ListItem>
           <ListItem>
             <ProjectMeta>Stack</ProjectMeta>
-            <span>React, TypeScript</span>
+            <span>Javascript, React, threeJS</span>
           </ListItem>
           <ListItem>
             <ProjectMeta>Source</ProjectMeta>
