@@ -14,7 +14,7 @@ const Project = () => {
           Map. Point-to-point route <Badge>2022</Badge>
         </ProjectTitle>
         <Paragraph>-------</Paragraph>
-        <List ml={4} my={4}>
+        <List ml={4} my={4} fontSize={18}>
           <ListItem>
             <ProjectMeta>Demo</ProjectMeta>
             <Link href="https://p-t-p-map-routing.vercel.app/" isExternal>
@@ -23,7 +23,7 @@ const Project = () => {
           </ListItem>
           <ListItem>
             <ProjectMeta>Stack</ProjectMeta>
-            <span>React, TypeScript</span>
+            <span>Javascript, React, TomTom SDK</span>
           </ListItem>
           <ListItem>
             <ProjectMeta>Source</ProjectMeta>
