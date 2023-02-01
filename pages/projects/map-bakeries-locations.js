@@ -14,16 +14,16 @@ const Project = () => {
           Map. Addresses of bakeries <Badge>2022</Badge>
         </ProjectTitle>
         <Paragraph>-------</Paragraph>
-        <List ml={4} my={4}>
+        <List ml={4} my={4} fontSize={18}>
           <ListItem>
             <ProjectMeta>Demo</ProjectMeta>
-            <Link href="popov-bakery-locations.netlify.app/" isExternal>
+            <Link href="https://popov-bakery-locations.netlify.app/" isExternal>
               popov-bakeries-locations.netlify.app <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
           <ListItem>
             <ProjectMeta>Stack</ProjectMeta>
-            <span>React, TypeScript</span>
+            <span>Typescript, React, Leaflet</span>
           </ListItem>
           <ListItem>
             <ProjectMeta>Source</ProjectMeta>
