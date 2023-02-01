@@ -14,7 +14,7 @@ const Project = () => {
           Map. Delivery from a warehouse <Badge>2022</Badge>
         </ProjectTitle>
         <Paragraph>-------</Paragraph>
-        <List ml={4} my={4}>
+        <List ml={4} my={4} fontSize={18}>
           <ListItem>
             <ProjectMeta>Demo</ProjectMeta>
             <Link
@@ -27,7 +27,7 @@ const Project = () => {
           </ListItem>
           <ListItem>
             <ProjectMeta>Stack</ProjectMeta>
-            <span>React, TypeScript</span>
+            <span>Javascript, React, TomTom SDK</span>
           </ListItem>
           <ListItem>
             <ProjectMeta>Source</ProjectMeta>
