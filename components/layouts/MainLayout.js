@@ -21,8 +21,8 @@ const MainLayout = ({ children, router }) => {
           m="auto"
           mt={['-20px', '-60px', '-120px']}
           mb={['-40px', '-140px', '-200px']}
-          w={[240, 420, 540]}
-          h={[240, 420, 540]}
+          w={[300, 450, 500]}
+          h={[300, 450, 500]}
           position="relative"
         >
           <Suspense fallback={<ModelSpinner />}>
