@@ -41,7 +41,7 @@ const HomePage = () => {
             alignItems={{ base: 'center', md: 'flex-start' }}
             flexDirection="column"
           >
-            <Heading as="h2" variant="page-title" textAlign={{ sm: 'justify' }}>
+            <Heading as="h2" variant="page-title" textAlign={{ sm: 'justify' }} fontSize={{ base: 26, md: 32 }}>
               {t('title')}
             </Heading>
             // <Paragraph>разработчик из России</Paragraph>
