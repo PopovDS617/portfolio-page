@@ -25,7 +25,7 @@ const Project = () => {
           </ListItem>
           <ListItem>
             <ProjectMeta>Stack</ProjectMeta>
-            <span>TypeScript, React, CSS</span>
+            <span>Typescript, React, CSS</span>
           </ListItem>
           <ListItem>
             <ProjectMeta>Source</ProjectMeta>
