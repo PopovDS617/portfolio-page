@@ -21,7 +21,7 @@ import { HamburgerIcon } from '@chakra-ui/icons';
 import useTranslation from 'next-translate/useTranslation';
 
 const LinkItem = ({ href, path, children, target, ...props }) => {
-  const active = path === href;
+  const active = path.includes(href);
   const inactiveColor = useColorModeValue('gray200', 'whiteAlpha900');
   return (
     <NextLink href={href} passHref scroll={false}>
@@ -82,7 +82,6 @@ export const Navbar = props => {
           <LinkItem href="/posts" path={path}>
             {t('postsLink')}
           </LinkItem>
-         
         </Stack>
         <Box flex={1} align="right" mr={5}>
           <LangToggleButton />
@@ -99,9 +98,6 @@ export const Navbar = props => {
                 border="none"
               />
               <MenuList>
-                {/* <NextLink href="/" passHref>
-                  <MenuItem as={Link}>about</MenuItem>
-                </NextLink> */}
                 <NextLink href="/stack" passHref>
                   <MenuItem> {t('stackLink')}</MenuItem>
                 </NextLink>
@@ -111,8 +107,6 @@ export const Navbar = props => {
                 <NextLink href="/posts" passHref>
                   <MenuItem as={Link}>{t('postsLink')}</MenuItem>
                 </NextLink>
-
-              
               </MenuList>
             </Menu>
           </Box>

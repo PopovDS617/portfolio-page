@@ -2,7 +2,6 @@ import { Container, Heading, SimpleGrid } from '@chakra-ui/react';
 import ArticleLayout from '../components/layouts/ArticleLayout';
 import Section from '../components/Section';
 import { GridItem, PostGridItem } from '../components/grid/GridItem';
-import ImagePath from '../public/images/ava.jpg';
 
 const PostsPage = () => {
   return (
@@ -16,12 +15,15 @@ const PostsPage = () => {
             <PostGridItem
               id="post-one"
               title="Post One"
-              thumbnail={ImagePath}
+              thumbnail="/images/ava.jpg"
             ></PostGridItem>
-            <PostGridItem title="Post Two" thumbnail={ImagePath}></PostGridItem>
+            <PostGridItem
+              title="Post Two"
+              thumbnail="/images/ava.jpg"
+            ></PostGridItem>
             <PostGridItem
               title="Post Three"
-              thumbnail={ImagePath}
+              thumbnail="/images/ava.jpg"
             ></PostGridItem>
           </SimpleGrid>
         </Section>
@@ -29,13 +31,16 @@ const PostsPage = () => {
           <SimpleGrid columns={[1, 2, 3]} gap={6}>
             <PostGridItem
               title="Post Four"
-              thumbnail={ImagePath}
+              thumbnail="/images/ava.jpg"
             ></PostGridItem>
             <PostGridItem
               title="Post Five"
-              thumbnail={ImagePath}
+              thumbnail="/images/ava.jpg"
             ></PostGridItem>
-            <PostGridItem title="Post Six" thumbnail={ImagePath}></PostGridItem>
+            <PostGridItem
+              title="Post Six"
+              thumbnail="/images/ava.jpg"
+            ></PostGridItem>
           </SimpleGrid>
         </Section>
         {/* <Section delay={0.5}>
