@@ -1,7 +1,7 @@
 import { Container, Badge, Link, List, ListItem } from '@chakra-ui/react';
 import { ExternalLinkIcon } from '@chakra-ui/icons';
 import { ProjectTitle } from '../../components/project/ProjectTitle';
-import { ProjectMeta } from '../../components/project/ProjectMeta';
+import { ProjectInfo } from '../../components/project/ProjectInfo';
 import { ProjectImage } from '../../components/project/ProjectImage';
 import { Paragraph } from '../../components/styles/Paragraph';
 import ArticleLayout from '../../components/layouts/ArticleLayout';
@@ -12,7 +12,7 @@ const Project = () => {
     <ArticleLayout title="English Grammar">
       <Container>
         <ProjectTitle>
-          English Grammar <ProjectMeta>2022</ProjectMeta>
+          English Grammar <ProjectInfo>2022</ProjectInfo>
         </ProjectTitle>
         <Paragraph>
           <TranslatedText
@@ -22,17 +22,17 @@ const Project = () => {
         </Paragraph>
         <List ml={4} my={4} fontSize={18}>
           <ListItem>
-            <ProjectMeta>Demo</ProjectMeta>
+            <ProjectInfo>Demo</ProjectInfo>
             <Link href="https://eng-grammar.vercel.app/" isExternal>
               https://eng-grammar.vercel.app <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
           <ListItem>
-            <ProjectMeta>Stack</ProjectMeta>
+            <ProjectInfo>Stack</ProjectInfo>
             <span>Typescript, NextJS, Tailwind, framer motion</span>
           </ListItem>
           <ListItem>
-            <ProjectMeta>Source</ProjectMeta>
+            <ProjectInfo>Source</ProjectInfo>
             <Link href="https://github.com/PopovDS617/eng-gram" isExternal>
               https://github.com/PopovDS617/eng-gram
               <ExternalLinkIcon mx="2px" />

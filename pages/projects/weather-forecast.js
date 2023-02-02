@@ -1,32 +1,37 @@
 import { Container, Badge, Link, List, ListItem } from '@chakra-ui/react';
 import { ExternalLinkIcon } from '@chakra-ui/icons';
 import { ProjectTitle } from '../../components/project/ProjectTitle';
-import { ProjectMeta } from '../../components/project/ProjectMeta';
+import { ProjectInfo } from '../../components/project/ProjectInfo';
 import { ProjectImage } from '../../components/project/ProjectImage';
 import { Paragraph } from '../../components/styles/Paragraph';
 import ArticleLayout from '../../components/layouts/ArticleLayout';
-
+import TranslatedText from '../../components/TranslatedText';
 const Project = () => {
   return (
     <ArticleLayout title="Weather forecast">
       <Container>
         <ProjectTitle>
-          Weather forecast <ProjectMeta>2022</ProjectMeta>
+          Weather forecast <ProjectInfo>2022</ProjectInfo>
         </ProjectTitle>
-        <Paragraph>-------</Paragraph>
-        <List ml={4} my={4} fontSize={18} >
+        <Paragraph>
+          <TranslatedText
+            localeFile="projects"
+            text="weatherForecasctDescription"
+          />
+        </Paragraph>
+        <List ml={4} my={4} fontSize={18}>
           <ListItem>
-            <ProjectMeta>Demo</ProjectMeta>
+            <ProjectInfo>Demo</ProjectInfo>
             <Link href="https://popov-forecast.vercel.app/" isExternal>
               https://popov-forecast.vercel.app <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
           <ListItem>
-            <ProjectMeta>Stack</ProjectMeta>
+            <ProjectInfo>Stack</ProjectInfo>
             <span>TypeScript, NextJS, Tailwind, framer motion </span>
           </ListItem>
           <ListItem>
-            <ProjectMeta>Source</ProjectMeta>
+            <ProjectInfo>Source</ProjectInfo>
             <Link
               href="https://github.com/PopovDS617/microservice-weather-forecast"
               isExternal

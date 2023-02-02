@@ -35,18 +35,6 @@ const HomePage = () => {
           borderRadius={20}
         >
           <Box
-            flexGrow={1}
-            display="flex"
-            justifyContent={{ md: 'center', sm: 'center' }}
-            alignItems={{ base: 'center', md: 'flex-start' }}
-            flexDirection="column"
-          >
-            <Heading as="h2" variant="page-title" textAlign={{ sm: 'justify' }} fontSize={{ base: 26, md: 32 }}>
-              {t('title')}
-            </Heading>
-            // <Paragraph>разработчик из России</Paragraph>
-          </Box>
-          <Box
             flexShrink={0}
             mt={{ base: 4, md: 0 }}
             ml={{ md: 6 }}
@@ -63,6 +51,22 @@ const HomePage = () => {
               alt="profile image"
             />
           </Box>
+          <Box
+            flexGrow={1}
+            display="flex"
+            justifyContent={{ md: 'center', sm: 'center' }}
+            alignItems={{ base: 'center', md: 'center' }}
+            flexDirection="column"
+          >
+            <Heading
+              as="h2"
+              variant="page-title"
+              textAlign={{ sm: 'justify' }}
+              fontSize={{ base: 26, md: 32 }}
+            >
+              {t('title')}
+            </Heading>
+          </Box>
         </Box>
         <Section delay={0.1}>
           <Heading as="h3" variant="section-title">
@@ -71,32 +75,14 @@ const HomePage = () => {
           <Paragraph fontSize={20}>
             Hello this is mine description hello and welcome
           </Paragraph>
-          {/* <Box align="center" my={4}>
-            <NextLink href="/projects">
-              <Button
-                rightIcon={<ChevronRightIcon />}
-                colorScheme="green"
-                bg="customSaturatedGreenColor"
-                _hover={{ bg: 'customDarkGreenColor' }}
-              >
-                my portfolio
-              </Button>
-            </NextLink>
-          </Box> */}
         </Section>
-        {/* <Section delay={0.2}>
-          <Heading as="h3" variant="section-title">
-            <BioSection>
-              <BioYear>2000</BioYear>
-            </BioSection>
-          </Heading>
-        </Section> */}
+
         <Section delay={0.3}>
           <Heading as="h3" variant="section-title">
             {t('hobbiesTitle')}
           </Heading>
 
-          <List fontSize={20}>
+          <List fontSize={18}>
             <ListItem>
               <ListIcon
                 as={SearchIcon}

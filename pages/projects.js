@@ -15,15 +15,14 @@ import MapBakeriesLogo from '../public/images/projects/map-bakeries/logo.jpg';
 import MapP2PLogo from '../public/images/projects/map-point-to-point/logo.jpg';
 import MapWarehouseLogo from '../public/images/projects/map-warehouse/logo.jpg';
 import WForecastLogo from '../public/images/projects/weather-forecast/logo.jpg';
+import TranslatedText from '../components/TranslatedText';
 
 const ProjectsPage = () => {
-  const { t } = useTranslation('pageTitle');
-
   return (
     <ArticleLayout>
       <Container>
         <Heading as="h3" fontSize={26} mb={4}>
-          {t('title')}
+          <TranslatedText localeFile="projects" text="pageTitle" />
         </Heading>
         <Divider my={6} />
         <SimpleGrid columns={[1, 1, 2]} gap={6}>

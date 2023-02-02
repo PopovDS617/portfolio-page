@@ -1,7 +1,7 @@
 import { Container, Badge, Link, List, ListItem } from '@chakra-ui/react';
 import { ExternalLinkIcon } from '@chakra-ui/icons';
 import { ProjectTitle } from '../../components/project/ProjectTitle';
-import { ProjectMeta } from '../../components/project/ProjectMeta';
+import { ProjectInfo } from '../../components/project/ProjectInfo';
 import { ProjectImage } from '../../components/project/ProjectImage';
 import { Paragraph } from '../../components/styles/Paragraph';
 import ArticleLayout from '../../components/layouts/ArticleLayout';
@@ -12,24 +12,24 @@ const Project = () => {
     <ArticleLayout title="Aki">
       <Container>
         <ProjectTitle>
-          Aki <ProjectMeta>2022</ProjectMeta>
+          Aki <ProjectInfo>2022</ProjectInfo>
         </ProjectTitle>
         <Paragraph>
           <TranslatedText localeFile="projects" text="catAkiDescription" />
         </Paragraph>
         <List ml={4} my={4} fontSize={18}>
           <ListItem>
-            <ProjectMeta>Demo</ProjectMeta>
+            <ProjectInfo>Demo</ProjectInfo>
             <Link href="https://cat-aki.vercel.app/" isExternal>
               https://cat-aki.vercel.app <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
           <ListItem>
-            <ProjectMeta>Stack</ProjectMeta>
-            <span>Typescript, NextJS, Sass, framer motion, threeJS</span>
+            <ProjectInfo>Stack</ProjectInfo>
+            <span>Typescript, Next.js, Sass, framer motion, three.js</span>
           </ListItem>
           <ListItem>
-            <ProjectMeta>Source</ProjectMeta>
+            <ProjectInfo>Source</ProjectInfo>
             <Link href="https://github.com/PopovDS617/aki" isExternal>
               https://github.com/PopovDS617/aki
               <ExternalLinkIcon mx="2px" />

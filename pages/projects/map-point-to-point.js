@@ -1,32 +1,34 @@
 import { Container, Badge, Link, List, ListItem } from '@chakra-ui/react';
 import { ExternalLinkIcon } from '@chakra-ui/icons';
 import { ProjectTitle } from '../../components/project/ProjectTitle';
-import { ProjectMeta } from '../../components/project/ProjectMeta';
+import { ProjectInfo } from '../../components/project/ProjectInfo';
 import { ProjectImage } from '../../components/project/ProjectImage';
 import { Paragraph } from '../../components/styles/Paragraph';
 import ArticleLayout from '../../components/layouts/ArticleLayout';
-
+import TranslatedText from '../../components/TranslatedText';
 const Project = () => {
   return (
     <ArticleLayout title="Map. Point-to-point route">
       <Container>
         <ProjectTitle>
-          Map. Point-to-point route <ProjectMeta>2022</ProjectMeta>
+          Map. Point-to-point route <ProjectInfo>2022</ProjectInfo>
         </ProjectTitle>
-        <Paragraph>-------</Paragraph>
+        <Paragraph>
+          <TranslatedText localeFile="projects" text="mapRoutingDescription" />
+        </Paragraph>
         <List ml={4} my={4} fontSize={18}>
           <ListItem>
-            <ProjectMeta>Demo</ProjectMeta>
+            <ProjectInfo>Demo</ProjectInfo>
             <Link href="https://p-t-p-map-routing.vercel.app/" isExternal>
               p-t-p-map-routing.vercel.app <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
           <ListItem>
-            <ProjectMeta>Stack</ProjectMeta>
+            <ProjectInfo>Stack</ProjectInfo>
             <span>Javascript, React, TomTom SDK</span>
           </ListItem>
           <ListItem>
-            <ProjectMeta>Source</ProjectMeta>
+            <ProjectInfo>Source</ProjectInfo>
             <Link
               href="https://github.com/PopovDS617/map-point-to-point-routing"
               isExternal

@@ -1,32 +1,35 @@
 import { Container, Badge, Link, List, ListItem } from '@chakra-ui/react';
 import { ExternalLinkIcon } from '@chakra-ui/icons';
 import { ProjectTitle } from '../../components/project/ProjectTitle';
-import { ProjectMeta } from '../../components/project/ProjectMeta';
+import { ProjectInfo } from '../../components/project/ProjectInfo';
 import { ProjectImage } from '../../components/project/ProjectImage';
 import { Paragraph } from '../../components/styles/Paragraph';
 import ArticleLayout from '../../components/layouts/ArticleLayout';
+import TranslatedText from '../../components/TranslatedText';
 
 const Project = () => {
   return (
     <ArticleLayout title="Harry Potter CSP">
       <Container>
         <ProjectTitle>
-          Harry Potter CSP <ProjectMeta>2022</ProjectMeta>
+          Harry Potter CSP <ProjectInfo>2022</ProjectInfo>
         </ProjectTitle>
-        <Paragraph>List of characters, spells and potions</Paragraph>
+        <Paragraph>
+          <TranslatedText localeFile="projects" text="harryPotterDescription" />
+        </Paragraph>
         <List ml={4} my={4} fontSize={18}>
           <ListItem>
-            <ProjectMeta>Demo</ProjectMeta>
+            <ProjectInfo>Demo</ProjectInfo>
             <Link href="https://harry-potter-pp.vercel.app/" isExternal>
               https://harry-potter-pp.vercel.app <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
           <ListItem>
-            <ProjectMeta>Stack</ProjectMeta>
+            <ProjectInfo>Stack</ProjectInfo>
             <span>Typescript, NextJS, Redux, Sass, framer motion</span>
           </ListItem>
           <ListItem>
-            <ProjectMeta>Source</ProjectMeta>
+            <ProjectInfo>Source</ProjectInfo>
             <Link href="https://github.com/PopovDS617/harry-potter" isExternal>
               https://github.com/PopovDS617/harry-potter
               <ExternalLinkIcon mx="2px" />
