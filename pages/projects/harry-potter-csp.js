@@ -11,7 +11,7 @@ const Project = () => {
     <ArticleLayout title="Harry Potter CSP">
       <Container>
         <ProjectTitle>
-          Harry Potter CSP <Badge>2022</Badge>
+          Harry Potter CSP <ProjectMeta>2022</ProjectMeta>
         </ProjectTitle>
         <Paragraph>List of characters, spells and potions</Paragraph>
         <List ml={4} my={4}>

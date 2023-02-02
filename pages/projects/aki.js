@@ -5,15 +5,18 @@ import { ProjectMeta } from '../../components/project/ProjectMeta';
 import { ProjectImage } from '../../components/project/ProjectImage';
 import { Paragraph } from '../../components/styles/Paragraph';
 import ArticleLayout from '../../components/layouts/ArticleLayout';
+import TranslatedText from '../../components/TranslatedText';
 
 const Project = () => {
   return (
     <ArticleLayout title="Aki">
       <Container>
         <ProjectTitle>
-          Aki <Badge>2022</Badge>
+          Aki <ProjectMeta>2022</ProjectMeta>
         </ProjectTitle>
-        <Paragraph>-------</Paragraph>
+        <Paragraph>
+          <TranslatedText localeFile="projects" text="catAkiDescription" />
+        </Paragraph>
         <List ml={4} my={4}>
           <ListItem>
             <ProjectMeta>Demo</ProjectMeta>

@@ -2,5 +2,5 @@ import styled from '@emotion/styled';
 
 export const Paragraph = styled.p`
   text-align: justify;
-  fontsize: 25rem;
+  font-size: 1.1rem;
 `;

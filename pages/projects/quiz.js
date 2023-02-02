@@ -11,7 +11,7 @@ const Project = () => {
     <ArticleLayout title="Pub quiz website">
       <Container>
         <ProjectTitle>
-          Pub quiz website <Badge>2022</Badge>
+          Pub quiz website <ProjectMeta>2022</ProjectMeta>
         </ProjectTitle>
         <Paragraph>-------</Paragraph>
         <List ml={4} my={4} fontSize={18}>

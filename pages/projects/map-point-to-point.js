@@ -11,7 +11,7 @@ const Project = () => {
     <ArticleLayout title="Map. Point-to-point route">
       <Container>
         <ProjectTitle>
-          Map. Point-to-point route <Badge>2022</Badge>
+          Map. Point-to-point route <ProjectMeta>2022</ProjectMeta>
         </ProjectTitle>
         <Paragraph>-------</Paragraph>
         <List ml={4} my={4}>
