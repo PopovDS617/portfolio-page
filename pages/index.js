@@ -20,6 +20,10 @@ import { BioSection, BioYear } from '../components/styles/Bio';
 import ArticleLayout from '../components/layouts/ArticleLayout';
 import { BsTelegram, BsGithub } from 'react-icons/bs';
 import useTranslation from 'next-translate/useTranslation';
+import { FaCat } from 'react-icons/fa';
+import { BsFillDice5Fill } from 'react-icons/bs';
+import { MdQuiz } from 'react-icons/md';
+import { GiPaintBrush } from 'react-icons/gi';
 
 const HomePage = () => {
   const { t } = useTranslation('common');
@@ -93,7 +97,7 @@ const HomePage = () => {
           <List fontSize={{ base: 16, md: 18 }}>
             <ListItem>
               <ListIcon
-                as={SearchIcon}
+                as={FaCat}
                 color={useColorModeValue(
                   'customDarkBlueColor',
                   'customSaturatedGreenColor'
@@ -103,7 +107,7 @@ const HomePage = () => {
             </ListItem>
             <ListItem>
               <ListIcon
-                as={SearchIcon}
+                as={BsFillDice5Fill}
                 color={useColorModeValue(
                   'customDarkBlueColor',
                   'customSaturatedGreenColor'
@@ -113,7 +117,7 @@ const HomePage = () => {
             </ListItem>
             <ListItem>
               <ListIcon
-                as={SearchIcon}
+                as={MdQuiz}
                 color={useColorModeValue(
                   'customDarkBlueColor',
                   'customSaturatedGreenColor'
@@ -123,7 +127,7 @@ const HomePage = () => {
             </ListItem>
             <ListItem>
               <ListIcon
-                as={SearchIcon}
+                as={GiPaintBrush}
                 color={useColorModeValue(
                   'customDarkBlueColor',
                   'customSaturatedGreenColor'

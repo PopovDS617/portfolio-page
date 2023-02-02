@@ -30,14 +30,14 @@ const ProjectsPage = () => {
             <ProjectGridItem
               id="crypto-tracker"
               title="Crypto tracker"
-              thumbnail={CryptoTrackerLogo}
+              thumbnail="/images/projects/crypto-tracker/logo.jpg"
             />
           </Section>
           <Section delay={0.2}>
             <ProjectGridItem
               id="quiz"
               title="Pub quiz website"
-              thumbnail={QuizLogo}
+              thumbnail="/images/projects/quiz/logo.jpg"
             />
           </Section>
         </SimpleGrid>
@@ -47,11 +47,15 @@ const ProjectsPage = () => {
             <ProjectGridItem
               id="harry-potter-csp"
               title="Harry Potter CSP"
-              thumbnail={HarryPotterLogo}
+              thumbnail="/images/projects/harry-potter-csp/logo.jpg"
             />
           </Section>
           <Section delay={0.4}>
-            <ProjectGridItem id="aki" title="Cat Aki" thumbnail={AkiLogo} />
+            <ProjectGridItem
+              id="aki"
+              title="Cat Aki"
+              thumbnail="/images/projects/aki/logo.jpg"
+            />
           </Section>
         </SimpleGrid>
         <Divider my={6} />
@@ -60,14 +64,14 @@ const ProjectsPage = () => {
             <ProjectGridItem
               id="rest-please"
               title="Rest, please"
-              thumbnail={RestPleaseLogo}
+              thumbnail="/images/projects/rest-please/logo.jpg"
             />
           </Section>
           <Section delay={0.4}>
             <ProjectGridItem
               id="the-moon"
               title="the Moon"
-              thumbnail={MoonLogo}
+              thumbnail="/images/projects/the-moon/logo.jpg"
             />
           </Section>
         </SimpleGrid>
@@ -77,14 +81,14 @@ const ProjectsPage = () => {
             <ProjectGridItem
               id="english-grammar"
               title="English Grammar"
-              thumbnail={EngGrammarLogo}
+              thumbnail="/images/projects/english-grammar/logo.jpg"
             />
           </Section>
           <Section delay={0.4}>
             <ProjectGridItem
               id="map-bakeries-locations"
               title="Map. Addresses of bakeries"
-              thumbnail={MapBakeriesLogo}
+              thumbnail="/images/projects/map-bakeries/logo.jpg"
             />
           </Section>
         </SimpleGrid>
@@ -94,14 +98,14 @@ const ProjectsPage = () => {
             <ProjectGridItem
               id="map-point-to-point"
               title="Map. Point-to-point route"
-              thumbnail={MapP2PLogo}
+              thumbnail="/images/projects/map-point-to-point/logo.jpg"
             />
           </Section>
           <Section delay={0.4}>
             <ProjectGridItem
               id="map-delivery-warehouse"
               title="Map. Delivery from a warehouse"
-              thumbnail={MapWarehouseLogo}
+              thumbnail="/images/projects/map-warehouse/logo.jpg"
             />
           </Section>
         </SimpleGrid>
@@ -111,7 +115,7 @@ const ProjectsPage = () => {
             <ProjectGridItem
               id="weather-forecast"
               title="Weather forecast"
-              thumbnail={WForecastLogo}
+              thumbnail="/images/projects/weather-forecast/logo.jpg"
             />
           </Section>
         </SimpleGrid>
