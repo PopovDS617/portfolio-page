@@ -14,10 +14,10 @@ const Project = () => {
         <ProjectTitle>
           Map. Addresses of bakeries <ProjectInfo>2022</ProjectInfo>
         </ProjectTitle>
-        <Paragraph>
+        <Paragraph fontSize={{ base: 14, md: 18 }}>
           <TranslatedText localeFile="projects" text="mapBakeryDescription" />
         </Paragraph>
-        <List ml={4} my={4} fontSize={18}>
+        <List ml={4} my={4} fontSize={{ base: 14, md: 18 }}>
           <ListItem>
             <ProjectInfo>Demo</ProjectInfo>
             <Link href="https://popov-bakery-locations.netlify.app/" isExternal>
@@ -34,7 +34,7 @@ const Project = () => {
               href="https://github.com/PopovDS617/microservice-interactive-map"
               isExternal
             >
-              https://github.com/PopovDS617/microservice-interactive-map
+              github.com/PopovDS617/microservice-interactive-map
               <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>

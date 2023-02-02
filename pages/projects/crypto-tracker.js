@@ -14,13 +14,13 @@ const Project = () => {
         <ProjectTitle>
           Crypto Tracker <ProjectInfo>2022</ProjectInfo>
         </ProjectTitle>
-        <Paragraph>
+        <Paragraph fontSize={{ base: 14, md: 18 }}>
           <TranslatedText
             localeFile="projects"
             text="cryptoTrackerDescription"
           />
         </Paragraph>
-        <List ml={4} my={4} fontSize={18}>
+        <List ml={4} my={4} fontSize={{ base: 14, md: 18 }}>
           <ListItem>
             <ProjectInfo>Demo</ProjectInfo>
             <Link href="https://crypto-trkr.netlify.app" isExternal>

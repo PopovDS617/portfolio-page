@@ -69,7 +69,11 @@ const HomePage = () => {
           </Box>
         </Box>
         <Section delay={0.1}>
-          <Heading as="h3" variant="section-title">
+          <Heading
+            as="h3"
+            variant="section-title"
+            fontSize={{ base: 20, md: 30 }}
+          >
             Work
           </Heading>
           <Paragraph fontSize={20}>
@@ -78,11 +82,15 @@ const HomePage = () => {
         </Section>
 
         <Section delay={0.3}>
-          <Heading as="h3" variant="section-title">
+          <Heading
+            as="h3"
+            variant="section-title"
+            fontSize={{ base: 20, md: 30 }}
+          >
             {t('hobbiesTitle')}
           </Heading>
 
-          <List fontSize={18}>
+          <List fontSize={{ base: 16, md: 18 }}>
             <ListItem>
               <ListIcon
                 as={SearchIcon}
@@ -126,7 +134,11 @@ const HomePage = () => {
           </List>
         </Section>
         <Section delay={0.3}>
-          <Heading as="h3" variant="section-title">
+          <Heading
+            as="h3"
+            variant="section-title"
+            fontSize={{ base: 20, md: 30 }}
+          >
             {t('contactsTitle')}
           </Heading>
           <List>

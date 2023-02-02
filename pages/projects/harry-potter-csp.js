@@ -14,14 +14,14 @@ const Project = () => {
         <ProjectTitle>
           Harry Potter CSP <ProjectInfo>2022</ProjectInfo>
         </ProjectTitle>
-        <Paragraph>
+        <Paragraph fontSize={{ base: 14, md: 18 }}>
           <TranslatedText localeFile="projects" text="harryPotterDescription" />
         </Paragraph>
-        <List ml={4} my={4} fontSize={18}>
+        <List ml={4} my={4} fontSize={{ base: 14, md: 18 }}>
           <ListItem>
             <ProjectInfo>Demo</ProjectInfo>
             <Link href="https://harry-potter-pp.vercel.app/" isExternal>
-              https://harry-potter-pp.vercel.app <ExternalLinkIcon mx="2px" />
+              harry-potter-pp.vercel.app <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
           <ListItem>
@@ -31,7 +31,7 @@ const Project = () => {
           <ListItem>
             <ProjectInfo>Source</ProjectInfo>
             <Link href="https://github.com/PopovDS617/harry-potter" isExternal>
-              https://github.com/PopovDS617/harry-potter
+              github.com/PopovDS617/harry-potter
               <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>

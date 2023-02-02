@@ -13,14 +13,14 @@ const Project = () => {
         <ProjectTitle>
           Rest, please <ProjectInfo>2022</ProjectInfo>
         </ProjectTitle>
-        <Paragraph>
+        <Paragraph fontSize={{ base: 12 }}>
           <TranslatedText localeFile="projects" text="restPleaseDescription" />
         </Paragraph>
-        <List ml={4} my={4} fontSize={18}>
+        <List ml={4} my={4} fontSize={{ base: 14, md: 18 }}>
           <ListItem>
             <ProjectInfo>Demo</ProjectInfo>
             <Link href="https://rest-please.vercel.app/" isExternal>
-              https://rest-please.vercel.app <ExternalLinkIcon mx="2px" />
+              rest-please.vercel.app <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
           <ListItem>
@@ -30,7 +30,7 @@ const Project = () => {
           <ListItem>
             <ProjectInfo>Source</ProjectInfo>
             <Link href="https://github.com/PopovDS617/rest-please" isExternal>
-              https://github.com/PopovDS617/rest-please
+              github.com/PopovDS617/rest-please
               <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>

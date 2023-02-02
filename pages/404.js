@@ -7,12 +7,15 @@ import {
   Button,
   Text
 } from '@chakra-ui/react';
+import TranslatedText from '../components/TranslatedText';
 
 const NotFoundPage = () => {
   return (
     <Container>
-      <Heading as="h1">Oops</Heading>
-      <Text> 404</Text>
+      <Heading as="h3" fontSize={36} mb={4} textAlign="center">
+        Oops
+      </Heading>
+
       <Divider my={6} />
       <Box my={6} align="center">
         <NextLink href="/">
@@ -21,7 +24,7 @@ const NotFoundPage = () => {
             bg="customSaturatedGreenColor"
             _hover={{ bg: 'customDarkGreenColor' }}
           >
-            to homepage
+            <TranslatedText localeFile="common" text="404" />
           </Button>
         </NextLink>
       </Box>

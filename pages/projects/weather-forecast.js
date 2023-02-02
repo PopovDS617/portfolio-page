@@ -19,11 +19,11 @@ const Project = () => {
             text="weatherForecasctDescription"
           />
         </Paragraph>
-        <List ml={4} my={4} fontSize={18}>
+        <List ml={4} my={4} fontSize={{ base: 14, md: 18 }}>
           <ListItem>
             <ProjectInfo>Demo</ProjectInfo>
             <Link href="https://popov-forecast.vercel.app/" isExternal>
-              https://popov-forecast.vercel.app <ExternalLinkIcon mx="2px" />
+              popov-forecast.vercel.app <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
           <ListItem>
@@ -36,7 +36,7 @@ const Project = () => {
               href="https://github.com/PopovDS617/microservice-weather-forecast"
               isExternal
             >
-              https://github.com/PopovDS617/microservice-weather-forecast
+              github.com/PopovDS617/microservice-weather-forecast
               <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>

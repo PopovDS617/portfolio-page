@@ -17,11 +17,11 @@ const Project = () => {
         <Paragraph>
           <TranslatedText localeFile="projects" text="theMoonDescription" />
         </Paragraph>
-        <List ml={4} my={4} fontSize={18}>
+        <List ml={4} my={4} fontSize={{ base: 14, md: 18 }}>
           <ListItem>
             <ProjectInfo>Demo</ProjectInfo>
             <Link href="https://moon-pp.netlify.app/" isExternal>
-              https://moon-pp.netlify.app <ExternalLinkIcon mx="2px" />
+              moon-pp.netlify.app <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
           <ListItem>
@@ -31,7 +31,7 @@ const Project = () => {
           <ListItem>
             <ProjectInfo>Source</ProjectInfo>
             <Link href="https://github.com/PopovDS617/the-moon" isExternal>
-              https://github.com/PopovDS617/the-moon
+              github.com/PopovDS617/the-moon
               <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
