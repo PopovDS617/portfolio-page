@@ -24,26 +24,22 @@ import { FaCat } from 'react-icons/fa';
 import { BsFillDice5Fill } from 'react-icons/bs';
 import { MdQuiz } from 'react-icons/md';
 import { GiPaintBrush } from 'react-icons/gi';
+import TranslatedText from '../components/TranslatedText';
 
 const HomePage = () => {
-  const { t } = useTranslation('common');
-
   return (
     <ArticleLayout>
       <Container>
         <Box
-          display={{ md: 'flex' }}
+          display={'flex'}
+          flexDirection={{ base: 'column-reverse ', md: 'row' }}
+          justifyContent={'center'}
+          alignItems={'center'}
           bg={useColorModeValue('#e8d2a6b5', '#20202380')}
           css={{ backdropFilter: 'blur(10px)' }}
-          padding={5}
           borderRadius={20}
         >
-          <Box
-            flexShrink={0}
-            mt={{ base: 4, md: 0 }}
-            ml={{ md: 6 }}
-            textAlign="center"
-          >
+          <Box flexShrink={0} mt={{ base: 4, md: 0 }}>
             <Image
               borderColor={useColorModeValue('#202023', 'whiteAlpha.800')}
               borderWidth={2}
@@ -58,8 +54,9 @@ const HomePage = () => {
           <Box
             flexGrow={1}
             display="flex"
+            ml={6}
             justifyContent={{ md: 'center', sm: 'center' }}
-            alignItems={{ base: 'center', md: 'center' }}
+            alignItems={{ base: 'center', md: 'flex-start' }}
             flexDirection="column"
           >
             <Heading
@@ -68,7 +65,7 @@ const HomePage = () => {
               textAlign={{ sm: 'justify' }}
               fontSize={{ base: 26, md: 32 }}
             >
-              {t('title')}
+              <TranslatedText localeFile="common" text="title" />
             </Heading>
           </Box>
         </Box>
@@ -76,7 +73,7 @@ const HomePage = () => {
           <Heading
             as="h3"
             variant="section-title"
-            fontSize={{ base: 20, md: 30 }}
+            fontSize={{ base: 20, md: 25 }}
           >
             Work
           </Heading>
@@ -89,9 +86,9 @@ const HomePage = () => {
           <Heading
             as="h3"
             variant="section-title"
-            fontSize={{ base: 20, md: 30 }}
+            fontSize={{ base: 20, md: 25 }}
           >
-            {t('hobbiesTitle')}
+            <TranslatedText localeFile="common" text="hobbiesTitle" />
           </Heading>
 
           <List fontSize={{ base: 16, md: 18 }}>
@@ -103,7 +100,7 @@ const HomePage = () => {
                   'customSaturatedGreenColor'
                 )}
               />
-              {t('hobbie1')}
+              <TranslatedText localeFile="common" text="hobbie1" />
             </ListItem>
             <ListItem>
               <ListIcon
@@ -113,7 +110,7 @@ const HomePage = () => {
                   'customSaturatedGreenColor'
                 )}
               />
-              {t('hobbie2')}
+              <TranslatedText localeFile="common" text="hobbie2" />
             </ListItem>
             <ListItem>
               <ListIcon
@@ -123,7 +120,7 @@ const HomePage = () => {
                   'customSaturatedGreenColor'
                 )}
               />
-              {t('hobbie3')}
+              <TranslatedText localeFile="common" text="hobbie3" />
             </ListItem>
             <ListItem>
               <ListIcon
@@ -133,7 +130,7 @@ const HomePage = () => {
                   'customSaturatedGreenColor'
                 )}
               />
-              {t('hobbie4')}
+              <TranslatedText localeFile="common" text="hobbie4" />
             </ListItem>
           </List>
         </Section>
@@ -141,9 +138,9 @@ const HomePage = () => {
           <Heading
             as="h3"
             variant="section-title"
-            fontSize={{ base: 20, md: 30 }}
+            fontSize={{ base: 20, md: 25 }}
           >
-            {t('contactsTitle')}
+            <TranslatedText localeFile="common" text="contactsTitle" />
           </Heading>
           <List>
             <ListItem>

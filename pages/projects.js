@@ -21,7 +21,12 @@ const ProjectsPage = () => {
   return (
     <ArticleLayout>
       <Container>
-        <Heading as="h3" fontSize={26} mb={4} textAlign="center">
+        <Heading
+          as="h3"
+          fontSize={{ base: 20, md: 30 }}
+          mb={4}
+          textAlign="center"
+        >
           <TranslatedText localeFile="projects" text="pageTitle" />
         </Heading>
         <Divider my={6} />

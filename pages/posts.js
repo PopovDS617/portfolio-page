@@ -7,7 +7,12 @@ const PostsPage = () => {
   return (
     <ArticleLayout title="posts">
       <Container>
-        <Heading as="h3" fontSize={26} mb={4} textAlign="center">
+        <Heading
+          as="h3"
+          fontSize={{ base: 20, md: 30 }}
+          mb={4}
+          textAlign="center"
+        >
           All the recent posts
         </Heading>
         <Section delay={0.1}>
