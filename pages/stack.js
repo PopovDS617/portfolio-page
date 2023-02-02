@@ -43,7 +43,7 @@ const StackPage = () => {
           <Heading
             as="h3"
             variant="section-title"
-            fontSize={{ base: 20, md: 30 }}
+            fontSize={{ base: 20, md: 25 }}
           >
             <TranslatedText localeFile="stack" text="languagesTitle" />
           </Heading>
@@ -64,7 +64,7 @@ const StackPage = () => {
           <Heading
             as="h3"
             variant="section-title"
-            fontSize={{ base: 20, md: 30 }}
+            fontSize={{ base: 20, md: 25 }}
           >
             <TranslatedText localeFile="stack" text="frontendTitle" />
           </Heading>
@@ -85,7 +85,7 @@ const StackPage = () => {
           <Heading
             as="h3"
             variant="section-title"
-            fontSize={{ base: 20, md: 30 }}
+            fontSize={{ base: 20, md: 25 }}
           >
             <TranslatedText localeFile="stack" text="backendTitle" />
           </Heading>
@@ -106,7 +106,7 @@ const StackPage = () => {
           <Heading
             as="h3"
             variant="section-title"
-            fontSize={{ base: 20, md: 30 }}
+            fontSize={{ base: 20, md: 25 }}
           >
             <TranslatedText localeFile="stack" text="dbBackendTitle" />
           </Heading>
@@ -127,7 +127,7 @@ const StackPage = () => {
           <Heading
             as="h3"
             variant="section-title"
-            fontSize={{ base: 20, md: 30 }}
+            fontSize={{ base: 20, md: 25 }}
           >
             <TranslatedText localeFile="stack" text="goalsFor2023" />
           </Heading>
