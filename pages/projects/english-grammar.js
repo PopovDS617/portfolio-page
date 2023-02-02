@@ -20,7 +20,7 @@ const Project = () => {
             text="englishGrammarDescription"
           />
         </Paragraph>
-        <List ml={4} my={4}>
+        <List ml={4} my={4} fontSize={18}>
           <ListItem>
             <ProjectMeta>Demo</ProjectMeta>
             <Link href="https://eng-grammar.vercel.app/" isExternal>
@@ -29,7 +29,7 @@ const Project = () => {
           </ListItem>
           <ListItem>
             <ProjectMeta>Stack</ProjectMeta>
-            <span>React, TypeScript</span>
+            <span>Typescript, NextJS, Tailwind, framer motion</span>
           </ListItem>
           <ListItem>
             <ProjectMeta>Source</ProjectMeta>

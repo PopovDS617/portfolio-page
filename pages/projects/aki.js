@@ -17,7 +17,7 @@ const Project = () => {
         <Paragraph>
           <TranslatedText localeFile="projects" text="catAkiDescription" />
         </Paragraph>
-        <List ml={4} my={4}>
+        <List ml={4} my={4} fontSize={18}>
           <ListItem>
             <ProjectMeta>Demo</ProjectMeta>
             <Link href="https://cat-aki.vercel.app/" isExternal>
@@ -26,7 +26,7 @@ const Project = () => {
           </ListItem>
           <ListItem>
             <ProjectMeta>Stack</ProjectMeta>
-            <span>React, TypeScript</span>
+            <span>Typescript, NextJS, Sass, framer motion, threeJS</span>
           </ListItem>
           <ListItem>
             <ProjectMeta>Source</ProjectMeta>

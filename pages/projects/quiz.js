@@ -23,7 +23,7 @@ const Project = () => {
           </ListItem>
           <ListItem>
             <ProjectMeta>Stack</ProjectMeta>
-            <span>React, TypeScript</span>
+            <span>Javascript, NextJS, Sass, framer motion</span>
           </ListItem>
           <ListItem>
             <ProjectMeta>Source</ProjectMeta>

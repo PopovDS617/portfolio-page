@@ -14,7 +14,7 @@ const Project = () => {
           Harry Potter CSP <ProjectMeta>2022</ProjectMeta>
         </ProjectTitle>
         <Paragraph>List of characters, spells and potions</Paragraph>
-        <List ml={4} my={4}>
+        <List ml={4} my={4} fontSize={18}>
           <ListItem>
             <ProjectMeta>Demo</ProjectMeta>
             <Link href="https://harry-potter-pp.vercel.app/" isExternal>
@@ -23,7 +23,7 @@ const Project = () => {
           </ListItem>
           <ListItem>
             <ProjectMeta>Stack</ProjectMeta>
-            <span>React, TypeScript</span>
+            <span>Typescript, NextJS, Redux, Sass, framer motion</span>
           </ListItem>
           <ListItem>
             <ProjectMeta>Source</ProjectMeta>
