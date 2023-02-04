@@ -11,11 +11,7 @@ import CustomHead from '../CustomHead';
 const MainLayout = ({ children, router }) => {
   return (
     <Box as="main" pb={8}>
-      <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta title="Дмитрий Попов" />
-        <meta name="description" content="Дмитрий Попов" />
-      </Head>
+      <CustomHead />
       <Navbar path={router.asPath} />
       <Container maxW="container.md" pt={14}>
         <Box
