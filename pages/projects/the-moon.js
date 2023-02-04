@@ -26,7 +26,7 @@ const Project = () => {
           </ListItem>
           <ListItem>
             <ProjectInfo>Stack</ProjectInfo>
-            <span>Javascript, React, threeJS</span>
+            <span>Javascript, React, three.js</span>
           </ListItem>
           <ListItem>
             <ProjectInfo>Source</ProjectInfo>

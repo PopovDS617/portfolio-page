@@ -1,4 +1,3 @@
-import NextLink from 'next/link';
 import {
   Container,
   Box,
@@ -10,16 +9,14 @@ import {
   List,
   ListItem,
   Icon,
-  ListIcon,
-  UnorderedList
+  ListIcon
 } from '@chakra-ui/react';
 import Section from '../components/Section';
 import { Paragraph } from '../components/styles/Paragraph';
-import { ChevronRightIcon, SearchIcon } from '@chakra-ui/icons';
-import { BioSection, BioYear } from '../components/styles/Bio';
+
 import ArticleLayout from '../components/layouts/ArticleLayout';
 import { BsTelegram, BsGithub } from 'react-icons/bs';
-import useTranslation from 'next-translate/useTranslation';
+
 import { FaCat } from 'react-icons/fa';
 import { BsFillDice5Fill } from 'react-icons/bs';
 import { MdQuiz } from 'react-icons/md';

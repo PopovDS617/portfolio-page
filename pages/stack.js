@@ -9,14 +9,13 @@ import {
   Divider
 } from '@chakra-ui/react';
 import Section from '../components/Section';
-import { Paragraph } from '../components/styles/Paragraph';
+
 import ArticleLayout from '../components/layouts/ArticleLayout';
 import TranslatedText from '../components/TranslatedText';
 import { AiFillApi } from 'react-icons/ai';
-import { MdApi, MdStorage } from 'react-icons/md';
-import { BsFillCreditCard2FrontFill } from 'react-icons/bs';
+import { MdStorage } from 'react-icons/md';
+import { BsFillCreditCard2FrontFill, BsTranslate } from 'react-icons/bs';
 import { FiTarget } from 'react-icons/fi';
-import { TbLanguageKatakana } from 'react-icons/tb';
 
 const StackPage = () => {
   return (
@@ -50,13 +49,13 @@ const StackPage = () => {
           <List fontSize={{ base: 16, md: 18 }}>
             <ListItem padding={2}>
               <ListIcon
-                as={TbLanguageKatakana}
+                as={BsTranslate}
                 color={useColorModeValue(
                   'customDarkBlueColor',
                   'customSaturatedGreenColor'
                 )}
               />
-              Hello this is mine description hello and welcome
+              Javascript, Typescript, Python
             </ListItem>
           </List>
         </Section>
@@ -77,7 +76,27 @@ const StackPage = () => {
                   'customSaturatedGreenColor'
                 )}
               />
-              Hello this is mine description hello and welcome
+              React, Next.js
+            </ListItem>
+            <ListItem padding={2}>
+              <ListIcon
+                as={BsFillCreditCard2FrontFill}
+                color={useColorModeValue(
+                  'customDarkBlueColor',
+                  'customSaturatedGreenColor'
+                )}
+              />
+              Sass, Tailwind, Styled components, Chakra, Bootstrap
+            </ListItem>
+            <ListItem padding={2}>
+              <ListIcon
+                as={BsFillCreditCard2FrontFill}
+                color={useColorModeValue(
+                  'customDarkBlueColor',
+                  'customSaturatedGreenColor'
+                )}
+              />
+              Three.js
             </ListItem>
           </List>
         </Section>
@@ -98,7 +117,7 @@ const StackPage = () => {
                   'customSaturatedGreenColor'
                 )}
               />
-              Hello this is mine description hello and welcome
+              Node, Express
             </ListItem>
           </List>
         </Section>
@@ -119,7 +138,7 @@ const StackPage = () => {
                   'customSaturatedGreenColor'
                 )}
               />
-              Hello this is mine description hello and welcome
+              MongoDB, MySQL
             </ListItem>
           </List>
         </Section>
@@ -140,7 +159,7 @@ const StackPage = () => {
                   'customSaturatedGreenColor'
                 )}
               />
-              Hello this is mine description hello and welcome
+              Vue, Django
             </ListItem>
           </List>
         </Section>
