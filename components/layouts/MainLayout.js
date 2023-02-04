@@ -5,16 +5,13 @@ import { Navbar } from '../navbar/Navbar';
 import { Canvas } from '@react-three/fiber';
 import { Suspense } from 'react';
 import Three from './../3dmodel/model-container';
+import CustomHead from '../CustromHead';
 import { ModelSpinner } from '../ui/Spinner';
 
 const MainLayout = ({ children, router }) => {
   return (
     <Box as="main" pb={8}>
-      <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta title="Дмитрий Попов" />
-        <meta name="description" content="Дмитрий Попов" />
-      </Head>
+      <CustomHead />
       <Navbar path={router.asPath} />
       <Container maxW="container.md" pt={14}>
         <Box
@@ -25,11 +22,11 @@ const MainLayout = ({ children, router }) => {
           h={[300, 450, 500]}
           position="relative"
         >
-          <Suspense fallback={<ModelSpinner />}>
-            <Canvas concurrent="true" shadows>
+          <Canvas concurrent="true" shadows>
+            <Suspense fallback={<ModelSpinner />}>
               <Three />
-            </Canvas>
-          </Suspense>
+            </Suspense>
+          </Canvas>
         </Box>
 
         {children}

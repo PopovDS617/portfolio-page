@@ -16,6 +16,7 @@ import { AiFillApi } from 'react-icons/ai';
 import { MdStorage } from 'react-icons/md';
 import { BsFillCreditCard2FrontFill, BsTranslate } from 'react-icons/bs';
 import { FiTarget } from 'react-icons/fi';
+import { BiTestTube } from 'react-icons/bi';
 
 const StackPage = () => {
   return (
@@ -47,7 +48,7 @@ const StackPage = () => {
             <TranslatedText localeFile="stack" text="languagesTitle" />
           </Heading>
           <List fontSize={{ base: 16, md: 18 }}>
-            <ListItem padding={2}>
+            <ListItem>
               <ListIcon
                 as={BsTranslate}
                 color={useColorModeValue(
@@ -68,7 +69,7 @@ const StackPage = () => {
             <TranslatedText localeFile="stack" text="frontendTitle" />
           </Heading>
           <List fontSize={{ base: 16, md: 18 }}>
-            <ListItem padding={2}>
+            <ListItem>
               <ListIcon
                 as={BsFillCreditCard2FrontFill}
                 color={useColorModeValue(
@@ -78,7 +79,7 @@ const StackPage = () => {
               />
               React, Next.js
             </ListItem>
-            <ListItem padding={2}>
+            <ListItem>
               <ListIcon
                 as={BsFillCreditCard2FrontFill}
                 color={useColorModeValue(
@@ -88,7 +89,7 @@ const StackPage = () => {
               />
               Sass, Tailwind, Styled components, Chakra, Bootstrap
             </ListItem>
-            <ListItem padding={2}>
+            <ListItem>
               <ListIcon
                 as={BsFillCreditCard2FrontFill}
                 color={useColorModeValue(
@@ -109,7 +110,7 @@ const StackPage = () => {
             <TranslatedText localeFile="stack" text="backendTitle" />
           </Heading>
           <List fontSize={{ base: 16, md: 18 }}>
-            <ListItem padding={2}>
+            <ListItem>
               <ListIcon
                 as={AiFillApi}
                 color={useColorModeValue(
@@ -130,7 +131,7 @@ const StackPage = () => {
             <TranslatedText localeFile="stack" text="dbBackendTitle" />
           </Heading>
           <List fontSize={{ base: 16, md: 18 }}>
-            <ListItem padding={2}>
+            <ListItem>
               <ListIcon
                 as={MdStorage}
                 color={useColorModeValue(
@@ -148,10 +149,31 @@ const StackPage = () => {
             variant="section-title"
             fontSize={{ base: 20, md: 25 }}
           >
+            <TranslatedText localeFile="stack" text="testingTitle" />
+          </Heading>
+          <List fontSize={{ base: 16, md: 18 }}>
+            <ListItem>
+              <ListIcon
+                as={BiTestTube}
+                color={useColorModeValue(
+                  'customDarkBlueColor',
+                  'customSaturatedGreenColor'
+                )}
+              />
+              Jest, React testing library, Cypress, Mocha
+            </ListItem>
+          </List>
+        </Section>
+        <Section delay={0.3}>
+          <Heading
+            as="h3"
+            variant="section-title"
+            fontSize={{ base: 20, md: 25 }}
+          >
             <TranslatedText localeFile="stack" text="goalsFor2023" />
           </Heading>
           <List fontSize={{ base: 16, md: 18 }}>
-            <ListItem padding={2}>
+            <ListItem>
               <ListIcon
                 as={FiTarget}
                 color={useColorModeValue(
