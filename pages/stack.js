@@ -33,6 +33,7 @@ const StackPage = () => {
             as="h2"
             variant="page-title"
             textAlign="center"
+            pt={2}
             fontSize={{ base: 20, md: 30 }}
           >
             <TranslatedText localeFile="stack" text="pageTitle" />

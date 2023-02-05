@@ -1,4 +1,9 @@
-import { Container, Heading, SimpleGrid } from '@chakra-ui/react';
+import {
+  Container,
+  Heading,
+  SimpleGrid,
+  useColorModeValue
+} from '@chakra-ui/react';
 import ArticleLayout from '../components/layouts/ArticleLayout';
 import Section from '../components/Section';
 import { GridItem, PostGridItem } from '../components/grid/GridItem';
@@ -11,6 +16,7 @@ const PostsPage = () => {
           as="h3"
           fontSize={{ base: 20, md: 30 }}
           mb={4}
+          pt={2}
           textAlign="center"
         >
           All the recent posts

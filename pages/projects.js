@@ -1,20 +1,15 @@
-import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react';
+import {
+  Container,
+  Heading,
+  SimpleGrid,
+  Divider,
+  useColorModeValue
+} from '@chakra-ui/react';
 import Section from '../components/Section';
 import { ProjectGridItem } from '../components/grid/GridItem';
 
 import ArticleLayout from '../components/layouts/ArticleLayout';
-import useTranslation from 'next-translate/useTranslation';
-import CryptoTrackerLogo from '../public/images/projects/crypto-tracker/logo.jpg';
-import QuizLogo from '../public/images/projects/quiz/logo.jpg';
-import HarryPotterLogo from '../public/images/projects/harry-potter-csp/logo.jpg';
-import AkiLogo from '../public/images/projects/aki/logo.jpg';
-import RestPleaseLogo from '../public/images/projects/rest-please/logo.jpg';
-import MoonLogo from '../public/images/projects/the-moon/logo.jpg';
-import EngGrammarLogo from '../public/images/projects/english-grammar/logo.jpg';
-import MapBakeriesLogo from '../public/images/projects/map-bakeries/logo.jpg';
-import MapP2PLogo from '../public/images/projects/map-point-to-point/logo.jpg';
-import MapWarehouseLogo from '../public/images/projects/map-warehouse/logo.jpg';
-import WForecastLogo from '../public/images/projects/weather-forecast/logo.jpg';
+
 import TranslatedText from '../components/TranslatedText';
 
 const ProjectsPage = () => {
@@ -25,6 +20,7 @@ const ProjectsPage = () => {
           as="h3"
           fontSize={{ base: 20, md: 30 }}
           mb={4}
+          pt={2}
           textAlign="center"
         >
           <TranslatedText localeFile="projects" text="pageTitle" />

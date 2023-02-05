@@ -32,9 +32,6 @@ const HomePage = () => {
           flexDirection={{ base: 'column-reverse ', md: 'row' }}
           justifyContent={'center'}
           alignItems={'center'}
-          bg={useColorModeValue('#e8d2a6b5', '#20202380')}
-          css={{ backdropFilter: 'blur(10px)' }}
-          borderRadius={20}
         >
           <Box flexShrink={0} mt={{ base: 4, md: 0 }}>
             <Image

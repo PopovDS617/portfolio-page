@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { Box, Container } from '@chakra-ui/react';
+import { Box, Container, useColorModeValue } from '@chakra-ui/react';
 import { Navbar } from '../navbar/Navbar';
 
 import { Canvas } from '@react-three/fiber';
@@ -18,8 +18,8 @@ const MainLayout = ({ children, router }) => {
           m="auto"
           mt={['-20px', '-60px', '-120px']}
           mb={['-50px', '-70px', '-100px']}
-          w={[250, 450, 500]}
-          h={[250, 450, 500]}
+          w={[250, 450, 480]}
+          h={[250, 450, 480]}
           position="relative"
         >
           <Suspense fallback={<ModelSpinner />}>
@@ -27,6 +27,14 @@ const MainLayout = ({ children, router }) => {
               <Three />
             </Canvas>
           </Suspense>
+          <Box
+            w={[250, 450, 480]}
+            h={[125, 225, 240]}
+            bg={useColorModeValue('#e8d2a6b5', '#20202380')}
+            css={{ backdropFilter: 'blur(10px)' }}
+            position="relative"
+            mt={['-50px', '-65px', '-105px']}
+          />
         </Box>
 
         {children}
