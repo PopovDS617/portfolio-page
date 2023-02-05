@@ -28,6 +28,7 @@ const HomePage = () => {
     <ArticleLayout>
       <Container>
         <Box
+          pt={3}
           display={'flex'}
           flexDirection={{ base: 'column-reverse ', md: 'row' }}
           justifyContent={'center'}
