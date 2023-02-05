@@ -11,7 +11,7 @@ export function Model(props) {
       modelRef.current.rotation.y += 0.0033;
     }
   });
-  const { nodes, materials } = useGLTF('/11.glb');
+  const { nodes, materials } = useGLTF('/final.glb');
   return (
     <group {...props}>
       <group ref={modelRef}>
@@ -27,4 +27,4 @@ export function Model(props) {
   );
 }
 
-useGLTF.preload('/11.glb');
+useGLTF.preload('/final.glb');
