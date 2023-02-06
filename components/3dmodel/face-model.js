@@ -5,17 +5,20 @@ import { angleToRadians } from '../../lib/angleToRadians';
 
 export function Model(props) {
   const modelRef = useRef();
-   let rotateRight=true
+   let rotateRight
   
   useFrame(() => {
-   if(modelRef.current.rotation.y===-2){rotateRight===true}
+    
+   if(modelRef.current.rotation.y===-2){rotateRight=true}
+   if (modelRef.current.rotation &&  modelRef.current.rotation.y && rotateRight) {
+      modelRef.current.rotation.y += 0.0033;
+    } 
+    
    if(modelRef.current.rotation &&  modelRef.current.rotation.y && !rotateRight ) {
       modelRef.current.rotation.y -= 0.0033;  
     } 
-   if(modelRef.current.rotation.y===2){rotateRight===false}
-   if (modelRef.current.rotation &&  modelRef.current.rotation.y && rotateRight) {
-      modelRef.current.rotation.y += 0.0033;
-    }
+   if(modelRef.current.rotation.y===2){rotateRight=false}
+   
   });
   const { nodes, materials } = useGLTF('/final.glb');
   return (
