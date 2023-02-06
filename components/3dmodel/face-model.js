@@ -5,18 +5,18 @@ import { angleToRadians } from '../../lib/angleToRadians';
 
 export function Model(props) {
   const modelRef = useRef();
-   let rotateRight=true
+   
   
   useFrame(() => {
-    console.log(rotateRight)
-    console.log(modelRef.current.rotation.y)
-   if(modelRef.current.rotation.y===-2){rotateRight=true}
-   if (modelRef.current.rotation &&  modelRef.current.rotation.y && rotateRight) {
+  
+    if (modelRef.current.rotation &&  modelRef.current.rotation.y && modelRef.current.rotation.y > 10 && modelRef.current.rotation.y < 40  ) {
+      modelRef.current.rotation.y += 0.0083;
+    }  
+  
+   if (modelRef.current.rotation &&  modelRef.current.rotation.y  ) {
       modelRef.current.rotation.y += 0.0033;
     } 
-     if(modelRef.current.rotation.y===2){rotateRight=false}
-   if(modelRef.current.rotation &&  modelRef.current.rotation.y && !rotateRight ) {
-      modelRef.current.rotation.y -= 0.0033;  
+  
     } 
   
    
