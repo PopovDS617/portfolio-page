@@ -7,12 +7,9 @@ export function Model(props) {
   const modelRef = useRef();
 
   useFrame(() => {
-   let targetPosition
-
-const rightPosition=1
-const leftPostion=-1
-   
-    if (modelRef.current.rotation && modelRef.current.rotation.y !== rightPosition ) {
+    
+    
+    if (modelRef.current.rotation && modelRef.current.rotation.y <=2 && modelRef.current.rotation.y !==2) {
       modelRef.current.rotation.y += 0.0033;
     }
   });
