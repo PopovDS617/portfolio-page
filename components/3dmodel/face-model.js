@@ -20,7 +20,7 @@ export function Model(props) {
     } )
   
    
-  });
+  
   const { nodes, materials } = useGLTF('/final.glb');
   return (
     <group {...props}>
