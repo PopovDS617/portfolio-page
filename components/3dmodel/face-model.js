@@ -8,16 +8,17 @@ export function Model(props) {
    let rotateRight
   
   useFrame(() => {
-    
+    console.log(rotateRight)
+    console.log(modelRef.current.rotation.y)
    if(modelRef.current.rotation.y===-2){rotateRight=true}
    if (modelRef.current.rotation &&  modelRef.current.rotation.y && rotateRight) {
       modelRef.current.rotation.y += 0.0033;
     } 
-    
+     if(modelRef.current.rotation.y===2){rotateRight=false}
    if(modelRef.current.rotation &&  modelRef.current.rotation.y && !rotateRight ) {
       modelRef.current.rotation.y -= 0.0033;  
     } 
-   if(modelRef.current.rotation.y===2){rotateRight=false}
+  
    
   });
   const { nodes, materials } = useGLTF('/final.glb');
