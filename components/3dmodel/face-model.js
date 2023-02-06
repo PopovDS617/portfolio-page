@@ -6,8 +6,13 @@ import { angleToRadians } from '../../lib/angleToRadians';
 export function Model(props) {
   const modelRef = useRef();
 
-  useFrame(({}) => {
-    if (modelRef.current.rotation) {
+  useFrame(() => {
+   let targetPosition
+
+const rightPosition=1
+const leftPostion=-1
+   
+    if (modelRef.current.rotation && modelRef.current.rotation.y !== rightPosition ) {
       modelRef.current.rotation.y += 0.0033;
     }
   });
