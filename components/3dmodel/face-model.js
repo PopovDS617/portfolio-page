@@ -17,7 +17,7 @@ export function Model(props) {
       modelRef.current.rotation.y += 0.0033;
     } 
   
-    } 
+    } )
   
    
   });
