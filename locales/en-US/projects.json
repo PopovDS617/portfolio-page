@@ -1,3 +1,25 @@
 {
-  "title": "Projects"
+  "pageTitle": "Projects",
+  "cryptoTrackerTitle": " ",
+  "cryptoTrackerDescription": "An application for tracking purchases and sales of cryptoassets",
+  "pubQuizTitle": " ",
+  "pubQuizDescription": "A website of a fictitious quiz. Created as a sample for testing Next.js features",
+  "harryPotterTitle": " ",
+  "harryPotterDescription": "A small database of characters, spells, and potions referenced in movies and books about «The Boy Who Lived»",
+  "catAkiTitle": " ",
+  "catAkiDescription": "A website of a cat named Aki. Created as a sample for testing the core features of framer motion",
+  "restPleaseTitle": " ",
+  "restPleaseDescription": "An application for testing REST API endpoints. Simplified version of Postman and Insomnia",
+  "englishGrammarTitle": " ",
+  "englishGrammarDescription": "Cheat sheet on English grammar",
+  "theMoonTitle": " ",
+  "theMoonDescription": "3D model of the Moon and its brief description. Created as sample for testing Three.js features",
+  "mapBakeryTitle": " ",
+  "mapBakeryDescription": "Addresses of all «Keks» bakeries in Rostov-on-Don. Created to test the core features of React Leaflet",
+  "mapRoutingTitle": " ",
+  "mapRoutingDescription": "An application for calculating and drawing a delivery route. Created to test the core features of TomTom SDK",
+  "mapWarehouseTitle": " ",
+  "mapWarehouseDescription": "An application for calculating the distance and time of delivery of goods from a warehouse to a delivery point. Created to test the core features of TomTom SDK",
+  "weatherForecasctTitle": " ",
+  "weatherForecasctDescription": "An application that allows you to find out the weather forecast in your region"
 }

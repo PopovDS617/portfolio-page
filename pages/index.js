@@ -28,7 +28,7 @@ const HomePage = () => {
     <ArticleLayout>
       <Container>
         <Box
-          pt={3}
+          pt={6}
           display={'flex'}
           flexDirection={{ base: 'column-reverse ', md: 'row' }}
           justifyContent={'center'}
@@ -89,7 +89,7 @@ const HomePage = () => {
           <List fontSize={{ base: 16, md: 18 }}>
             <ListItem>
               <ListIcon
-                as={FaCat}
+                as={BsFillDice5Fill}
                 color={useColorModeValue(
                   'customDarkBlueColor',
                   'customSaturatedGreenColor'
@@ -99,7 +99,7 @@ const HomePage = () => {
             </ListItem>
             <ListItem>
               <ListIcon
-                as={BsFillDice5Fill}
+                as={MdQuiz}
                 color={useColorModeValue(
                   'customDarkBlueColor',
                   'customSaturatedGreenColor'
@@ -109,7 +109,7 @@ const HomePage = () => {
             </ListItem>
             <ListItem>
               <ListIcon
-                as={MdQuiz}
+                as={GiPaintBrush}
                 color={useColorModeValue(
                   'customDarkBlueColor',
                   'customSaturatedGreenColor'
@@ -119,7 +119,7 @@ const HomePage = () => {
             </ListItem>
             <ListItem>
               <ListIcon
-                as={GiPaintBrush}
+                as={FaCat}
                 color={useColorModeValue(
                   'customDarkBlueColor',
                   'customSaturatedGreenColor'

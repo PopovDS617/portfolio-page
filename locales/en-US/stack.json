@@ -1,0 +1,13 @@
+{
+  "pageTitle": "My tech stack:",
+  "languagesTitle": "Languages",
+  "frontendTitle": "Frontend",
+  "backendTitle": "Backend",
+  "frameworksFrontEndTitle": "Frameworks",
+  "stylingFronEndTitle": "Styling and animations",
+  "miscFronEndTitle": "Misc",
+  "dbBackendTitle": "Databases",
+  "testingTitle": "Testing",
+  "familiarWith": "Have a basic knowledge",
+  "goalsFor2023": "Goals for 2023"
+}

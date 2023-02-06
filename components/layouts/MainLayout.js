@@ -33,7 +33,7 @@ const MainLayout = ({ children, router }) => {
             bg={useColorModeValue('#e8d2a6b5', '#20202380')}
             css={{ backdropFilter: 'blur(10px)' }}
             position="relative"
-            mt={['-45px', '-60px', '-100px']}
+            mt={['-40px', '-60px', '-95px']}
           />
         </Box>
 

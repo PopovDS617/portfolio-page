@@ -20,7 +20,7 @@ const ProjectsPage = () => {
           as="h3"
           fontSize={{ base: 20, md: 30 }}
           mb={4}
-          pt={2}
+          pt={6}
           textAlign="center"
         >
           <TranslatedText localeFile="projects" text="pageTitle" />

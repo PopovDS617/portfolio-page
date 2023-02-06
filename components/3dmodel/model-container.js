@@ -17,16 +17,6 @@ const Three = () => {
       />
 
       <ambientLight />
-
-      {/* <directionalLight
-        position={[5, 7, -16]}
-        castShadow
-        shadow-mapSize-height={1024}
-        shadow-mapSize-width={1024}
-        shadow-radius={20}
-        shadow-bias={-0.0001}
-        intensity={0.8}
-      /> */}
     </>
   );
 };

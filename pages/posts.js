@@ -16,7 +16,7 @@ const PostsPage = () => {
           as="h3"
           fontSize={{ base: 20, md: 30 }}
           mb={4}
-          pt={2}
+          pt={6}
           textAlign="center"
         >
           All the recent posts

@@ -19,6 +19,7 @@ export const ProjectTitle = ({ children }) => (
       as="h3"
       fontSize={{ base: 20, md: 26 }}
       mb={4}
+      pt={6}
     >
       {children}
     </Heading>

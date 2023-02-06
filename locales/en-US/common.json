@@ -1,3 +1,15 @@
 {
-  "title": "Dmitry Popov"
+  "title": "Dmitry Popov",
+
+  "stackLink": "stack",
+  "projectsLink": "projects",
+  "postsLink": "posts",
+
+  "hobbiesTitle": "hobbies",
+  "hobbie1": "fond of board games",
+  "hobbie2": "play pub quizzes with friends",
+  "hobbie3": "trying to learn how to draw, but in the end everything draws Midjourney",
+  "hobbie4": "have a cat Simon, 11 years old: I feed, pet and listen to his purring",
+  "contactsTitle": "contacts",
+  "404": "to homepage"
 }
