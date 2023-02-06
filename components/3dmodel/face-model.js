@@ -5,7 +5,7 @@ import { angleToRadians } from '../../lib/angleToRadians';
 
 export function Model(props) {
   const modelRef = useRef();
-   let rotateRight
+   let rotateRight=true
   
   useFrame(() => {
     console.log(rotateRight)
