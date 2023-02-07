@@ -4,7 +4,7 @@ import { useFrame } from '@react-three/fiber';
 
 export function Model(props) {
   const modelRef = useRef();
-  if (modelRef.current) {
+  if (modelRef.current && modelRef.current.rotation.y) {
     modelRef.current.rotation.moveRight = true;
   }
 
