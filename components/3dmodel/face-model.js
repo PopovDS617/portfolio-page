@@ -22,9 +22,7 @@ export function Model(props) {
       modelRef.current.rotation.moveRight &&
       modelRef.current.rotation.y > 1.3 &&
       modelRef.current.rotation.y >=0.18 &&
-      modelRef.current.rotation.y <=0.35 
-      
-    ) {
+      modelRef.current.rotation.y <=0.35) {
       modelRef.current.rotation.y += 0.0010;
     } else if (
       modelRef.current.rotation &&
