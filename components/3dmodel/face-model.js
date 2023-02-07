@@ -20,14 +20,17 @@ export function Model(props) {
     if (
       modelRef.current.rotation &&
       modelRef.current.rotation.moveRight &&
-      modelRef.current.rotation.y > 1.3
+      modelRef.current.rotation.y > 1.3 &&
+      modelRef.current.rotation.y >=0.18 &&
+      modelRef.current.rotation.y <=0.35 &&
+      
     ) {
-      modelRef.current.rotation.y += 0.002;
+      modelRef.current.rotation.y += 0.0015;
     } else if (
       modelRef.current.rotation &&
       modelRef.current.rotation.moveRight
     ) {
-      modelRef.current.rotation.y += 0.0033;
+      modelRef.current.rotation.y += 0.0023;
     }
 
     if (
@@ -35,12 +38,12 @@ export function Model(props) {
       !modelRef.current.rotation.moveRight &&
       modelRef.current.rotation.y < 0.3
     ) {
-      modelRef.current.rotation.y -= 0.002;
+      modelRef.current.rotation.y -= 0.0018;
     } else if (
       modelRef.current.rotation &&
       !modelRef.current.rotation.moveRight
     ) {
-      modelRef.current.rotation.y -= 0.0033;
+      modelRef.current.rotation.y -= 0.0023;
     }
   });
 
