@@ -25,25 +25,27 @@ export function Model(props) {
       modelRef.current.rotation.y <=0.35 
       
     ) {
-      modelRef.current.rotation.y += 0.0015;
+      modelRef.current.rotation.y += 0.0010;
     } else if (
       modelRef.current.rotation &&
       modelRef.current.rotation.moveRight
     ) {
-      modelRef.current.rotation.y += 0.0023;
+      modelRef.current.rotation.y += 0.0020;
     }
 
     if (
       modelRef.current.rotation &&
       !modelRef.current.rotation.moveRight &&
-      modelRef.current.rotation.y < 0.3
+      modelRef.current.rotation.y < 0.3 &&
+       modelRef.current.rotation.y =< 1.4 &&
+       modelRef.current.rotation.y >= 1.1  
     ) {
-      modelRef.current.rotation.y -= 0.0018;
+      modelRef.current.rotation.y -= 0.0010;
     } else if (
       modelRef.current.rotation &&
       !modelRef.current.rotation.moveRight
     ) {
-      modelRef.current.rotation.y -= 0.0023;
+      modelRef.current.rotation.y -= 0.0020;
     }
   });
 
