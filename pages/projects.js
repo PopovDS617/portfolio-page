@@ -1,15 +1,8 @@
-import {
-  Container,
-  Heading,
-  SimpleGrid,
-  Divider,
-  useColorModeValue
-} from '@chakra-ui/react';
+import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react';
 import Section from '../components/Section';
-import { ProjectGridItem } from '../components/grid/GridItem';
+import { ProjectGridItem } from '../components/grid/ProjectGridItem';
 
 import ArticleLayout from '../components/layouts/ArticleLayout';
-
 import TranslatedText from '../components/TranslatedText';
 
 const ProjectsPage = () => {

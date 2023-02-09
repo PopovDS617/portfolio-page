@@ -1,12 +1,8 @@
-import {
-  Container,
-  Heading,
-  SimpleGrid,
-  useColorModeValue
-} from '@chakra-ui/react';
+import { Container, Heading, SimpleGrid } from '@chakra-ui/react';
 import ArticleLayout from '../components/layouts/ArticleLayout';
 import Section from '../components/Section';
-import { GridItem, PostGridItem } from '../components/grid/GridItem';
+import { PostGridItem } from '../components/grid/PostGridItem';
+import TranslatedText from '../components/TranslatedText';
 
 const PostsPage = () => {
   return (
@@ -19,9 +15,21 @@ const PostsPage = () => {
           pt={6}
           textAlign="center"
         >
-          All the recent posts
+          <TranslatedText localeFile="posts" text="pageTitle" />
         </Heading>
-        <Section delay={0.1}>
+
+        <Heading
+          as="h3"
+          fontSize={{ base: 12, md: 20 }}
+          mb={4}
+          pt={6}
+          textAlign="center"
+          fontStyle="italic"
+        >
+          <TranslatedText localeFile="posts" text="addLater" />
+        </Heading>
+
+        {/* <Section delay={0.1}>
           <SimpleGrid columns={[1, 2, 3]} gap={6}>
             <PostGridItem
               id="post-one"
@@ -54,7 +62,7 @@ const PostsPage = () => {
             ></PostGridItem>
           </SimpleGrid>
         </Section>
-        {/* <Section delay={0.5}>
+        <Section delay={0.5}>
           <SimpleGrid columns={[1, 2, 3]} gap={6}>
             <GridItem title="Post Seven" thumbnail={ImagePath}></GridItem>
             <GridItem title="Post Eight" thumbnail={ImagePath}></GridItem>

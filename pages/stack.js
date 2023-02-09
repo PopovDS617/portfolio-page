@@ -57,7 +57,7 @@ const StackPage = () => {
                   'customSaturatedGreenColor'
                 )}
               />
-              Javascript, Typescript, Python
+              Javascript, Typescript
             </ListItem>
           </List>
         </Section>

@@ -2,49 +2,60 @@ import React, { useRef } from 'react';
 import { useGLTF } from '@react-three/drei';
 import { useFrame } from '@react-three/fiber';
 
+const animationProgress = {
+  start: 0,
+  reversePoint: 0.35,
+  startEdge: 0.45,
+  finalEdge: 1.2,
+  final: 1.5
+};
+
 export function Model(props) {
   const modelRef = useRef();
-  if (modelRef.current && modelRef.current.rotation.y) {
-    modelRef.current.rotation.moveRight = !modelRef.current.rotation.moveRight;
-  }
 
   useFrame(({}) => {
-    if (modelRef.current.rotation.y >= 1.3) {
-      modelRef.current.rotation.moveRight = false;
-    }
+    if (modelRef.current.rotation) {
+      if (modelRef.current.rotation.y === animationProgress.start) {
+        modelRef.current.rotation.moveRight = true;
+      }
+      if (modelRef.current.rotation.y >= animationProgress.final) {
+        modelRef.current.rotation.moveRight = false;
+      }
+      if (modelRef.current.rotation.y <= animationProgress.reversePoint) {
+        modelRef.current.rotation.moveRight = true;
+      }
 
-    if (modelRef.current.rotation.y <= 0.3) {
-      modelRef.current.rotation.moveRight = true;
-    }
+      if (
+        modelRef.current.rotation.moveRight &&
+        modelRef.current.rotation.y <= animationProgress.startEdge
+      ) {
+        modelRef.current.rotation.y += 0.001;
+      }
 
-    if (
-      modelRef.current.rotation &&
-      modelRef.current.rotation.moveRight &&
-      modelRef.current.rotation.y > 1.3 &&
-      modelRef.current.rotation.y >= 0.3 &&
-      modelRef.current.rotation.y <= 0.45
-    ) {
-      modelRef.current.rotation.y += 0.001;
-    } else if (
-      modelRef.current.rotation &&
-      modelRef.current.rotation.moveRight
-    ) {
-      modelRef.current.rotation.y += 0.002;
-    }
+      if (
+        modelRef.current.rotation.moveRight &&
+        modelRef.current.rotation.y >= animationProgress.finalEdge
+      ) {
+        modelRef.current.rotation.y += 0.001;
+      } else if (modelRef.current.rotation.moveRight) {
+        modelRef.current.rotation.y += 0.002;
+      }
 
-    if (
-      modelRef.current.rotation &&
-      !modelRef.current.rotation.moveRight &&
-      modelRef.current.rotation.y < 0.3 &&
-      modelRef.current.rotation.y <= 1.3 &&
-      modelRef.current.rotation.y >= 1.1
-    ) {
-      modelRef.current.rotation.y -= 0.001;
-    } else if (
-      modelRef.current.rotation &&
-      !modelRef.current.rotation.moveRight
-    ) {
-      modelRef.current.rotation.y -= 0.002;
+      if (
+        !modelRef.current.rotation.moveRight &&
+        modelRef.current.rotation.y <= animationProgress.startEdge
+      ) {
+        modelRef.current.rotation.y -= 0.001;
+      }
+
+      if (
+        !modelRef.current.rotation.moveRight &&
+        modelRef.current.rotation.y >= animationProgress.finalEdge
+      ) {
+        modelRef.current.rotation.y -= 0.001;
+      } else if (!modelRef.current.rotation.moveRight) {
+        modelRef.current.rotation.y -= 0.002;
+      }
     }
   });
 

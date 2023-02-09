@@ -1,7 +1,5 @@
-import Head from 'next/head';
 import { Box, Container, useColorModeValue } from '@chakra-ui/react';
 import { Navbar } from '../navbar/Navbar';
-
 import { Canvas } from '@react-three/fiber';
 import { Suspense } from 'react';
 import Three from './../3dmodel/model-container';

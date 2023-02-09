@@ -44,6 +44,7 @@ const HomePage = () => {
               borderRadius="full"
               src="/images/avatar.jpg"
               alt="profile image"
+              height="100%"
             />
           </Box>
           <Box
