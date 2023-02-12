@@ -29,6 +29,7 @@ const HomePage = () => {
       <Container>
         <Box
           pt={6}
+          pb={4}
           display={'flex'}
           flexDirection={{ base: 'column-reverse ', md: 'row' }}
           justifyContent={'center'}
@@ -73,7 +74,7 @@ const HomePage = () => {
           >
             Work
           </Heading> */}
-          <Paragraph fontSize={20} pt={6}>
+          <Paragraph>
             <TranslatedText localeFile="common" text="description" />
           </Paragraph>
         </Section>

@@ -29,32 +29,26 @@ export function Model(props) {
         modelRef.current.rotation.moveRight &&
         modelRef.current.rotation.y <= animationProgress.startEdge
       ) {
-        modelRef.current.rotation.y += 0.001;
-      }
-
-      if (
+        modelRef.current.rotation.y += 0.0007;
+      } else if (
         modelRef.current.rotation.moveRight &&
         modelRef.current.rotation.y >= animationProgress.finalEdge
       ) {
-        modelRef.current.rotation.y += 0.001;
+        modelRef.current.rotation.y += 0.0007;
       } else if (modelRef.current.rotation.moveRight) {
-        modelRef.current.rotation.y += 0.002;
-      }
-
-      if (
+        modelRef.current.rotation.y += 0.0014;
+      } else if (
         !modelRef.current.rotation.moveRight &&
         modelRef.current.rotation.y <= animationProgress.startEdge
       ) {
-        modelRef.current.rotation.y -= 0.001;
-      }
-
-      if (
+        modelRef.current.rotation.y -= 0.0007;
+      } else if (
         !modelRef.current.rotation.moveRight &&
         modelRef.current.rotation.y >= animationProgress.finalEdge
       ) {
-        modelRef.current.rotation.y -= 0.001;
+        modelRef.current.rotation.y -= 0.0007;
       } else if (!modelRef.current.rotation.moveRight) {
-        modelRef.current.rotation.y -= 0.002;
+        modelRef.current.rotation.y -= 0.0014;
       }
     }
   });

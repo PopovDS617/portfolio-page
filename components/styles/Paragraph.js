@@ -6,6 +6,6 @@ export const Paragraph = styled.p`
   text-align: justify;
   font-size: 15px;
   @media (min-width: 48em) {
-    font-size: 18px;
+    font-size: 20px;
   }
 `;
