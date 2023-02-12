@@ -1,8 +1,9 @@
-import { Container, Heading, SimpleGrid } from '@chakra-ui/react';
+import { Container, Heading, SimpleGrid, Box } from '@chakra-ui/react';
 import ArticleLayout from '../components/layouts/ArticleLayout';
 import Section from '../components/Section';
 import { PostGridItem } from '../components/grid/PostGridItem';
 import TranslatedText from '../components/TranslatedText';
+import { Image } from '@chakra-ui/react';
 
 const PostsPage = () => {
   return (
@@ -20,13 +21,25 @@ const PostsPage = () => {
 
         <Heading
           as="h3"
-          fontSize={{ base: 12, md: 20 }}
+          fontSize={{ base: 16, md: 20 }}
           mb={4}
-          pt={6}
+          pt={2}
           textAlign="center"
           fontStyle="italic"
         >
           <TranslatedText localeFile="posts" text="addLater" />
+          <Box display="flex" justifyContent="center" pt={4}>
+            <Image
+              borderRadius="lg"
+              h="20"
+              src="images/cat-emoji.png"
+              alt="a cat"
+              mb={4}
+              transition="all 0.4s"
+              _hover={{ transform: 'scale(1.1)', transition: 'all 0.4s' }}
+              loading="lazy"
+            />
+          </Box>
         </Heading>
 
         {/* <Section delay={0.1}>
