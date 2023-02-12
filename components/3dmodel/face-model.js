@@ -6,8 +6,8 @@ const animationProgress = {
   start: 0,
   reversePoint: 0.35,
   startEdge: 0.45,
-  finalEdge: 1.2,
-  final: 1.5
+  finalEdge: 1.1,
+  final: 1.2
 };
 
 export function Model(props) {
