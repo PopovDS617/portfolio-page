@@ -66,15 +66,15 @@ const HomePage = () => {
           </Box>
         </Box>
         <Section delay={0.1}>
-          <Heading
+          {/* <Heading
             as="h3"
             variant="section-title"
             fontSize={{ base: 20, md: 25 }}
           >
             Work
-          </Heading>
+          </Heading> */}
           <Paragraph fontSize={20}>
-            Hello this is mine description hello and welcome
+            <TranslatedText localeFile="common" text="description" />
           </Paragraph>
         </Section>
 
