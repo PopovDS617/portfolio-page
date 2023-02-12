@@ -73,7 +73,7 @@ const HomePage = () => {
           >
             Work
           </Heading> */}
-          <Paragraph fontSize={20}>
+          <Paragraph fontSize={20} pt={6}>
             <TranslatedText localeFile="common" text="description" />
           </Paragraph>
         </Section>
