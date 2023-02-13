@@ -12,7 +12,7 @@ const Three = () => {
       <Model
         scale={0.6}
         receiveShadow
-        position={[-0.4, -4.25, 0]}
+        position={[-0.5, -4, 0]}
         rotation={[angleToRadians(0), angleToRadians(-50), angleToRadians(0)]}
       />
 

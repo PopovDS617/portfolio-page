@@ -18,11 +18,6 @@ const ArticleLayout = ({ children, title }) => (
     style={{ position: 'relative' }}
   >
     <>
-      {title && (
-        <Head>
-          <title>Dmitry Popov</title>
-        </Head>
-      )}
       {children}
       <GridItemStyle />
     </>

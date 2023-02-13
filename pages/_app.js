@@ -16,11 +16,11 @@ const Website = ({ Component, pageProps, router }) => {
         <AnimatePresence
           mode="wait"
           initial={true}
-          onExitComplete={() => {
-            if (typeof window !== 'undefined') {
-              window.scrollTo({ top: 0 });
-            }
-          }}
+          // onExitComplete={() => {
+          //   if (typeof window !== 'undefined') {
+          //     window.scrollTo({ top: 0 });
+          //   }
+          // }}
         >
           <Component {...pageProps} key={router.route} />
         </AnimatePresence>

@@ -14,7 +14,7 @@ const MainLayout = ({ children, router }) => {
       <Container maxW="container.md" pt={14}>
         <Box
           m="auto"
-          mt={['-20px', '-60px', '-120px']}
+          mt={['-50px', '-60px', '-120px']}
           mb={['-50px', '-70px', '-100px']}
           w={[250, 450, 480]}
           h={[250, 450, 480]}

@@ -35,8 +35,6 @@ const PostsPage = () => {
               src="images/cat-emoji.png"
               alt="a cat"
               mb={4}
-              transition="all 0.4s"
-              _hover={{ transform: 'scale(1.1)', transition: 'all 0.4s' }}
               loading="lazy"
             />
           </Box>
