@@ -13,7 +13,7 @@ const Three = () => {
         scale={0.6}
         receiveShadow
         position={[-0.5, -4, 0]}
-        rotation={[angleToRadians(0), angleToRadians(-50), angleToRadians(0)]}
+        rotation={[angleToRadians(0), angleToRadians(-30), angleToRadians(0)]}
       />
 
       <ambientLight />

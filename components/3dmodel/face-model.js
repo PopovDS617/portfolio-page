@@ -4,10 +4,10 @@ import { useFrame } from '@react-three/fiber';
 
 const animationProgress = {
   start: 0,
-  reversePoint: 0.35,
-  startEdge: 0.45,
-  finalEdge: 1.1,
-  final: 1.2
+  reversePoint: 0.25,
+  startEdge: 0.35,
+  finalEdge: 0.8,
+  final: 1
 };
 
 export function Model(props) {
