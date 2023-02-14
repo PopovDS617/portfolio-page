@@ -1,6 +1,14 @@
-# portfolio-page
+## LINK - https://popov.vercel.app/
 
-TO DO (after mvp would be reached):
+
+## Getting Started
+#### `1. npm install`
+
+#### `2. npm run dev`
+
+<br>
+
+## TO DO
 
 - [x] refactor folders and components
 - [x] change three logic from vanilla to fiber & drei
