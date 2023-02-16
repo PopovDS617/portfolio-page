@@ -1,5 +1,5 @@
 import NextLink from 'next/link';
-import { Image } from '@chakra-ui/react';
+import Image from 'next/image';
 import { Box, Text, LinkBox, LinkOverlay } from '@chakra-ui/react';
 
 export const ProjectGridItem = ({ children, id, title, thumbnail }) => (
@@ -18,8 +18,10 @@ export const ProjectGridItem = ({ children, id, title, thumbnail }) => (
           src={thumbnail}
           alt={title}
           placeholder="blur"
-          height="100%"
-          width="80%"
+          blurDataURL="/images/blurred-logo-2.jpg"
+          quality={100}
+          height="230"
+          width="230"
         />
         <LinkOverlay href={`/projects/${id}`}>
           <Text mt={2} fontSize={22}>

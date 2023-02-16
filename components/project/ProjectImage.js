@@ -1,14 +1,23 @@
-import { Image } from '@chakra-ui/react';
+import Image from 'next/image';
+import { Box } from '@chakra-ui/react';
 
 export const ProjectImage = ({ src, alt }) => (
-  <Image
-    borderRadius="lg"
-    w="full"
-    src={src}
-    alt={alt}
+  <Box
     mb={4}
     transition="all 0.4s"
-    _hover={{ transform: 'scale(1.1)', transition: 'all 0.4s' }}
-    loading="lazy"
-  />
+    _hover={{ transform: 'scale(1.05)', transition: 'all 0.4s' }}
+    borderRadius="lg"
+  >
+    <Image
+      w="full"
+      src={src}
+      alt={alt}
+      height="500"
+      width="1000"
+      loading="lazy"
+      placeholder="blur"
+      blurDataURL="/images/blurred-logo-1.jpg"
+      quality={100}
+    />
+  </Box>
 );
