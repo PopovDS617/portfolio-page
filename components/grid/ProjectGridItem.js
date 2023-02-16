@@ -18,7 +18,7 @@ export const ProjectGridItem = ({ children, id, title, thumbnail }) => (
           src={thumbnail}
           alt={title}
           placeholder="blur"
-          blurDataURL="/images/blurred-logo-2.jpg"
+          blurDataURL="/images/blurred-logo-1.jpg"
           quality={100}
           height="230"
           width="230"

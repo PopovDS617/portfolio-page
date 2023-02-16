@@ -16,7 +16,7 @@ export const ProjectImage = ({ src, alt }) => (
       width="1000"
       loading="lazy"
       placeholder="blur"
-      blurDataURL="/images/blurred-logo-1.jpg"
+      blurDataURL="/images/blurred-logo-2.jpg"
       quality={100}
     />
   </Box>
