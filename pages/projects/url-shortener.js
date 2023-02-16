@@ -12,7 +12,7 @@ const Project = () => {
     <ArticleLayout title="url shortener">
       <Container>
         <ProjectTitle>
-          Crypto Tracker <ProjectInfo>2023</ProjectInfo>
+          URL shortener <ProjectInfo>2023</ProjectInfo>
         </ProjectTitle>
         <Paragraph fontSize={{ base: 14, md: 18 }}>
           <TranslatedText
