@@ -120,6 +120,7 @@ const ProjectsPage = () => {
             />
           </Section>
         </SimpleGrid>
+        <Divider my={6} />
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section delay={0.7}>
             <ProjectGridItem
