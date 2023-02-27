@@ -23,5 +23,7 @@
   "mapWarehouseTitle": " ",
   "mapWarehouseDescription": "Приложение для рассчета расстояния и времени доставки груза со склада до пункта выдачи. Создано для тестирования возможностей TomTom SDK",
   "weatherForecasctTitle": " ",
-  "weatherForecasctDescription": "Приложение, позволяющее узнать прогноз погоды"
+  "weatherForecasctDescription": "Приложение, позволяющее узнать прогноз погоды",
+  "snakeGameTitle": " ",
+  "snakeGameDescription": "Классическая игра «змейка». Создана на Реакте, основный упор сделан на использовании кастомных хуков"
 }

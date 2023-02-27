@@ -23,5 +23,7 @@
   "mapWarehouseTitle": " ",
   "mapWarehouseDescription": "An application for calculating the distance and time of delivery of goods from a warehouse to a delivery point. Created to test the core features of TomTom SDK",
   "weatherForecasctTitle": " ",
-  "weatherForecasctDescription": "An application that allows you to find out the weather forecast in your region"
+  "weatherForecasctDescription": "An application that allows you to find out the weather forecast in your region",
+  "snakeGameTitle": " ",
+  "snakeGameDescription": "The classic snake game. Built with React, with a heavy focus on custom hooks"
 }
