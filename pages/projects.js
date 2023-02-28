@@ -80,9 +80,9 @@ const ProjectsPage = () => {
           </Section>
           <Section delay={0.7}>
             <ProjectGridItem
-              id="english-grammar"
-              title="English Grammar"
-              thumbnail="/images/projects/english-grammar/logo.jpg"
+              id="weather-forecast"
+              title="Weather forecast"
+              thumbnail="/images/projects/weather-forecast/logo.jpg"
             />
           </Section>
         </SimpleGrid>
@@ -117,16 +117,6 @@ const ProjectsPage = () => {
               id="map-bakeries-locations"
               title="Map. Addresses of bakeries"
               thumbnail="/images/projects/map-bakeries/logo.jpg"
-            />
-          </Section>
-        </SimpleGrid>
-        <Divider my={6} />
-        <SimpleGrid columns={[1, 1, 2]} gap={6}>
-          <Section delay={0.7}>
-            <ProjectGridItem
-              id="weather-forecast"
-              title="Weather forecast"
-              thumbnail="/images/projects/weather-forecast/logo.jpg"
             />
           </Section>
         </SimpleGrid>
