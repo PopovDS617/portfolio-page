@@ -89,7 +89,7 @@ const HomePage = () => {
           </Heading>
 
           <List fontSize={{ base: 16, md: 18 }}>
-            <ListItem>
+            <ListItem mb={2}>
               <ListIcon
                 as={BsFillDice5Fill}
                 color={useColorModeValue(
@@ -99,7 +99,7 @@ const HomePage = () => {
               />
               <TranslatedText localeFile="common" text="hobbie1" />
             </ListItem>
-            <ListItem>
+            <ListItem mb={2}>
               <ListIcon
                 as={MdQuiz}
                 color={useColorModeValue(
@@ -109,7 +109,7 @@ const HomePage = () => {
               />
               <TranslatedText localeFile="common" text="hobbie2" />
             </ListItem>
-            <ListItem>
+            <ListItem mb={2}>
               <ListIcon
                 as={GiPaintBrush}
                 color={useColorModeValue(
@@ -119,7 +119,7 @@ const HomePage = () => {
               />
               <TranslatedText localeFile="common" text="hobbie3" />
             </ListItem>
-            <ListItem>
+            <ListItem mb={2}>
               <ListIcon
                 as={FaCat}
                 color={useColorModeValue(
