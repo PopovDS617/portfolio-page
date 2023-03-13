@@ -97,15 +97,54 @@ export const Navbar = props => {
                 aria-label="Options"
                 border="none"
               />
-              <MenuList>
+              <MenuList bg={useColorModeValue('#b59f72', '#2d3748')}>
                 <NextLink href="/stack" passHref>
-                  <MenuItem> {t('stackLink')}</MenuItem>
+                  <MenuItem
+                    _focus={false}
+                    color={path === '/stack' && 'black'}
+                    bg={
+                      path === '/stack'
+                        ? useColorModeValue(
+                            'customSaturatedGreenColor',
+                            'customSaturatedGreenColor'
+                          )
+                        : ''
+                    }
+                  >
+                    {t('stackLink')}
+                  </MenuItem>
                 </NextLink>
                 <NextLink href="/projects" passHref>
-                  <MenuItem> {t('projectsLink')}</MenuItem>
+                  <MenuItem
+                    _focus={false}
+                    color={path === '/projects' && 'black'}
+                    bg={
+                      path === '/projects'
+                        ? useColorModeValue(
+                            'customSaturatedGreenColor',
+                            'customSaturatedGreenColor'
+                          )
+                        : ''
+                    }
+                  >
+                    {t('projectsLink')}
+                  </MenuItem>
                 </NextLink>
                 <NextLink href="/posts" passHref>
-                  <MenuItem as={Link}>{t('postsLink')}</MenuItem>
+                  <MenuItem
+                    _focus={false}
+                    color={path === '/posts' && 'black'}
+                    bg={
+                      path === '/posts'
+                        ? useColorModeValue(
+                            'customSaturatedGreenColor',
+                            'customSaturatedGreenColor'
+                          )
+                        : ''
+                    }
+                  >
+                    {t('postsLink')}
+                  </MenuItem>
                 </NextLink>
               </MenuList>
             </Menu>
