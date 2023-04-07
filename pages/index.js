@@ -39,13 +39,13 @@ const HomePage = () => {
             <Image
               borderColor={useColorModeValue('#202023', 'whiteAlpha.800')}
               borderWidth={2}
+              width="150px"
               borderStyle="solid"
-              maxWidth="150px"
+              height="150px"
               display="inline-block"
               borderRadius="full"
               src="/images/avatar.jpg"
               alt="profile image"
-              height="100%"
             />
           </Box>
           <Box
@@ -67,13 +67,6 @@ const HomePage = () => {
           </Box>
         </Box>
         <Section delay={0.1}>
-          {/* <Heading
-            as="h3"
-            variant="section-title"
-            fontSize={{ base: 20, md: 25 }}
-          >
-            Work
-          </Heading> */}
           <Paragraph>
             <TranslatedText localeFile="common" text="description" />
           </Paragraph>
