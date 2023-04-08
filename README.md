@@ -18,4 +18,5 @@
 - [x] adjust rotation animation for 3d model
 - [x] add ru/eng internationalization (18i)
 - [x] add screenshots and description for each project
+- [x] check for every browser
 - [ ] add a couple of posts (5 ideally)
