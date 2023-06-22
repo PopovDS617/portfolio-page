@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://popov-d.site/
+
+# Sitemaps
+Sitemap: https://popov-d.site/sitemap.xml
