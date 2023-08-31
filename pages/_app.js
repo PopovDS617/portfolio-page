@@ -3,7 +3,7 @@ import Layout from '../components/layouts/MainLayout';
 import theme from '../lib/theme';
 import Fonts from '../components/styles/Fonts';
 import { AnimatePresence } from 'framer-motion';
-import { DefaultSeo } from 'next-seo';
+import { DefaultSeo, OrganizationJsonLd, WebPageJsonLd } from 'next-seo';
 
 import { defaultSeo } from '../next-seo.config';
 import { useRouter } from 'next/router';
@@ -17,6 +17,13 @@ const Website = ({ Component, pageProps, router }) => {
 
   return (
     <ChakraProvider theme={theme}>
+      <WebPageJsonLd id={1} description="Дмитрий Попов" />
+      <OrganizationJsonLd
+        name="Дмитрий Попов"
+        url="https://popov-d.site"
+        logo="/favicon.ico"
+        address="Ростов-на-Дону"
+      />
       <DefaultSeo {...defaultSeo} canonical={generateCanonical(asPath)} />
       <Fonts />
       <Layout router={router}>
