@@ -2,6 +2,7 @@ import { Spinner } from '@chakra-ui/react';
 
 export const ModelSpinner = () => (
   <Spinner
+    zIndex={100}
     size="xl"
     position="absolute"
     left="50%"
