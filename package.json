@@ -7,7 +7,7 @@
     "dev": "next dev -H 0.0.0.0",
     "build": "next build",
     "start": "next start",
-    "prettier": "prettier -write .",
+    "prettier": "prettier --write .",
     "lint": "next lint",
     "sitemap": "next-sitemap"
   },
@@ -40,5 +40,9 @@
     "react-icons": "^4.6.0",
     "react-syntax-highlighter": "^15.5.0",
     "three": "^0.145.0"
+  },
+  "devDependencies": {
+    "eslint": "8.50.0",
+    "eslint-config-next": "13.5.3"
   }
 }

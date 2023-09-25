@@ -1,6 +1,4 @@
 import { Container, Badge, List, ListItem, Box } from '@chakra-ui/react';
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { vscDarkPlus } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 import { PostImage } from '../../components/post/PostImage';
 import { PostMeta } from '../../components/post/PostMeta';
 import { PostTitle } from '../../components/post/PostTitle';

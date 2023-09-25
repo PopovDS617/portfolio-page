@@ -34,7 +34,6 @@ const LogoIcon = styled.span`
 
 const Logo = props => {
   const active = props.path === '/';
-  const inactiveColor = useColorModeValue('gray200', 'whiteAlpha900');
   return (
     <Link href="/">
       <a>

@@ -1,7 +1,7 @@
 ## LINK - https://popov-d.site/
 
-
 ## Getting Started
+
 #### `1. npm install`
 
 #### `2. npm run dev`

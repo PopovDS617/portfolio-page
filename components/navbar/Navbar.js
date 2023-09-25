@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import Logo from './Logo';
 import NextLink from 'next/link';
 import {
@@ -5,7 +6,6 @@ import {
   Box,
   Link,
   Stack,
-  Heading,
   Flex,
   Menu,
   MenuItem,

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import Head from 'next/head';
+
 import { GridItemStyle } from '../styles/Grid';
 
 const variants = {
@@ -8,7 +8,7 @@ const variants = {
   exit: { opacity: 0, x: -0, y: 20 }
 };
 
-const ArticleLayout = ({ children, title }) => (
+const ArticleLayout = ({ children }) => (
   <motion.article
     initial="hidden"
     animate="enter"

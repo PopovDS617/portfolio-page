@@ -1,10 +1,10 @@
 const options = {
-  arrowParens: "avoid",
+  arrowParens: 'avoid',
   singleQuote: true,
   bracketSpacing: true,
-  endOfLine: "lf",
+  endOfLine: 'lf',
   tabWidth: 2,
-  trailingComma: "none",
+  trailingComma: 'none'
 };
 
 module.exports = options;

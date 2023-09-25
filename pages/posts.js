@@ -1,7 +1,6 @@
-import { Container, Heading, SimpleGrid, Box } from '@chakra-ui/react';
+import { Container, Heading, Box } from '@chakra-ui/react';
 import ArticleLayout from '../components/layouts/ArticleLayout';
-import Section from '../components/Section';
-import { PostGridItem } from '../components/grid/PostGridItem';
+
 import TranslatedText from '../components/TranslatedText';
 import { Image } from '@chakra-ui/react';
 
