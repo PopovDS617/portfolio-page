@@ -35,7 +35,7 @@ const LogoIcon = styled.span`
 const Logo = props => {
   const active = props.path === '/';
   return (
-    <Link href="/">
+    <Link legacyBehavior href="/">
       <a>
         <LogoBox>
           <LogoIcon>

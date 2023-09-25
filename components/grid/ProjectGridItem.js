@@ -12,7 +12,7 @@ export const ProjectGridItem = ({ children, id, title, thumbnail }) => (
       transition: 'all 0.3s'
     }}
   >
-    <NextLink href={`/projects/${id}`}>
+    <NextLink legacyBehavior href={`/projects/${id}`}>
       <LinkBox cursor="pointer">
         <Image
           src={thumbnail}

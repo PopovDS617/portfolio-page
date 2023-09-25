@@ -6,7 +6,7 @@ import TranslatedText from '../TranslatedText';
 
 export const ProjectTitle = ({ children }) => (
   <Box fontSize={{ base: 20, md: 26 }}>
-    <NextLink href="/projects" passHref>
+    <NextLink legacyBehavior href="/projects" passHref>
       <Link>
         <TranslatedText localeFile="projects" text="pageTitle" />
       </Link>

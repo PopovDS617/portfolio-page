@@ -24,7 +24,7 @@ const LinkItem = ({ href, path, children, target, ...props }) => {
   const active = path.includes(href);
   const inactiveColor = useColorModeValue('gray200', 'whiteAlpha900');
   return (
-    <NextLink href={href} passHref scroll={false}>
+    <NextLink legacyBehavior href={href} passHref scroll={false}>
       <Link
         p={2}
         px={4}
@@ -98,7 +98,7 @@ export const Navbar = props => {
                 border="none"
               />
               <MenuList bg={useColorModeValue('#b59f72', '#2d3748')}>
-                <NextLink href="/stack" passHref>
+                <NextLink legacyBehavior href="/stack" passHref>
                   <MenuItem
                     _focus={false}
                     color={path === '/stack' && 'black'}
@@ -114,7 +114,7 @@ export const Navbar = props => {
                     {t('stackLink')}
                   </MenuItem>
                 </NextLink>
-                <NextLink href="/projects" passHref>
+                <NextLink legacyBehavior href="/projects" passHref>
                   <MenuItem
                     _focus={false}
                     color={path === '/projects' && 'black'}
@@ -130,7 +130,7 @@ export const Navbar = props => {
                     {t('projectsLink')}
                   </MenuItem>
                 </NextLink>
-                <NextLink href="/posts" passHref>
+                <NextLink legacyBehavior href="/posts" passHref>
                   <MenuItem
                     _focus={false}
                     color={path === '/posts' && 'black'}

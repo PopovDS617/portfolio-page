@@ -14,7 +14,7 @@ const NotFoundPage = () => {
 
         <Divider my={6} />
         <Box my={6} align="center">
-          <NextLink href="/">
+          <NextLink legacyBehavior href="/">
             <Button
               colorScheme="green"
               bg="customSaturatedGreenColor"
