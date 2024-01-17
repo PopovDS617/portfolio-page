@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 
-import { GridItemStyle } from '../styles/Grid';
+import { GridItemStyle } from '../../styles/Grid';
 
 const variants = {
   hidden: { opacity: 0, x: 0, y: 20 },
