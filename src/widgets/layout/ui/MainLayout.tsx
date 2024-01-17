@@ -37,8 +37,7 @@ export const MainLayout = (props: MainLayoutProps) => {
 
               backdropFilter: 'blur(10px)',
               mask: 'linear-gradient(to top, black 70%,  transparent 100%)',
-              height: '100%',
-              width: '125%'
+              height: '100%'
             }}
             position="relative"
             mt={['-80px', '-148px', '-165px']}
