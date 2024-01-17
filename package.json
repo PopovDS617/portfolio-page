@@ -9,6 +9,9 @@
     "lint": "next lint",
     "prettify": "prettier --write ."
   },
+  "engines": {
+    "node": "18.x - 20.x"
+  },
   "dependencies": {
     "@chakra-ui/icons": "2.0.10",
     "@chakra-ui/react": "2.8.2",
