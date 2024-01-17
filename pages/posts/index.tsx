@@ -8,34 +8,14 @@ const PostsPage = () => {
   return (
     <ArticleLayout title="posts">
       <Container>
-        <Heading
-          as="h3"
-          fontSize={{ base: 20, md: 30 }}
-          mb={4}
-          pt={6}
-          textAlign="center"
-        >
+        <Heading as="h3" fontSize={{ base: 20, md: 30 }} mb={4} pt={6} textAlign="center">
           <TranslatedText localeFile="posts" text="pageTitle" />
         </Heading>
 
-        <Heading
-          as="h3"
-          fontSize={{ base: 16, md: 20 }}
-          mb={4}
-          pt={2}
-          textAlign="center"
-          fontStyle="italic"
-        >
+        <Heading as="h3" fontSize={{ base: 16, md: 20 }} mb={4} pt={2} textAlign="center" fontStyle="italic">
           <TranslatedText localeFile="posts" text="addLater" />
           <Box display="flex" justifyContent="center" pt={4}>
-            <Image
-              borderRadius="lg"
-              h="20"
-              src="images/cat-emoji.png"
-              alt="a cat"
-              mb={4}
-              loading="lazy"
-            />
+            <Image borderRadius="lg" h="20" src="images/cat-emoji.png" alt="a cat" mb={4} loading="lazy" />
           </Box>
         </Heading>
 

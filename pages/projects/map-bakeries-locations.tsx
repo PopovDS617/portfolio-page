@@ -29,10 +29,7 @@ const Project = () => {
           </ListItem>
           <ListItem>
             <ProjectInfo>Source</ProjectInfo>
-            <Link
-              href="https://github.com/PopovDS617/microservice-interactive-map"
-              isExternal
-            >
+            <Link href="https://github.com/PopovDS617/microservice-interactive-map" isExternal>
               github.com/PopovDS617/microservice-interactive-map
               <ExternalLinkIcon mx="2px" />
             </Link>

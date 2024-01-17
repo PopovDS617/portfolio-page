@@ -12,12 +12,7 @@ export const ProjectImage = (props: ProjectImageProps) => {
   const { src, alt, height = 500, width = 1000 } = props;
 
   return (
-    <Box
-      mb={4}
-      transition="all 0.4s"
-      _hover={{ transform: 'scale(1.05)', transition: 'all 0.4s' }}
-      borderRadius="lg"
-    >
+    <Box mb={4} transition="all 0.4s" _hover={{ transform: 'scale(1.05)', transition: 'all 0.4s' }} borderRadius="lg">
       <Image
         src={src}
         alt={alt || ''}

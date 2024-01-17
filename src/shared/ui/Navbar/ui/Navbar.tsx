@@ -40,13 +40,7 @@ export const Navbar = (props: NavbarProps) => {
       zIndex={1}
       {...props}
     >
-      <Container
-        display="flex"
-        p={2}
-        maxW="container.md"
-        alignItems="center"
-        justifyContent="center"
-      >
+      <Container display="flex" p={2} maxW="container.md" alignItems="center" justifyContent="center">
         <Flex align="center" mr={5}>
           <Logo path={props.path} />
         </Flex>
@@ -68,13 +62,7 @@ export const Navbar = (props: NavbarProps) => {
             {t('postsLink')}
           </Link>
         </Stack>
-        <Box
-          flex={1}
-          alignItems="center"
-          mr={5}
-          display="flex"
-          justifyContent="flex-end"
-        >
+        <Box flex={1} alignItems="center" mr={5} display="flex" justifyContent="flex-end">
           <LangToggleButton />
           <ThemeToggleButton />
 
@@ -94,11 +82,7 @@ export const Navbar = (props: NavbarProps) => {
                   backgroundColor: useColorModeValue('#eec677', '#2d3748')
                 }}
               />
-              <MenuList
-                bg={useColorModeValue('#eec677', '#2d3748')}
-                borderColor="transparent"
-                padding={0}
-              >
+              <MenuList bg={useColorModeValue('#eec677', '#2d3748')} borderColor="transparent" padding={0}>
                 <NextLink legacyBehavior href="/stack" passHref>
                   <MenuItem
                     borderRadius={4}
@@ -106,10 +90,7 @@ export const Navbar = (props: NavbarProps) => {
                     color={path === '/stack' ? 'black' : undefined}
                     bg={
                       path === '/stack'
-                        ? useColorModeValue(
-                            'customSaturatedGreenColor',
-                            'customSaturatedGreenColor'
-                          )
+                        ? useColorModeValue('customSaturatedGreenColor', 'customSaturatedGreenColor')
                         : ''
                     }
                   >
@@ -122,10 +103,7 @@ export const Navbar = (props: NavbarProps) => {
                     color={path === '/projects' ? 'black' : undefined}
                     bg={
                       path === '/projects'
-                        ? useColorModeValue(
-                            'customSaturatedGreenColor',
-                            'customSaturatedGreenColor'
-                          )
+                        ? useColorModeValue('customSaturatedGreenColor', 'customSaturatedGreenColor')
                         : ''
                     }
                   >
@@ -138,10 +116,7 @@ export const Navbar = (props: NavbarProps) => {
                     color={path === '/posts' ? 'black' : undefined}
                     bg={
                       path === '/posts'
-                        ? useColorModeValue(
-                            'customSaturatedGreenColor',
-                            'customSaturatedGreenColor'
-                          )
+                        ? useColorModeValue('customSaturatedGreenColor', 'customSaturatedGreenColor')
                         : ''
                     }
                   >

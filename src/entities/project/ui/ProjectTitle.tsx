@@ -14,13 +14,7 @@ export const ProjectTitle = ({ children }: { children: React.ReactNode }) => (
     <span>
       <ChevronRightIcon />
     </span>
-    <Heading
-      display="inline-block"
-      as="h3"
-      fontSize={{ base: 20, md: 26 }}
-      mb={4}
-      pt={6}
-    >
+    <Heading display="inline-block" as="h3" fontSize={{ base: 20, md: 26 }} mb={4} pt={6}>
       {children}
     </Heading>
   </Box>

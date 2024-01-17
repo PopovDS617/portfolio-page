@@ -1,5 +1,5 @@
 {
-  "printMaxWidth":120,
+  "printWidth": 120,
   "arrowParens": "avoid",
   "singleQuote": true,
   "bracketSpacing": true,
@@ -7,5 +7,3 @@
   "tabWidth": 2,
   "trailingComma": "none"
 }
-
-

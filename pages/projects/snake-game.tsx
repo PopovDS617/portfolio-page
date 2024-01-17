@@ -35,16 +35,8 @@ const Project = () => {
             </Link>
           </ListItem>
         </List>
-        <ProjectImage
-          src="/images/projects/snake-game/shot-1.jpg"
-          width={615}
-          height={800}
-        />
-        <ProjectImage
-          src="/images/projects/snake-game/shot-2.jpg"
-          width={615}
-          height={800}
-        />
+        <ProjectImage src="/images/projects/snake-game/shot-1.jpg" width={615} height={800} />
+        <ProjectImage src="/images/projects/snake-game/shot-2.jpg" width={615} height={800} />
       </Container>
     </ArticleLayout>
   );

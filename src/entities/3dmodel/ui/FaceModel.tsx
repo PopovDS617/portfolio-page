@@ -32,27 +32,15 @@ export function FaceModel(props: FaceModelProps) {
         modelRef.current.rotation.moveRight = true;
       }
 
-      if (
-        modelRef.current.rotation.moveRight &&
-        modelRef.current.rotation.y <= animationProgress.startEdge
-      ) {
+      if (modelRef.current.rotation.moveRight && modelRef.current.rotation.y <= animationProgress.startEdge) {
         modelRef.current.rotation.y += 0.0007;
-      } else if (
-        modelRef.current.rotation.moveRight &&
-        modelRef.current.rotation.y >= animationProgress.finalEdge
-      ) {
+      } else if (modelRef.current.rotation.moveRight && modelRef.current.rotation.y >= animationProgress.finalEdge) {
         modelRef.current.rotation.y += 0.0007;
       } else if (modelRef.current.rotation.moveRight) {
         modelRef.current.rotation.y += 0.0014;
-      } else if (
-        !modelRef.current.rotation.moveRight &&
-        modelRef.current.rotation.y <= animationProgress.startEdge
-      ) {
+      } else if (!modelRef.current.rotation.moveRight && modelRef.current.rotation.y <= animationProgress.startEdge) {
         modelRef.current.rotation.y -= 0.0007;
-      } else if (
-        !modelRef.current.rotation.moveRight &&
-        modelRef.current.rotation.y >= animationProgress.finalEdge
-      ) {
+      } else if (!modelRef.current.rotation.moveRight && modelRef.current.rotation.y >= animationProgress.finalEdge) {
         modelRef.current.rotation.y -= 0.0007;
       } else if (!modelRef.current.rotation.moveRight) {
         modelRef.current.rotation.y -= 0.0014;

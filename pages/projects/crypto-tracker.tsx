@@ -14,10 +14,7 @@ const Project = () => {
           Crypto Tracker <ProjectInfo>2022</ProjectInfo>
         </ProjectTitle>
         <Paragraph>
-          <TranslatedText
-            localeFile="projects"
-            text="cryptoTrackerDescription"
-          />
+          <TranslatedText localeFile="projects" text="cryptoTrackerDescription" />
         </Paragraph>
         <List ml={4} my={4} fontSize={{ base: 14, md: 18 }}>
           <ListItem>
@@ -32,10 +29,7 @@ const Project = () => {
           </ListItem>
           <ListItem>
             <ProjectInfo>Source</ProjectInfo>
-            <Link
-              href="https://github.com/PopovDS617/crypto-tracker-app"
-              isExternal
-            >
+            <Link href="https://github.com/PopovDS617/crypto-tracker-app" isExternal>
               https://github.com/PopovDS617/crypto-tracker-app
               <ExternalLinkIcon mx="2px" />
             </Link>

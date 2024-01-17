@@ -56,12 +56,7 @@ const HomePage = () => {
             alignItems={{ base: 'center', md: 'flex-start' }}
             flexDirection="column"
           >
-            <Heading
-              as="h2"
-              variant="page-title"
-              textAlign={{ sm: 'justify' }}
-              fontSize={{ base: 26, md: 32 }}
-            >
+            <Heading as="h2" variant="page-title" textAlign={{ sm: 'justify' }} fontSize={{ base: 26, md: 32 }}>
               <TranslatedText localeFile="common" text="title" />
             </Heading>
           </Box>
@@ -73,11 +68,7 @@ const HomePage = () => {
         </Section>
 
         <Section delay={0.3}>
-          <Heading
-            as="h3"
-            variant="section-title"
-            fontSize={{ base: 20, md: 25 }}
-          >
+          <Heading as="h3" variant="section-title" fontSize={{ base: 20, md: 25 }}>
             <TranslatedText localeFile="common" text="hobbiesTitle" />
           </Heading>
 
@@ -85,51 +76,29 @@ const HomePage = () => {
             <ListItem mb={2}>
               <ListIcon
                 as={BsFillDice5Fill}
-                color={useColorModeValue(
-                  'customDarkBlueColor',
-                  'customSaturatedGreenColor'
-                )}
+                color={useColorModeValue('customDarkBlueColor', 'customSaturatedGreenColor')}
               />
               <TranslatedText localeFile="common" text="hobbie1" />
             </ListItem>
             <ListItem mb={2}>
-              <ListIcon
-                as={MdQuiz}
-                color={useColorModeValue(
-                  'customDarkBlueColor',
-                  'customSaturatedGreenColor'
-                )}
-              />
+              <ListIcon as={MdQuiz} color={useColorModeValue('customDarkBlueColor', 'customSaturatedGreenColor')} />
               <TranslatedText localeFile="common" text="hobbie2" />
             </ListItem>
             <ListItem mb={2}>
               <ListIcon
                 as={GiPaintBrush}
-                color={useColorModeValue(
-                  'customDarkBlueColor',
-                  'customSaturatedGreenColor'
-                )}
+                color={useColorModeValue('customDarkBlueColor', 'customSaturatedGreenColor')}
               />
               <TranslatedText localeFile="common" text="hobbie3" />
             </ListItem>
             <ListItem mb={2}>
-              <ListIcon
-                as={FaCat}
-                color={useColorModeValue(
-                  'customDarkBlueColor',
-                  'customSaturatedGreenColor'
-                )}
-              />
+              <ListIcon as={FaCat} color={useColorModeValue('customDarkBlueColor', 'customSaturatedGreenColor')} />
               <TranslatedText localeFile="common" text="hobbie4" />
             </ListItem>
           </List>
         </Section>
         <Section delay={0.3}>
-          <Heading
-            as="h3"
-            variant="section-title"
-            fontSize={{ base: 20, md: 25 }}
-          >
+          <Heading as="h3" variant="section-title" fontSize={{ base: 20, md: 25 }}>
             <TranslatedText localeFile="common" text="contactsTitle" />
           </Heading>
           <List>
@@ -138,17 +107,11 @@ const HomePage = () => {
                 <Button
                   variant="ghost"
                   _hover={{
-                    bg: useColorModeValue(
-                      'rgba(0, 66, 90,0.35)',
-                      'rgba(0, 220, 130,0.10)'
-                    )
+                    bg: useColorModeValue('rgba(0, 66, 90,0.35)', 'rgba(0, 220, 130,0.10)')
                   }}
                   fontSize={20}
                   colorScheme="green"
-                  color={useColorModeValue(
-                    'customDarkBlueColor',
-                    'customSaturatedGreenColor'
-                  )}
+                  color={useColorModeValue('customDarkBlueColor', 'customSaturatedGreenColor')}
                   leftIcon={<Icon as={BsGithub} />}
                 >
                   {`github`}
@@ -159,18 +122,12 @@ const HomePage = () => {
               <Link href="https://t.me/PopovDS617" target="_blank">
                 <Button
                   _hover={{
-                    bg: useColorModeValue(
-                      'rgba(0, 66, 90,0.35)',
-                      'rgba(0, 220, 130,0.10)'
-                    )
+                    bg: useColorModeValue('rgba(0, 66, 90,0.35)', 'rgba(0, 220, 130,0.10)')
                   }}
                   fontSize={20}
                   variant="ghost"
                   colorScheme="green"
-                  color={useColorModeValue(
-                    'customDarkBlueColor',
-                    'customSaturatedGreenColor'
-                  )}
+                  color={useColorModeValue('customDarkBlueColor', 'customSaturatedGreenColor')}
                   leftIcon={<Icon as={BsTelegram} />}
                 >
                   {`telegram`}

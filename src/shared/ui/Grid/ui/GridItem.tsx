@@ -6,7 +6,7 @@ export const GridItem = (props: GridItemProps) => {
   const { children, thumbnail, title, href } = props;
 
   return (
-    <Box w="100%" align="center">
+    <Box w="100%" alignItems="center">
       <LinkBox cursor="pointer">
         <Image src={thumbnail} height="100%" alt={title} loading="lazy" />
         <LinkOverlay href={href} target="_blank">

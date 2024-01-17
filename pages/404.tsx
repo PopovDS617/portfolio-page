@@ -15,11 +15,7 @@ const NotFoundPage = () => {
         <Divider my={6} />
         <Box my={6} alignItems="center" justifyContent="center" display="flex">
           <NextLink legacyBehavior href="/">
-            <Button
-              colorScheme="green"
-              bg="customSaturatedGreenColor"
-              _hover={{ bg: 'customDarkGreenColor' }}
-            >
+            <Button colorScheme="green" bg="customSaturatedGreenColor" _hover={{ bg: 'customDarkGreenColor' }}>
               <TranslatedText localeFile="common" text="404" />
             </Button>
           </NextLink>

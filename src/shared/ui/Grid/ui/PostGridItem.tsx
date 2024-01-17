@@ -14,7 +14,7 @@ export const PostGridItem = (props: GridItemProps) => {
             src={thumbnail}
             alt={title}
             height="100%"
-            _placeholder="blur"
+            // _placeholder="blur"
           />
           <LinkOverlay href={`/posts/${id}`}>
             <Text mt={2} fontSize={22}>

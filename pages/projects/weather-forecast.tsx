@@ -13,10 +13,7 @@ const Project = () => {
           Weather forecast <ProjectInfo>2022</ProjectInfo>
         </ProjectTitle>
         <Paragraph>
-          <TranslatedText
-            localeFile="projects"
-            text="weatherForecasctDescription"
-          />
+          <TranslatedText localeFile="projects" text="weatherForecasctDescription" />
         </Paragraph>
         <List ml={4} my={4} fontSize={{ base: 14, md: 18 }}>
           <ListItem>
@@ -31,10 +28,7 @@ const Project = () => {
           </ListItem>
           <ListItem>
             <ProjectInfo>Source</ProjectInfo>
-            <Link
-              href="https://github.com/PopovDS617/microservice-weather-forecast"
-              isExternal
-            >
+            <Link href="https://github.com/PopovDS617/microservice-weather-forecast" isExternal>
               github.com/PopovDS617/microservice-weather-forecast
               <ExternalLinkIcon mx="2px" />
             </Link>

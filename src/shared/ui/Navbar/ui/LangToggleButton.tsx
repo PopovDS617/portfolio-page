@@ -19,11 +19,7 @@ export const LangToggleButton = () => {
 
   return (
     <LanguageToggleBox>
-      <Text
-        aria-label="Toggle lang"
-        colorScheme={useColorModeValue('black', 'white')}
-        onClick={switchLanguage}
-      >
+      <Text aria-label="Toggle lang" colorScheme={useColorModeValue('black', 'white')} onClick={switchLanguage}>
         {router.locale === 'ru-RU' ? 'RU' : 'ENG'}
       </Text>
     </LanguageToggleBox>

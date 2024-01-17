@@ -14,20 +14,13 @@ const Project = () => {
           Map. Delivery from a warehouse <ProjectInfo>2022</ProjectInfo>
         </ProjectTitle>
         <Paragraph>
-          <TranslatedText
-            localeFile="projects"
-            text="mapWarehouseDescription"
-          />
+          <TranslatedText localeFile="projects" text="mapWarehouseDescription" />
         </Paragraph>
         <List ml={4} my={4} fontSize={{ base: 14, md: 18 }}>
           <ListItem>
             <ProjectInfo>Demo</ProjectInfo>
-            <Link
-              href="https://map-warehouse-to-delivery-point.vercel.app/"
-              isExternal
-            >
-              map-warehouse-to-delivery-point.vercel.app{' '}
-              <ExternalLinkIcon mx="2px" />
+            <Link href="https://map-warehouse-to-delivery-point.vercel.app/" isExternal>
+              map-warehouse-to-delivery-point.vercel.app <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
           <ListItem>
@@ -36,10 +29,7 @@ const Project = () => {
           </ListItem>
           <ListItem>
             <ProjectInfo>Source</ProjectInfo>
-            <Link
-              href="https://github.com/PopovDS617/map-warehouse-to-delivery-point"
-              isExternal
-            >
+            <Link href="https://github.com/PopovDS617/map-warehouse-to-delivery-point" isExternal>
               github.com/PopovDS617/map-warehouse-to-delivery-point
               <ExternalLinkIcon mx="2px" />
             </Link>

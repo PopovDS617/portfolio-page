@@ -12,7 +12,7 @@ const Project = () => {
         <ProjectTitle>
           Rest, please <ProjectInfo>2022</ProjectInfo>
         </ProjectTitle>
-        <Paragraph fontSize={{ base: 12 }}>
+        <Paragraph>
           <TranslatedText localeFile="projects" text="restPleaseDescription" />
         </Paragraph>
         <List ml={4} my={4} fontSize={{ base: 14, md: 18 }}>

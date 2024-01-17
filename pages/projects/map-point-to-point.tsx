@@ -28,10 +28,7 @@ const Project = () => {
           </ListItem>
           <ListItem>
             <ProjectInfo>Source</ProjectInfo>
-            <Link
-              href="https://github.com/PopovDS617/map-point-to-point-routing"
-              isExternal
-            >
+            <Link href="https://github.com/PopovDS617/map-point-to-point-routing" isExternal>
               github.com/PopovDS617/map-point-to-point-routing
               <ExternalLinkIcon mx="2px" />
             </Link>

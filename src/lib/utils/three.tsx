@@ -1,2 +1,1 @@
-export const angleToRadians = (angleInDeg: number) =>
-  (Math.PI / 180) * angleInDeg;
+export const angleToRadians = (angleInDeg: number) => (Math.PI / 180) * angleInDeg;

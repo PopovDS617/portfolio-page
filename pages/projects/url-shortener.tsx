@@ -14,10 +14,7 @@ const Project = () => {
           URL shortener <ProjectInfo>2023</ProjectInfo>
         </ProjectTitle>
         <Paragraph>
-          <TranslatedText
-            localeFile="projects"
-            text="urlShortenerDescription"
-          />
+          <TranslatedText localeFile="projects" text="urlShortenerDescription" />
         </Paragraph>
         <List ml={4} my={4} fontSize={{ base: 14, md: 18 }}>
           <ListItem>
@@ -32,10 +29,7 @@ const Project = () => {
           </ListItem>
           <ListItem>
             <ProjectInfo>Source</ProjectInfo>
-            <Link
-              href="https://github.com/PopovDS617/url-shortener-MERN"
-              isExternal
-            >
+            <Link href="https://github.com/PopovDS617/url-shortener-MERN" isExternal>
               github.com/PopovDS617/url-shortener-MERN
               <ExternalLinkIcon mx="2px" />
             </Link>

@@ -8,23 +8,13 @@ const ProjectsPage = () => {
   return (
     <ArticleLayout>
       <Container>
-        <Heading
-          as="h3"
-          fontSize={{ base: 20, md: 30 }}
-          mb={4}
-          pt={6}
-          textAlign="center"
-        >
+        <Heading as="h3" fontSize={{ base: 20, md: 30 }} mb={4} pt={6} textAlign="center">
           <TranslatedText localeFile="projects" text="pageTitle" />
         </Heading>
         <Divider my={6} />
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section delay={0.2}>
-            <ProjectGridItem
-              id="snake-game"
-              title="Snake game"
-              thumbnail="/images/projects/snake-game/logo.jpg"
-            />
+            <ProjectGridItem id="snake-game" title="Snake game" thumbnail="/images/projects/snake-game/logo.jpg" />
           </Section>
           <Section delay={0.1}>
             <ProjectGridItem
@@ -37,18 +27,10 @@ const ProjectsPage = () => {
         <Divider my={6} />
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section delay={0.2}>
-            <ProjectGridItem
-              id="rest-please"
-              title="Rest, please"
-              thumbnail="/images/projects/rest-please/logo.jpg"
-            />
+            <ProjectGridItem id="rest-please" title="Rest, please" thumbnail="/images/projects/rest-please/logo.jpg" />
           </Section>
           <Section delay={0.4}>
-            <ProjectGridItem
-              id="quiz"
-              title="Pub quiz website"
-              thumbnail="/images/projects/quiz/logo.jpg"
-            />
+            <ProjectGridItem id="quiz" title="Pub quiz website" thumbnail="/images/projects/quiz/logo.jpg" />
           </Section>
         </SimpleGrid>
         <Divider my={6} />
@@ -71,11 +53,7 @@ const ProjectsPage = () => {
         <Divider my={6} />
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section delay={0.7}>
-            <ProjectGridItem
-              id="aki"
-              title="Cat Aki"
-              thumbnail="/images/projects/aki/logo.jpg"
-            />
+            <ProjectGridItem id="aki" title="Cat Aki" thumbnail="/images/projects/aki/logo.jpg" />
           </Section>
           <Section delay={0.7}>
             <ProjectGridItem
@@ -88,11 +66,7 @@ const ProjectsPage = () => {
         <Divider my={6} />
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section delay={0.7}>
-            <ProjectGridItem
-              id="the-moon"
-              title="the Moon"
-              thumbnail="/images/projects/the-moon/logo.jpg"
-            />
+            <ProjectGridItem id="the-moon" title="the Moon" thumbnail="/images/projects/the-moon/logo.jpg" />
           </Section>
           <Section delay={1}>
             <ProjectGridItem
