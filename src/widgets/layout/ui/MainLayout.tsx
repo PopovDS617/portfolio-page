@@ -16,7 +16,7 @@ export const MainLayout = (props: MainLayoutProps) => {
   return (
     <Box as="main" pb={8}>
       <Navbar path={router.asPath} />
-      <Container minW="calc(100vw)" pt={14}>
+      <Container minW="calc(100vw)" overflow="hidden" pt={14}>
         <Box
           m="auto"
           mt={['-50px', '-60px', '-120px']}
