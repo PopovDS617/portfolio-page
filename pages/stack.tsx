@@ -100,7 +100,7 @@ const StackPage = () => {
             </ListItem>
           </List>
         </Section>
-        <Section delay={0.3}>
+        {/* <Section delay={0.3}>
           <Heading as="h3" variant="section-title" fontSize={{ base: 20, md: 25 }}>
             <TranslatedText localeFile="stack" text="goalsFor2023" />
           </Heading>
@@ -110,7 +110,7 @@ const StackPage = () => {
               Vue, Django
             </ListItem>
           </List>
-        </Section>
+        </Section> */}
       </Container>
     </ArticleLayout>
   );

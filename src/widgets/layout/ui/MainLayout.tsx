@@ -14,9 +14,9 @@ export const MainLayout = (props: MainLayoutProps) => {
   const { children, router } = props;
 
   return (
-    <Box as="main" pb={8}>
+    <Box as="main" overflowX="hidden" pb={8}>
       <Navbar path={router.asPath} />
-      <Container minW="calc(100vw)" overflow="hidden" pt={14}>
+      <Container minW="calc(100vw)" pt={14}>
         <Box
           m="auto"
           mt={['-50px', '-60px', '-120px']}
@@ -24,7 +24,7 @@ export const MainLayout = (props: MainLayoutProps) => {
           w={[250, 450, 480]}
           h={[250, 450, 480]}
           position="relative"
-          overflowX="hidden"
+          overflow="hidden"
         >
           <Suspense fallback={<Spinner />}>
             <ModelContainer />
