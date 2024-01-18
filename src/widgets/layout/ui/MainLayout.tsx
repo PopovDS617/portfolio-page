@@ -24,6 +24,7 @@ export const MainLayout = (props: MainLayoutProps) => {
           w={[250, 450, 480]}
           h={[250, 450, 480]}
           position="relative"
+          overflowX="hidden"
         >
           <Suspense fallback={<Spinner />}>
             <ModelContainer />
@@ -37,7 +38,8 @@ export const MainLayout = (props: MainLayoutProps) => {
 
               backdropFilter: 'blur(10px)',
               mask: 'linear-gradient(to top, black 70%,  transparent 100%)',
-              height: '100%'
+              height: '100%',
+              width: '100%'
             }}
             position="relative"
             mt={['-80px', '-148px', '-165px']}
