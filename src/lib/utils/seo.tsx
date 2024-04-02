@@ -1,3 +1,5 @@
+import { SITE_URL } from '@/shared/constants';
+
 export const generateCanonical = (path: string) => {
-  return 'https://dpopov.site' + path;
+  return SITE_URL + path;
 };
