@@ -1,4 +1,4 @@
-import { extendTheme } from '@chakra-ui/react';
+import { border, extendTheme } from '@chakra-ui/react';
 import { mode } from '@chakra-ui/theme-tools';
 
 type ThemeProps = Record<string, any>;
@@ -10,6 +10,24 @@ const styles = {
       bg: mode('#E8D2A6', '#202023')(props),
       scrollBehavior: 'smooth',
       '-webkit-tap-highlight-color': 'transparent'
+    },
+    '::-webkit-scrollbar': {
+      bgColor: 'transparent',
+      height: '8px',
+      width: '8px'
+    },
+    '::-webkit-scrollbar-track': {
+      bgColor: 'transparent',
+      borderTopLeftRadius: '10px',
+      borderBottomLeftRadius: '10px'
+    },
+    '::-webkit-scrollbar-thumb': {
+      bgColor: '#525252',
+      borderTopLeftRadius: '10px',
+      borderBottomLeftRadius: '10px'
+    },
+    '::-webkit-scrollbar-corner': {
+      bgColor: '#ffffff'
     }
   })
 };
