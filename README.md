@@ -1,10 +1,10 @@
-## LINK - https://popov-d.site/
+## LINK - https://dpopov.site/
 
 ## Getting Started
 
-#### `1. npm install`
+#### `1. yarn`
 
-#### `2. npm run dev`
+#### `2. yarn dev / yarn prod`
 
 <br>
 

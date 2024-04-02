@@ -19,12 +19,7 @@ const Website = ({ Component, pageProps, router }: AppProps) => {
   return (
     <ChakraProvider theme={theme}>
       <WebPageJsonLd id="1" description="Дмитрий Попов" />
-      <OrganizationJsonLd
-        name="Дмитрий Попов"
-        url="https://popov-d.site"
-        logo="/favicon.ico"
-        address="Ростов-на-Дону"
-      />
+      <OrganizationJsonLd name="Дмитрий Попов" url="https://dpopov.site" logo="/favicon.ico" address="Ростов-на-Дону" />
       <DefaultSeo {...defaultSeo} canonical={generateCanonical(asPath)} />
       <Fonts />
       <MainLayout router={router}>

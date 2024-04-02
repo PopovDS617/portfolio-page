@@ -1,5 +1,5 @@
 module.exports = {
-  siteUrl: process.env.SITE_URL || 'https://popov-d.site/',
+  siteUrl: process.env.SITE_URL || 'https://dpopov.site/',
   generateRobotsTxt: true,
   exclude: ['/404', '/en-US/404']
 };
