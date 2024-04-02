@@ -1,5 +1,8 @@
 import { SITE_URL } from '@/shared/constants';
 
+const ogImage = { images: [{ url: SITE_URL + '/meta/og_image.png', alt: '', height: 600, width: 600 }] };
+// const ogTwitter = { handle: '@handle', site: '@site', cardType: 'summary_large_image' };
+
 export const defaultSeoRU = {
   title: 'Дмитрий Попов',
   description:
@@ -8,8 +11,10 @@ export const defaultSeoRU = {
     type: 'website',
     locale: 'ru_RU',
     url: SITE_URL,
-    siteName: 'Дмитрий Попов'
+    siteName: 'Дмитрий Попов',
+    ...ogImage
   }
+  // twitter: ogTwitter
 };
 
 export const defaultSeoENG = {
@@ -20,6 +25,8 @@ export const defaultSeoENG = {
     type: 'website',
     locale: 'en_US',
     url: SITE_URL,
-    siteName: 'Dmitry Popov'
+    siteName: 'Dmitry Popov',
+    ...ogImage
   }
+  // twitter: ogTwitter
 };
