@@ -35,11 +35,46 @@ const StackPage = () => {
                 as={BsTranslate}
                 color={useColorModeValue('customDarkBlueColor', 'customSaturatedGreenColor')}
               />
-              Javascript, Typescript
+              Go, Javascript (Typescript)
             </ListItem>
           </List>
         </Section>
         <Section delay={0.1}>
+          <Heading as="h3" variant="section-title" fontSize={{ base: 20, md: 25 }}>
+            <TranslatedText localeFile="stack" text="backendTitle" />
+          </Heading>
+          <List fontSize={{ base: 16, md: 18 }}>
+            <ListItem>
+              <ListIcon as={AiFillApi} color={useColorModeValue('customDarkBlueColor', 'customSaturatedGreenColor')} />
+              Go - Gin, Fiber, Gorilla
+            </ListItem>
+            <ListItem>
+              <ListIcon as={AiFillApi} color={useColorModeValue('customDarkBlueColor', 'customSaturatedGreenColor')} />
+              JS - Node, Express, NestJS
+            </ListItem>
+          </List>
+        </Section>
+
+        <Section delay={0.2}>
+          <Heading as="h3" variant="section-title" fontSize={{ base: 20, md: 25 }}>
+            <TranslatedText localeFile="stack" text="dbBackendTitle" />
+          </Heading>
+          <List fontSize={{ base: 16, md: 18 }}>
+            <ListItem>
+              <ListIcon as={MdStorage} color={useColorModeValue('customDarkBlueColor', 'customSaturatedGreenColor')} />
+              PostgreSQL, MySQL
+            </ListItem>
+            <ListItem>
+              <ListIcon as={MdStorage} color={useColorModeValue('customDarkBlueColor', 'customSaturatedGreenColor')} />
+              MongoDB
+            </ListItem>
+            <ListItem>
+              <ListIcon as={MdStorage} color={useColorModeValue('customDarkBlueColor', 'customSaturatedGreenColor')} />
+              Redis, Memcached
+            </ListItem>
+          </List>
+        </Section>
+        <Section delay={0.2}>
           <Heading as="h3" variant="section-title" fontSize={{ base: 20, md: 25 }}>
             <TranslatedText localeFile="stack" text="frontendTitle" />
           </Heading>
@@ -56,40 +91,18 @@ const StackPage = () => {
                 as={BsFillCreditCard2FrontFill}
                 color={useColorModeValue('customDarkBlueColor', 'customSaturatedGreenColor')}
               />
-              Sass, Tailwind, Styled components, Chakra, Bootstrap
+              sass, tailwind, styled components, chakra, bootstrap
             </ListItem>
             <ListItem>
               <ListIcon
                 as={BsFillCreditCard2FrontFill}
                 color={useColorModeValue('customDarkBlueColor', 'customSaturatedGreenColor')}
               />
-              Three.js
+              three.js
             </ListItem>
           </List>
         </Section>
-        <Section delay={0.2}>
-          <Heading as="h3" variant="section-title" fontSize={{ base: 20, md: 25 }}>
-            <TranslatedText localeFile="stack" text="backendTitle" />
-          </Heading>
-          <List fontSize={{ base: 16, md: 18 }}>
-            <ListItem>
-              <ListIcon as={AiFillApi} color={useColorModeValue('customDarkBlueColor', 'customSaturatedGreenColor')} />
-              Node, Express
-            </ListItem>
-          </List>
-        </Section>
-        <Section delay={0.2}>
-          <Heading as="h3" variant="section-title" fontSize={{ base: 20, md: 25 }}>
-            <TranslatedText localeFile="stack" text="dbBackendTitle" />
-          </Heading>
-          <List fontSize={{ base: 16, md: 18 }}>
-            <ListItem>
-              <ListIcon as={MdStorage} color={useColorModeValue('customDarkBlueColor', 'customSaturatedGreenColor')} />
-              MongoDB, MySQL
-            </ListItem>
-          </List>
-        </Section>
-        <Section delay={0.3}>
+        {/* <Section delay={0.3}>
           <Heading as="h3" variant="section-title" fontSize={{ base: 20, md: 25 }}>
             <TranslatedText localeFile="stack" text="testingTitle" />
           </Heading>
@@ -99,7 +112,7 @@ const StackPage = () => {
               Jest, React testing library, Cypress, Mocha
             </ListItem>
           </List>
-        </Section>
+        </Section> */}
         {/* <Section delay={0.3}>
           <Heading as="h3" variant="section-title" fontSize={{ base: 20, md: 25 }}>
             <TranslatedText localeFile="stack" text="goalsFor2023" />
