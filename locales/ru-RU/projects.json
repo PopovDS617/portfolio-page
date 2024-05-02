@@ -25,5 +25,9 @@
   "weatherForecasctTitle": " ",
   "weatherForecasctDescription": "Приложение, позволяющее узнать прогноз погоды",
   "snakeGameTitle": " ",
-  "snakeGameDescription": "Классическая игра «змейка». Создана на Реакте, основный упор сделан на использовании кастомных хуков"
+  "snakeGameDescription": "Классическая игра «змейка». Создана на Реакте, основный упор сделан на использовании кастомных хуков",
+  "googleOauthTitle": " ",
+  "googleOauthDescription": "Аутентификация через gmail, с получением профиля пользователя и его email",
+  "mdBlogTitle": " ",
+  "mdBlogDescription": "Минималистичный блог. Статьи формируются путем преобразования md файлов в html"
 }

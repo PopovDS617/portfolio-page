@@ -14,6 +14,14 @@ const ProjectsPage = () => {
         <Divider my={6} />
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section delay={0.2}>
+            <ProjectGridItem id="mdblog" title="Markdown blog" thumbnail="/images/projects/mdblog/logo.jpg" />
+          </Section>
+          <Section delay={0.2}>
+            <ProjectGridItem id="oauth" title="Google OAuth" thumbnail="/images/projects/oauth/logo.jpg" />
+          </Section>
+        </SimpleGrid>
+        <SimpleGrid columns={[1, 1, 2]} gap={6}>
+          <Section delay={0.2}>
             <ProjectGridItem id="snake-game" title="Snake game" thumbnail="/images/projects/snake-game/logo.jpg" />
           </Section>
           <Section delay={0.1}>
